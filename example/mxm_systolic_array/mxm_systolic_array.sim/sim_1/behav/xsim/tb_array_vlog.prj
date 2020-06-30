@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "/opt/Xilinx/Vivado/2018.1/data/xilinx_vip/include" \
+"../../../../../../generator/RTL/sim/dsp_macro.v" \
+"../../../../../../generator/RTL/dsp_macro_wrapper.v" \
+
+sv xil_defaultlib  --include "/opt/Xilinx/Vivado/2018.1/data/xilinx_vip/include" \
+"../../../../../../generator/RTL/add.sv" \
+"../../../../../../generator/RTL/generated/array.sv" \
+"../../../../../../generator/RTL/dff.sv" \
+"../../../../../../generator/RTL/int8_dual_mac.sv" \
+"../../../../../../generator/RTL/int8_pe.sv" \
+"../../../../mxm_systolic_array.srcs/sim_1/new/tb_array.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

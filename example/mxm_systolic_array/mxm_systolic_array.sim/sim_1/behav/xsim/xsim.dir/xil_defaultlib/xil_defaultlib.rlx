@@ -1,0 +1,18 @@
+0.6
+2018.1
+Apr  4 2018
+18:43:17
+/home/libano/github/SystolicArray/example/mxm_systolic_array/mxm_systolic_array.sim/sim_1/behav/xsim/glbl.v,1522801934,verilog,,,,glbl,,xil_defaultlib,,,,,,
+/home/libano/github/SystolicArray/example/mxm_systolic_array/mxm_systolic_array.srcs/sim_1/new/tb_array.sv,1593535548,systemVerilog,,,,tb_array,,xil_defaultlib,/opt/Xilinx/Vivado/2018.1/data/xilinx_vip/include,,,,,
+/home/libano/github/SystolicArray/example/mxm_systolic_array/mxm_systolic_array.srcs/sim_1/new/tb_top.sv,1593537708,systemVerilog,,,,tb_top,,xil_defaultlib,/opt/Xilinx/Vivado/2018.1/data/xilinx_vip/include,,,,,
+/home/libano/github/SystolicArray/generator/RTL/add.sv,1581184608,systemVerilog,,/home/libano/github/SystolicArray/generator/RTL/generated/array.sv,,add,,xil_defaultlib,/opt/Xilinx/Vivado/2018.1/data/xilinx_vip/include,,,,,
+/home/libano/github/SystolicArray/generator/RTL/dff.sv,1581184938,systemVerilog,,/home/libano/github/SystolicArray/generator/RTL/fsm.sv,,dff,,xil_defaultlib,/opt/Xilinx/Vivado/2018.1/data/xilinx_vip/include,,,,,
+/home/libano/github/SystolicArray/generator/RTL/dsp_macro_wrapper.v,1581184608,verilog,,,,dsp_macro_wrapper,,xil_defaultlib,/opt/Xilinx/Vivado/2018.1/data/xilinx_vip/include,,,,,
+/home/libano/github/SystolicArray/generator/RTL/fsm.sv,1581443194,systemVerilog,,/home/libano/github/SystolicArray/generator/RTL/int8_dual_mac.sv,,fsm,,xil_defaultlib,/opt/Xilinx/Vivado/2018.1/data/xilinx_vip/include,,,,,
+/home/libano/github/SystolicArray/generator/RTL/generated/array.sv,1593536530,systemVerilog,,/home/libano/github/SystolicArray/generator/RTL/dff.sv,,array,,xil_defaultlib,/opt/Xilinx/Vivado/2018.1/data/xilinx_vip/include,,,,,
+/home/libano/github/SystolicArray/generator/RTL/generated/top.sv,1593536530,systemVerilog,,/home/libano/github/SystolicArray/example/mxm_systolic_array/mxm_systolic_array.srcs/sim_1/new/tb_top.sv,,top,,xil_defaultlib,/opt/Xilinx/Vivado/2018.1/data/xilinx_vip/include,,,,,
+/home/libano/github/SystolicArray/generator/RTL/int8_dual_mac.sv,1581184608,systemVerilog,,/home/libano/github/SystolicArray/generator/RTL/int8_pe.sv,,int8_dual_mac,,xil_defaultlib,/opt/Xilinx/Vivado/2018.1/data/xilinx_vip/include,,,,,
+/home/libano/github/SystolicArray/generator/RTL/int8_pe.sv,1581184608,systemVerilog,,/home/libano/github/SystolicArray/generator/RTL/mem.sv,,int8_pe,,xil_defaultlib,/opt/Xilinx/Vivado/2018.1/data/xilinx_vip/include,,,,,
+/home/libano/github/SystolicArray/generator/RTL/ip/dsp_macro_xbip_dsp48_macro_0_0/sim/dsp_macro_xbip_dsp48_macro_0_0.vhd,1593535596,vhdl,,,,dsp_macro_xbip_dsp48_macro_0_0,,,,,,,,
+/home/libano/github/SystolicArray/generator/RTL/mem.sv,1581443460,systemVerilog,,/home/libano/github/SystolicArray/generator/RTL/generated/top.sv,,mem,,xil_defaultlib,/opt/Xilinx/Vivado/2018.1/data/xilinx_vip/include,,,,,
+/home/libano/github/SystolicArray/generator/RTL/sim/dsp_macro.v,1593535595,verilog,,/home/libano/github/SystolicArray/generator/RTL/dsp_macro_wrapper.v,,dsp_macro,,xil_defaultlib,/opt/Xilinx/Vivado/2018.1/data/xilinx_vip/include,,,,,
