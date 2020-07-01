@@ -6,8 +6,8 @@ import math as m
 
 #globals
 path = "./RTL/generated/"
-parallelismLevel = 2
 arraySize = 2
-inputBits = 8
+parallelismLevel = 2 #DONT TOUCH (DSP48E1)
+inputBits = 8 #DONT TOUCH (DSP48E1)
 outputBits = 32
 axiWrapper = True
