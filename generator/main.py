@@ -2,7 +2,7 @@ from settings import *
 from arrayGenerator import *
 from topGenerator import *
 
-print("############# MxM Systolic Array Generator #############")
+print("############# Libano's Systolic Array Generator #############")
 
 #generate .sv files
 generateArray()
