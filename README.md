@@ -25,7 +25,7 @@ Given a systolic array of size NxN:
 - **DSPs:** N<sup>2</sup> DSP48E1<sup>[[5]](https://www.xilinx.com/support/documentation/user_guides/ug479_7Series_DSP48E1.pdf)</sup> *(can easily be adapted to work with DSP48E2)*
 - **BRAMs:** 5N RAMB18E1<sup>[[6]](https://www.xilinx.com/support/documentation/user_guides/ug473_7Series_Memory_Resources.pdf)</sup> *(N for each input/output matrix: A,B,C,Y,Z)*
 - **Operations/Cycle:** 4N<sup>2</sup> *(N<sup>2</sup> PEs, 2xMUL + 2xADD per PE)*
-- **Frequency:** Will depend on N and target device *(but an 8x8 version easily meets timing on a XC7Z020-CLG484 @ 150MHz)*
+- **Frequency:** Will depend on N and target device *(an 8x8 easily meets timing on a XC7Z020 @ 150MHz)*
 
 ![testbench](/docs/testbench.png)
 
