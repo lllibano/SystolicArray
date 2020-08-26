@@ -15,7 +15,7 @@ The adders responsible for accumulation are implemented with LUTs.
 
 Hence, the Processing Elements (PEs) that constitute the array are multiply-accumulate (MAC) units.
 
-![array-mem-pe](/docs/array-mem-pe.png)
+![array-mem-pe](/docs/architecture.png)
 
 ---
 
@@ -51,4 +51,4 @@ Given a systolic array of size NxN:
 ---
 
 ## Extras
-![systolic-demo](/docs/systolic-demo.gif)
+![systolic-demo](/docs/demo.gif)
