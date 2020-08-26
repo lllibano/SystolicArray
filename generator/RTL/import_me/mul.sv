@@ -60,7 +60,7 @@ module mul
     assign dsp_in0 = {dsp_in0_dff_out, 17'd0};
     assign dsp_in1 = (dsp_in1_dff_out[bInputBits-1]) ? {17'hFFFFF, dsp_in1_dff_out}:{17'h00000, dsp_in1_dff_out};
     assign dsp_in2 = (dsp_in2_dff_out[eInputBits-1]) ? {10'hFFF, dsp_in2_dff_out}:{10'h000, dsp_in2_dff_out};
-    dsp_macro_wrapper dsp_macro_wrapper(.CLK(clk2x), .CLR(rst), .A(dsp_in0), .B(dsp_in1), .C(dsp_in2), .Z(dsp_out));
+    dsp_macro_wrapper dsp_macro_wrapper(.CLK(clk2x), .CLR(1'b0), .A(dsp_in0), .B(dsp_in1), .C(dsp_in2), .Z(dsp_out));
     assign ae = (dsp_out[32]) ? {{aebecedePadding{1'b1}}, dsp_out[32:17]}:{{aebecedePadding{1'b0}}, dsp_out[32:17]};
     assign be = (dsp_out[15]) ? {{aebecedePadding{1'b1}}, dsp_out[15:0]}:{{aebecedePadding{1'b0}}, dsp_out[15:0]};
     assign ce = (dsp_out[32]) ? {{aebecedePadding{1'b1}}, dsp_out[32:17]}:{{aebecedePadding{1'b0}}, dsp_out[32:17]};
