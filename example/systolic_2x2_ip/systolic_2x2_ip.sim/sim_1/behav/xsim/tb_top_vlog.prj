@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "/opt/Xilinx/Vivado/2018.1/data/xilinx_vip/include" \
+"../../../../systolic_2x2_ip.srcs/sources_1/bd/import_me/sim/dsp_macro.v" \
+
+sv xil_defaultlib  --include "/opt/Xilinx/Vivado/2018.1/data/xilinx_vip/include" \
+"../../../../systolic_2x2_ip.srcs/sources_1/imports/import_me/add.sv" \
+"../../../../systolic_2x2_ip.srcs/sources_1/imports/import_me/array.sv" \
+"../../../../systolic_2x2_ip.srcs/sources_1/imports/import_me/dff.sv" \
+"../../../../systolic_2x2_ip.srcs/sources_1/imports/import_me/dff_enbl.sv" \
+"../../../../systolic_2x2_ip.srcs/sources_1/imports/import_me/dsp_macro_wrapper.sv" \
+"../../../../systolic_2x2_ip.srcs/sources_1/imports/import_me/fsm.sv" \
+"../../../../systolic_2x2_ip.srcs/sources_1/imports/import_me/int8_pe.sv" \
+"../../../../systolic_2x2_ip.srcs/sources_1/imports/import_me/int8_quad_mac.sv" \
+"../../../../systolic_2x2_ip.srcs/sources_1/imports/import_me/mem.sv" \
+"../../../../systolic_2x2_ip.srcs/sources_1/imports/import_me/mul.sv" \
+"../../../../systolic_2x2_ip.srcs/sources_1/imports/import_me/top.sv" \
+"../../../../systolic_2x2_ip.srcs/sim_1/new/tb_top.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

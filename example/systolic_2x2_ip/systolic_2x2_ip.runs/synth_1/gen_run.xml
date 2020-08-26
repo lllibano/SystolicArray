@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1598406178">
+  <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
+  <File Type="RDS-RDS" Name="top.vds"/>
+  <File Type="RDS-DCP" Name="top.dcp"/>
+  <File Type="PA-TCL" Name="top.tcl"/>
+  <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/import_me/dsp_macro.bd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../github/SystolicArray/generator/RTL/import_me/dsp_macro.bd"/>
+        <Attr Name="ImportTime" Val="1598405514"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/import_me/add.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../github/SystolicArray/generator/RTL/import_me/add.sv"/>
+        <Attr Name="ImportTime" Val="1598405514"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/import_me/array.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../github/SystolicArray/generator/RTL/import_me/array.sv"/>
+        <Attr Name="ImportTime" Val="1598405514"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/import_me/dff.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../github/SystolicArray/generator/RTL/import_me/dff.sv"/>
+        <Attr Name="ImportTime" Val="1598405514"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/import_me/dff_enbl.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../github/SystolicArray/generator/RTL/import_me/dff_enbl.sv"/>
+        <Attr Name="ImportTime" Val="1598405514"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/import_me/dsp_macro_wrapper.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../github/SystolicArray/generator/RTL/import_me/dsp_macro_wrapper.sv"/>
+        <Attr Name="ImportTime" Val="1598405514"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/import_me/fsm.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../github/SystolicArray/generator/RTL/import_me/fsm.sv"/>
+        <Attr Name="ImportTime" Val="1598405514"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/import_me/int8_pe.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../github/SystolicArray/generator/RTL/import_me/int8_pe.sv"/>
+        <Attr Name="ImportTime" Val="1598405514"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/import_me/int8_quad_mac.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../github/SystolicArray/generator/RTL/import_me/int8_quad_mac.sv"/>
+        <Attr Name="ImportTime" Val="1598405514"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/import_me/mem.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../github/SystolicArray/generator/RTL/import_me/mem.sv"/>
+        <Attr Name="ImportTime" Val="1598405514"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/import_me/mul.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../github/SystolicArray/generator/RTL/import_me/mul.sv"/>
+        <Attr Name="ImportTime" Val="1598405514"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/import_me/top.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../github/SystolicArray/generator/RTL/import_me/top.sv"/>
+        <Attr Name="ImportTime" Val="1598405514"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="dsp_macro_xbip_dsp48_macro_0_0"/>
+</GenRun>
