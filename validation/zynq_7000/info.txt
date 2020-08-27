@@ -1,6 +1,7 @@
 ##### ./validation/zynq_7000/ #####
 
-The 'ooc' directory contains source/constraint files for an 8x8 systolic array, and a 'tcl.tcl' script that allows for OOC sythesis, placement and routing in Vivado's non-project mode.
+The 'ooc' directory contains 'systolic_8x8_ip'.
+The 'systolic_8x8_ip' directory contains source/constraint files for an 8x8 systolic array, and a 'tcl.tcl' script that allows for OOC sythesis, placement and routing in Vivado's non-project mode. It showcases how fast the systolic array can run standalone.
 
 The 'system' directory contains 'systolic_8x8_ip' and 'systolic_8x8_system'.
 The 'systolic_8x8_ip' directory is the root of a Vivado project for an 8x8 systolic array IP.
