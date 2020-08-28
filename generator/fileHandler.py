@@ -16,6 +16,13 @@ def copyNewFiles():
 	#copy from 'generic' to 'import_me'
 	for fileName in glob.glob(os.path.join(genericPath, "*.*")):
 		shutil.copy(fileName, importMePath)
+	if(is7Series):
+		dspPath = genericPath + "7series"
+	else:
+		dspPath = genericPath + "ultrascale"
+	for fileName in glob.glob(os.path.join(dspPath, "*.*")):
+		shutil.copy(fileName, importMePath)
+
 	#copy from 'generated' to 'import_me'
 	for fileName in glob.glob(os.path.join(generatedPath, "*.*")):
 		shutil.copy(fileName, importMePath)
