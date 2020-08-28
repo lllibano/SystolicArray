@@ -22,8 +22,8 @@ Hence, the Processing Elements (PEs) that constitute the array are multiply-accu
 ## Resource Utilization & Performance
 
 Given a systolic array of size NxN:
-- **DSPs:** N<sup>2</sup> DSP48E(1<sup>[[5]](https://www.xilinx.com/support/documentation/user_guides/ug479_7Series_DSP48E1.pdf)</sup>|2<sup>[[6]](https://www.xilinx.com/support/documentation/user_guides/ug579-ultrascale-dsp.pdf)</sup>)
-- **BRAMs:** 9N RAMB18E(1<sup>[[9]](https://www.xilinx.com/support/documentation/user_guides/ug473_7Series_Memory_Resources.pdf)</sup>|2<sup>[[10]](https://www.xilinx.com/support/documentation/user_guides/ug573-ultrascale-memory-resources.pdf)</sup>) *(N for each input/output matrix: A,B,C,D,E,W,X,Y,Z)*
+- **DSPs:** N<sup>2</sup> DSP48E[1<sup>[[5]](https://www.xilinx.com/support/documentation/user_guides/ug479_7Series_DSP48E1.pdf)</sup>|2<sup>[[6]](https://www.xilinx.com/support/documentation/user_guides/ug579-ultrascale-dsp.pdf)</sup>] *(1 for each PE)*
+- **BRAMs:** 9N RAMB18E[1<sup>[[9]](https://www.xilinx.com/support/documentation/user_guides/ug473_7Series_Memory_Resources.pdf)</sup>|2<sup>[[10]](https://www.xilinx.com/support/documentation/user_guides/ug573-ultrascale-memory-resources.pdf)</sup>] *(N for each input/output matrix: A,B,C,D,E,W,X,Y,Z)*
 - **Operations/Cycle:** 8N<sup>2</sup> *(N<sup>2</sup> PEs, 2x2xMUL + 4xADD per PE)*
 - **Frequency:** Will depend on N and target device *(![/validation/](/validation/))*
 	- 8x8 @ XC7Z020 @ 200MHz
@@ -38,7 +38,7 @@ Given a systolic array of size NxN:
 - ![/docs/](/docs/): Relevant repository documentation.
 - ![/example/](/example/): Vivado project with a working example, and testbenches for a 2x2 array.
 - ![/generator/](/generator/): Python script for generating RTL (edit 'settings.py', and then run 'main.py').
-- ![/validation/](/validation/): Out-of-context and system-level Vivado projects for an 8x8 array (with synth/place/route reports).
+- ![/validation/](/validation/): Out-of-context and system-level Vivado projects for an 8x8 array (synth/place/route).
 
 ---
 
@@ -53,7 +53,7 @@ Given a systolic array of size NxN:
 - [<sup>[7]</sup>Xilinx, "7 Series Configurable Logic Block User Guide"](https://www.xilinx.com/support/documentation/user_guides/ug474_7Series_CLB.pdf)
 - [<sup>[8]</sup>Xilinx, "UltraScale Architecture Configurable Logic Block User Guide"](https://www.xilinx.com/support/documentation/user_guides/ug574-ultrascale-clb.pdf)
 - [<sup>[9]</sup>Xilinx, "7 Series FPGAs Memory Resources"](https://www.xilinx.com/support/documentation/user_guides/ug473_7Series_Memory_Resources.pdf)
-- [<sup>[10]</sup>Xilinx, "UltraScale Architecture FPGAs Memory Resources"](https://www.xilinx.com/support/documentation/user_guides/ug573-ultrascale-memory-resources.pdf)
+- [<sup>[10]</sup>Xilinx, "UltraScale Architecture Memory Resources"](https://www.xilinx.com/support/documentation/user_guides/ug573-ultrascale-memory-resources.pdf)
 
 ---
 
