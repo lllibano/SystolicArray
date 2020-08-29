@@ -43,10 +43,6 @@ module mul
     logic [wxyzOutputBits-1:0] be1_dff_out;
     logic [wxyzOutputBits-1:0] ce1_dff_out;
     logic [wxyzOutputBits-1:0] de1_dff_out;
-    logic [wxyzOutputBits-1:0] mul_ae_dff_out;
-    logic [wxyzOutputBits-1:0] mul_be_dff_out;
-    logic [wxyzOutputBits-1:0] mul_ce_dff_out;
-    logic [wxyzOutputBits-1:0] mul_de_dff_out;
     
     //input mux
     dff #(1) dff_input_mux_sel(clk2x, rst, !input_mux_sel, input_mux_sel);
