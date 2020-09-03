@@ -3,7 +3,7 @@ module top //2x2
 	parameter arraySize = 2,
 	parameter inputBits = 8,
 	parameter outputBits = 32,
-	parameter addressWidth = $clog2(arraySize),
+	parameter addressWidth = 1,
 	parameter s_axi_tdata_width = arraySize*inputBits*5 + 48,
 	parameter s_axi_tkeep_width = s_axi_tdata_width/8,
 	parameter m_axi_tdata_width = arraySize*outputBits*4 + 0,

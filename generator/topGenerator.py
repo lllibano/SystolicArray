@@ -11,7 +11,7 @@ def generateTop():
 	file.write("\tparameter arraySize = " + str(arraySize) + ",\n")
 	file.write("\tparameter inputBits = " + str(inputBits) + ",\n")
 	file.write("\tparameter outputBits = " + str(outputBits) + ",\n")
-	file.write("\tparameter addressWidth = $clog2(arraySize),\n")
+	file.write("\tparameter addressWidth = " + str(int(m.ceil(m.log2(arraySize)))) + ",\n")
 	s_axi_tdata_width_adjustment = int(m.pow(2, m.ceil(m.log(arraySize*inputBits*5, 2))) - arraySize*inputBits*5)
 	file.write("\tparameter s_axi_tdata_width = arraySize*inputBits*5 + " + str(s_axi_tdata_width_adjustment) + ",\n")
 	file.write("\tparameter s_axi_tkeep_width = s_axi_tdata_width/8,\n")
