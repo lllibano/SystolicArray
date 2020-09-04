@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu Sep  3 15:54:14 2020
+# Process ID: 2403
+# Current directory: /home/flibano/vivado/vivado/NON_PROJECT_MODE/systolic_32x32_ip/systolic_32x32_ip/systolic_32x32_ip.runs/dsp_macro_xbip_dsp48_macro_0_0_synth_1
+# Command line: vivado -log dsp_macro_xbip_dsp48_macro_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dsp_macro_xbip_dsp48_macro_0_0.tcl
+# Log file: /home/flibano/vivado/vivado/NON_PROJECT_MODE/systolic_32x32_ip/systolic_32x32_ip/systolic_32x32_ip.runs/dsp_macro_xbip_dsp48_macro_0_0_synth_1/dsp_macro_xbip_dsp48_macro_0_0.vds
+# Journal file: /home/flibano/vivado/vivado/NON_PROJECT_MODE/systolic_32x32_ip/systolic_32x32_ip/systolic_32x32_ip.runs/dsp_macro_xbip_dsp48_macro_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source dsp_macro_xbip_dsp48_macro_0_0.tcl -notrace
