@@ -3,8 +3,3 @@
 The 'ooc' directory contains 'systolic_8x8_ip', 'systolic_14x14_ip', and 'systolic_32x32_ip'.
 These subdirectories contain source/constraint files for an 8x8/14x14/32x32 systolic array, and a 'tcl.tcl' script that allows for OOC sythesis, placement and routing in Vivado's non-project mode. It showcases how fast the systolic array can run standalone (300MHz).
 
-The 'system' directory contains 'systolic_8x8.zip'.
-The 'systolic_8x8.zip' file contains 'systolic_8x8_ip' and 'systolic_8x8_system'.
-The 'systolic_8x8_ip' directory is the root of a Vivado project for an 8x8 systolic array IP.
-The 'systolic_8x8_system' includes 'systolic_8x8_ip' in it's IP catalog, and instantiates it in a block design along with a Zynq PS, an AXI DMA, and some other auxiliary blocks. An application is written inside SDK to demonstrate an use-case of 'systolic_8x8_ip', where input data is sent by the PS to the PL (via DMA), and output data is sent by the PL to the PS (via DMA).
-
