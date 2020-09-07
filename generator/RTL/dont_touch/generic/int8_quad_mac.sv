@@ -26,10 +26,10 @@ module int8_quad_mac
     output logic [wxyzOutputBits-1:0] z
 );
 
-    logic [wxyzOutputBits-1:0] mul_ae;
-    logic [wxyzOutputBits-1:0] mul_be;
-    logic [wxyzOutputBits-1:0] mul_ce;
-    logic [wxyzOutputBits-1:0] mul_de;
+    logic [aInputBits+eInputBits-1:0] mul_ae;
+    logic [bInputBits+eInputBits-1:0] mul_be;
+    logic [cInputBits+eInputBits-1:0] mul_ce;
+    logic [dInputBits+eInputBits-1:0] mul_de;
     logic [wxyzOutputBits-1:0] acc_w_dff_out;
     logic [wxyzOutputBits-1:0] acc_x_dff_out;
     logic [wxyzOutputBits-1:0] acc_y_dff_out;
@@ -40,12 +40,12 @@ module int8_quad_mac
     logic [wxyzOutputBits:0] acc_z_out;
 
     //mul
-    mul #(aInputBits, bInputBits, cInputBits, dInputBits, eInputBits, wxyzOutputBits) mul(clk, rst, clk2x, a, b, c, d, e, mul_ae, mul_be, mul_ce, mul_de);
+    mul #(aInputBits, bInputBits, cInputBits, dInputBits, eInputBits) mul(clk, rst, clk2x, a, b, c, d, e, mul_ae, mul_be, mul_ce, mul_de);
     //acc
-    add #(wxyzOutputBits, wxyzOutputBits, wxyzOutputBits+1) acc_w(mul_ae, s, mul_be[wxyzOutputBits-1], acc_w_out);
-    add #(wxyzOutputBits, wxyzOutputBits, wxyzOutputBits+1) acc_x(mul_be, t, 1'b0, acc_x_out);
-    add #(wxyzOutputBits, wxyzOutputBits, wxyzOutputBits+1) acc_y(mul_ce, u, mul_de[wxyzOutputBits-1], acc_y_out);
-    add #(wxyzOutputBits, wxyzOutputBits, wxyzOutputBits+1) acc_z(mul_de, v, 1'b0, acc_z_out);
+    add #(aInputBits+eInputBits, wxyzOutputBits, wxyzOutputBits+1) acc_w(mul_ae, s, mul_be[bInputBits+eInputBits-1], acc_w_out);
+    add #(bInputBits+eInputBits, wxyzOutputBits, wxyzOutputBits+1) acc_x(mul_be, t, 1'b0, acc_x_out);
+    add #(cInputBits+eInputBits, wxyzOutputBits, wxyzOutputBits+1) acc_y(mul_ce, u, mul_de[dInputBits+eInputBits-1], acc_y_out);
+    add #(dInputBits+eInputBits, wxyzOutputBits, wxyzOutputBits+1) acc_z(mul_de, v, 1'b0, acc_z_out);
     dff #(wxyzOutputBits) acc_w_dff(clk, rst, acc_w_out[wxyzOutputBits-1:0], acc_w_dff_out);
     dff #(wxyzOutputBits) acc_x_dff(clk, rst, acc_x_out[wxyzOutputBits-1:0], acc_x_dff_out);
     dff #(wxyzOutputBits) acc_y_dff(clk, rst, acc_y_out[wxyzOutputBits-1:0], acc_y_dff_out);
