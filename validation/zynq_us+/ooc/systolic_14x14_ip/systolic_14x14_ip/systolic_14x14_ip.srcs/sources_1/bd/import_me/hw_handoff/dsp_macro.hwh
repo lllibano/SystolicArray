@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Sep  3 15:46:12 2020" VIVADOVERSION="2018.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Sep  7 15:45:11 2020" VIVADOVERSION="2018.1">
 
   <SYSTEMINFO ARCH="zynquplus" DEVICE="xczu9eg" NAME="dsp_macro" PACKAGE="ffvb1156" SPEEDGRADE="-3"/>
 

@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/flibano/vivado/vivado/NON_PROJECT_MODE/systolic_8x8_ip/systolic_8x8_ip/systolic_8x8_ip.runs/dsp_macro_xbip_dsp48_macro_0_0_synth_1'
+HD_PWD='/home/flibano/vivado/vivado/NON_PROJECT_MODE/zynq_us+/systolic_8x8_ip/systolic_8x8_ip/systolic_8x8_ip.runs/dsp_macro_xbip_dsp48_macro_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

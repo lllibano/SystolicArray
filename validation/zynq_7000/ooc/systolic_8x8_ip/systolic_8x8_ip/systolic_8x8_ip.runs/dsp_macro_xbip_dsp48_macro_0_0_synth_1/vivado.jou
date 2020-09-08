@@ -2,8 +2,8 @@
 # Vivado v2018.1 (64-bit)
 # SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
 # IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
-# Start of session at: Wed Aug 26 21:17:13 2020
-# Process ID: 20674
+# Start of session at: Mon Sep  7 18:54:29 2020
+# Process ID: 28673
 # Current directory: /home/libano/vivado/NON_PROJECT/zynq_7000/systolic_8x8_ip/systolic_8x8_ip/systolic_8x8_ip.runs/dsp_macro_xbip_dsp48_macro_0_0_synth_1
 # Command line: vivado -log dsp_macro_xbip_dsp48_macro_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dsp_macro_xbip_dsp48_macro_0_0.tcl
 # Log file: /home/libano/vivado/NON_PROJECT/zynq_7000/systolic_8x8_ip/systolic_8x8_ip/systolic_8x8_ip.runs/dsp_macro_xbip_dsp48_macro_0_0_synth_1/dsp_macro_xbip_dsp48_macro_0_0.vds

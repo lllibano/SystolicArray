@@ -1,0 +1,362 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
+| Date         : Mon Sep  7 19:53:07 2020
+| Host         : linux running 64-bit Ubuntu 16.04.6 LTS
+| Command      : report_drc -file ./rundir/post_route_drc.rpt
+| Design       : top
+| Device       : xc7z020clg400-3
+| Speed File   : -3
+| Design State : Routed
+------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: top
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 65
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| REQP-1723 | Warning  | DSP_Abus_sign_bit_restriction | 64         |
+| ZPS7-1    | Warning  | PS7 block required            | 1          |
++-----------+----------+-------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+REQP-1723#1 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_0_0/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#2 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_0_1/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#3 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_0_2/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#4 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_0_3/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#5 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_0_4/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#6 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_0_5/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#7 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_0_6/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#8 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_0_7/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#9 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_1_0/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#10 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_1_1/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#11 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_1_2/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#12 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_1_3/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#13 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_1_4/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#14 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_1_5/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#15 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_1_6/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#16 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_1_7/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#17 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_2_0/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#18 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_2_1/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#19 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_2_2/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#20 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_2_3/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#21 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_2_4/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#22 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_2_5/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#23 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_2_6/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#24 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_2_7/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#25 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_3_0/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#26 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_3_1/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#27 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_3_2/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#28 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_3_3/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#29 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_3_4/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#30 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_3_5/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#31 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_3_6/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#32 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_3_7/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#33 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_4_0/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#34 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_4_1/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#35 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_4_2/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#36 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_4_3/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#37 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_4_4/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#38 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_4_5/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#39 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_4_6/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#40 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_4_7/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#41 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_5_0/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#42 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_5_1/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#43 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_5_2/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#44 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_5_3/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#45 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_5_4/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#46 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_5_5/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#47 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_5_6/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#48 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_5_7/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#49 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_6_0/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#50 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_6_1/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#51 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_6_2/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#52 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_6_3/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#53 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_6_4/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#54 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_6_5/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#55 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_6_6/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#56 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_6_7/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#57 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_7_0/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#58 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_7_1/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#59 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_7_2/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#60 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_7_3/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#61 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_7_4/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#62 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_7_5/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#63 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_7_6/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1723#64 Warning
+DSP_Abus_sign_bit_restriction  
+array/pe_7_7/int8_quad_mac/mul/dsp_macro_wrapper/dsp_macro/xbip_dsp48_macro_0/U0/i_synth/i_synth_option.i_synth_model/opt_7series.i_uniwrap/i_primitive: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

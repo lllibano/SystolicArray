@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
-| Date         : Thu Sep  3 20:20:30 2020
+| Date         : Mon Sep  7 19:03:10 2020
 | Host         : linux running 64-bit Ubuntu 16.04.6 LTS
 | Command      : report_utilization -file dsp_macro_xbip_dsp48_macro_0_0_utilization_synth.rpt -pb dsp_macro_xbip_dsp48_macro_0_0_utilization_synth.pb
 | Design       : dsp_macro_xbip_dsp48_macro_0_0

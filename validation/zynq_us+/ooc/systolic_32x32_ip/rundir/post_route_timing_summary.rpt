@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version      : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
-| Date              : Thu Sep  3 17:43:19 2020
+| Date              : Mon Sep  7 17:11:45 2020
 | Host              : Shears running 64-bit unknown
 | Command           : report_timing_summary -file ./rundir/post_route_timing_summary.rpt
 | Design            : top
@@ -127,7 +127,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      0.199        0.000                      0               570776        0.004        0.000                      0               570776        0.558        0.000                       0                334262  
+      0.197        0.000                      0               565515        0.010        0.000                      0               565515        0.558        0.000                       0                329871  
 
 
 All user specified timing constraints are met.
@@ -151,8 +151,8 @@ clk2x  {0.000 0.833}        1.666           600.240
 
 Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-clk                 0.245        0.000                      0               182680        0.010        0.000                      0               182680        1.171        0.000                       0                232886  
-clk2x               0.315        0.000                      0               314368        0.010        0.000                      0               314368        0.558        0.000                       0                101376  
+clk                 0.253        0.000                      0               177419        0.010        0.000                      0               177419        1.171        0.000                       0                228495  
+clk2x               0.398        0.000                      0               314368        0.010        0.000                      0               314368        0.558        0.000                       0                101376  
 
 
 ------------------------------------------------------------------------------------------------
@@ -162,8 +162,8 @@ clk2x               0.315        0.000                      0               3143
 
 From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
 ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
-clk2x         clk                 0.200        0.000                      0                65536        0.004        0.000                      0                65536  
-clk           clk2x               0.199        0.000                      0                24576        0.010        0.000                      0                24576  
+clk2x         clk                 0.197        0.000                      0                65536        0.010        0.000                      0                65536  
+clk           clk2x               0.216        0.000                      0                24576        0.010        0.000                      0                24576  
 
 
 ------------------------------------------------------------------------------------------------
@@ -185,7 +185,7 @@ Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing 
 From Clock:  clk
   To Clock:  clk
 
-Setup :            0  Failing Endpoints,  Worst Slack        0.245ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack        0.253ns,  Total Violation        0.000ns
 Hold  :            0  Failing Endpoints,  Worst Slack        0.010ns,  Total Violation        0.000ns
 PW    :            0  Failing Endpoints,  Worst Slack        1.171ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
@@ -193,54 +193,54 @@ PW    :            0  Failing Endpoints,  Worst Slack        1.171ns,  Total Vio
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.245ns  (required time - arrival time)
+Slack (MET) :             0.253ns  (required time - arrival time)
   Source:                 fsm/dff_loadingWeights/q_reg[0]/C
                             (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.666ns period=3.333ns})
-  Destination:            array/pe_25_0/dff_e/q_reg[5]/CE
+  Destination:            array/pe_24_1/dff_e/q_reg[6]/CE
                             (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.666ns period=3.333ns})
   Path Group:             clk
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            3.333ns  (clk rise@3.333ns - clk rise@0.000ns)
-  Data Path Delay:        2.798ns  (logic 0.074ns (2.645%)  route 2.724ns (97.355%))
+  Data Path Delay:        2.704ns  (logic 0.073ns (2.700%)  route 2.631ns (97.300%))
   Logic Levels:           0  
-  Clock Path Skew:        -0.221ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    2.201ns = ( 5.534 - 3.333 ) 
-    Source Clock Delay      (SCD):    2.517ns
+  Clock Path Skew:        -0.307ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.158ns = ( 5.491 - 3.333 ) 
+    Source Clock Delay      (SCD):    2.560ns
     Clock Pessimism Removal (CPR):    0.095ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Total Input Jitter      (TIJ):    0.000ns
     Discrete Jitter          (DJ):    0.000ns
     Phase Error              (PE):    0.000ns
-  Clock Net Delay (Source):      2.517ns (routing 1.204ns, distribution 1.313ns)
-  Clock Net Delay (Destination): 2.201ns (routing 1.109ns, distribution 1.092ns)
+  Clock Net Delay (Source):      2.560ns (routing 1.204ns, distribution 1.356ns)
+  Clock Net Delay (Destination): 2.158ns (routing 1.109ns, distribution 1.049ns)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
                          (clock clk rise edge)        0.000     0.000 r  
                                                       0.000     0.000 r  clk (IN)
-    X1Y3 (CLOCK_ROOT)    net (fo=232885, unset)       2.517     2.517    fsm/dff_loadingWeights/clk
-    SLICE_X66Y231        FDRE                                         r  fsm/dff_loadingWeights/q_reg[0]/C
+    X1Y3 (CLOCK_ROOT)    net (fo=228494, unset)       2.560     2.560    fsm/dff_loadingWeights/clk
+    SLICE_X62Y244        FDRE                                         r  fsm/dff_loadingWeights/q_reg[0]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X66Y231        FDRE (Prop_EFF2_SLICEL_C_Q)
-                                                      0.074     2.591 r  fsm/dff_loadingWeights/q_reg[0]/Q
-                         net (fo=2779, routed)        2.724     5.315    array/pe_25_0/dff_e/loadingWeights_bufg_place
-    SLICE_X59Y23         FDRE                                         r  array/pe_25_0/dff_e/q_reg[5]/CE
+    SLICE_X62Y244        FDRE (Prop_DFF2_SLICEM_C_Q)
+                                                      0.073     2.633 r  fsm/dff_loadingWeights/q_reg[0]/Q
+                         net (fo=6023, routed)        2.631     5.264    array/pe_24_1/dff_e/loadingWeights_bufg_place
+    SLICE_X52Y34         FDRE                                         r  array/pe_24_1/dff_e/q_reg[6]/CE
   -------------------------------------------------------------------    -------------------
 
                          (clock clk rise edge)        3.333     3.333 r  
                                                       0.000     3.333 r  clk (IN)
-    X1Y3 (CLOCK_ROOT)    net (fo=232885, unset)       2.201     5.534    array/pe_25_0/dff_e/clk
-    SLICE_X59Y23         FDRE                                         r  array/pe_25_0/dff_e/q_reg[5]/C
-                         clock pessimism              0.095     5.629    
-                         clock uncertainty           -0.035     5.594    
-    SLICE_X59Y23         FDRE (Setup_EFF2_SLICEL_C_CE)
-                                                     -0.033     5.561    array/pe_25_0/dff_e/q_reg[5]
+    X1Y3 (CLOCK_ROOT)    net (fo=228494, unset)       2.158     5.491    array/pe_24_1/dff_e/clk
+    SLICE_X52Y34         FDRE                                         r  array/pe_24_1/dff_e/q_reg[6]/C
+                         clock pessimism              0.095     5.586    
+                         clock uncertainty           -0.035     5.551    
+    SLICE_X52Y34         FDRE (Setup_DFF2_SLICEM_C_CE)
+                                                     -0.033     5.518    array/pe_24_1/dff_e/q_reg[6]
   -------------------------------------------------------------------
-                         required time                          5.561    
-                         arrival time                          -5.315    
+                         required time                          5.518    
+                         arrival time                          -5.264    
   -------------------------------------------------------------------
-                         slack                                  0.245    
+                         slack                                  0.253    
 
 
 
@@ -249,45 +249,45 @@ Slack (MET) :             0.245ns  (required time - arrival time)
 Min Delay Paths
 --------------------------------------------------------------------------------------
 Slack (MET) :             0.010ns  (arrival time - required time)
-  Source:                 array/pe_0_28/dff_a/q_reg[4]/C
+  Source:                 array/pe_27_0/dff_a/q_reg[2]/C
                             (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.666ns period=3.333ns})
-  Destination:            array/pe_0_29/dff_a/q_reg[4]/D
+  Destination:            array/pe_27_1/dff_a/q_reg[2]/D
                             (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.666ns period=3.333ns})
   Path Group:             clk
   Path Type:              Hold (Min at Slow Process Corner)
   Requirement:            0.000ns  (clk rise@0.000ns - clk rise@0.000ns)
-  Data Path Delay:        0.171ns  (logic 0.054ns (31.579%)  route 0.117ns (68.421%))
+  Data Path Delay:        0.136ns  (logic 0.056ns (41.176%)  route 0.080ns (58.823%))
   Logic Levels:           0  
-  Clock Path Skew:        0.114ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    2.675ns
-    Source Clock Delay      (SCD):    2.384ns
-    Clock Pessimism Removal (CPR):    0.177ns
-  Clock Net Delay (Source):      2.384ns (routing 1.109ns, distribution 1.275ns)
-  Clock Net Delay (Destination): 2.675ns (routing 1.204ns, distribution 1.471ns)
+  Clock Path Skew:        0.079ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.417ns
+    Source Clock Delay      (SCD):    2.149ns
+    Clock Pessimism Removal (CPR):    0.189ns
+  Clock Net Delay (Source):      2.149ns (routing 1.109ns, distribution 1.040ns)
+  Clock Net Delay (Destination): 2.417ns (routing 1.204ns, distribution 1.213ns)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
                          (clock clk rise edge)        0.000     0.000 r  
                                                       0.000     0.000 r  clk (IN)
-    X1Y3 (CLOCK_ROOT)    net (fo=232885, unset)       2.384     2.384    array/pe_0_28/dff_a/clk
-    SLICE_X91Y362        FDRE                                         r  array/pe_0_28/dff_a/q_reg[4]/C
+    X1Y3 (CLOCK_ROOT)    net (fo=228494, unset)       2.149     2.149    array/pe_27_0/dff_a/clk
+    SLICE_X48Y36         FDRE                                         r  array/pe_27_0/dff_a/q_reg[2]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X91Y362        FDRE (Prop_EFF_SLICEM_C_Q)
-                                                      0.054     2.438 r  array/pe_0_28/dff_a/q_reg[4]/Q
-                         net (fo=2, routed)           0.117     2.555    array/pe_0_29/dff_a/D[4]
-    SLICE_X93Y362        FDRE                                         r  array/pe_0_29/dff_a/q_reg[4]/D
+    SLICE_X48Y36         FDRE (Prop_BFF_SLICEL_C_Q)
+                                                      0.056     2.205 r  array/pe_27_0/dff_a/q_reg[2]/Q
+                         net (fo=2, routed)           0.080     2.285    array/pe_27_1/dff_a/D[2]
+    SLICE_X48Y35         FDRE                                         r  array/pe_27_1/dff_a/q_reg[2]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk rise edge)        0.000     0.000 r  
                                                       0.000     0.000 r  clk (IN)
-    X1Y3 (CLOCK_ROOT)    net (fo=232885, unset)       2.675     2.675    array/pe_0_29/dff_a/clk
-    SLICE_X93Y362        FDRE                                         r  array/pe_0_29/dff_a/q_reg[4]/C
-                         clock pessimism             -0.177     2.498    
-    SLICE_X93Y362        FDRE (Hold_FFF2_SLICEM_C_D)
-                                                      0.047     2.545    array/pe_0_29/dff_a/q_reg[4]
+    X1Y3 (CLOCK_ROOT)    net (fo=228494, unset)       2.417     2.417    array/pe_27_1/dff_a/clk
+    SLICE_X48Y35         FDRE                                         r  array/pe_27_1/dff_a/q_reg[2]/C
+                         clock pessimism             -0.189     2.228    
+    SLICE_X48Y35         FDRE (Hold_EFF2_SLICEL_C_D)
+                                                      0.047     2.275    array/pe_27_1/dff_a/q_reg[2]
   -------------------------------------------------------------------
-                         required time                         -2.545    
-                         arrival time                           2.555    
+                         required time                         -2.275    
+                         arrival time                           2.285    
   -------------------------------------------------------------------
                          slack                                  0.010    
 
@@ -303,9 +303,9 @@ Period(ns):         3.333
 Sources:            { clk }
 
 Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
-Min Period        n/a     RAMB18E2/CLKARDCLK  n/a            1.392         3.333       1.941      RAMB18_X12Y48  mem_a_0/memory_reg_bram_0/CLKARDCLK
-Low Pulse Width   Slow    RAMB18E2/CLKARDCLK  n/a            0.495         1.666       1.171      RAMB18_X12Y48  mem_a_0/memory_reg_bram_0/CLKARDCLK
-High Pulse Width  Fast    RAMB18E2/CLKARDCLK  n/a            0.495         1.666       1.171      RAMB18_X12Y48  mem_a_0/memory_reg_bram_0/CLKARDCLK
+Min Period        n/a     RAMB18E2/CLKARDCLK  n/a            1.392         3.333       1.941      RAMB18_X11Y34  mem_abcd_0/memory_reg/CLKARDCLK
+Low Pulse Width   Slow    RAMB18E2/CLKBWRCLK  n/a            0.495         1.666       1.171      RAMB18_X11Y34  mem_abcd_0/memory_reg/CLKBWRCLK
+High Pulse Width  Slow    RAMB18E2/CLKARDCLK  n/a            0.495         1.666       1.171      RAMB18_X11Y34  mem_abcd_0/memory_reg/CLKARDCLK
 
 
 
@@ -313,7 +313,7 @@ High Pulse Width  Fast    RAMB18E2/CLKARDCLK  n/a            0.495         1.666
 From Clock:  clk2x
   To Clock:  clk2x
 
-Setup :            0  Failing Endpoints,  Worst Slack        0.315ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack        0.398ns,  Total Violation        0.000ns
 Hold  :            0  Failing Endpoints,  Worst Slack        0.010ns,  Total Violation        0.000ns
 PW    :            0  Failing Endpoints,  Worst Slack        0.558ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
@@ -321,54 +321,54 @@ PW    :            0  Failing Endpoints,  Worst Slack        0.558ns,  Total Vio
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.315ns  (required time - arrival time)
-  Source:                 array/pe_3_16/int8_quad_mac/mul/dff_ae0/q_reg[1]/C
+Slack (MET) :             0.398ns  (required time - arrival time)
+  Source:                 array/pe_6_14/int8_quad_mac/mul/dff_be0/q_reg[1]/C
                             (rising edge-triggered cell FDRE clocked by clk2x  {rise@0.000ns fall@0.833ns period=1.666ns})
-  Destination:            array/pe_3_16/int8_quad_mac/mul/dff_ae1/q_reg[1]/D
+  Destination:            array/pe_6_14/int8_quad_mac/mul/dff_be1/q_reg[1]/D
                             (rising edge-triggered cell FDRE clocked by clk2x  {rise@0.000ns fall@0.833ns period=1.666ns})
   Path Group:             clk2x
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            1.666ns  (clk2x rise@1.666ns - clk2x rise@0.000ns)
-  Data Path Delay:        1.276ns  (logic 0.074ns (5.799%)  route 1.202ns (94.201%))
+  Data Path Delay:        1.035ns  (logic 0.072ns (6.957%)  route 0.963ns (93.043%))
   Logic Levels:           0  
-  Clock Path Skew:        -0.072ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    2.373ns = ( 4.039 - 1.666 ) 
-    Source Clock Delay      (SCD):    2.652ns
-    Clock Pessimism Removal (CPR):    0.207ns
+  Clock Path Skew:        -0.230ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.311ns = ( 3.977 - 1.666 ) 
+    Source Clock Delay      (SCD):    2.636ns
+    Clock Pessimism Removal (CPR):    0.095ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Total Input Jitter      (TIJ):    0.000ns
     Discrete Jitter          (DJ):    0.000ns
     Phase Error              (PE):    0.000ns
-  Clock Net Delay (Source):      2.652ns (routing 1.215ns, distribution 1.437ns)
-  Clock Net Delay (Destination): 2.373ns (routing 1.120ns, distribution 1.253ns)
+  Clock Net Delay (Source):      2.636ns (routing 1.215ns, distribution 1.421ns)
+  Clock Net Delay (Destination): 2.311ns (routing 1.120ns, distribution 1.191ns)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
                          (clock clk2x rise edge)      0.000     0.000 r  
                                                       0.000     0.000 r  clk2x (IN)
-    X1Y3 (CLOCK_ROOT)    net (fo=105471, unset)       2.652     2.652    array/pe_3_16/int8_quad_mac/mul/dff_ae0/clk2x
-    SLICE_X89Y274        FDRE                                         r  array/pe_3_16/int8_quad_mac/mul/dff_ae0/q_reg[1]/C
+    X1Y3 (CLOCK_ROOT)    net (fo=105471, unset)       2.636     2.636    array/pe_6_14/int8_quad_mac/mul/dff_be0/clk2x
+    SLICE_X77Y240        FDRE                                         r  array/pe_6_14/int8_quad_mac/mul/dff_be0/q_reg[1]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X89Y274        FDRE (Prop_BFF2_SLICEL_C_Q)
-                                                      0.074     2.726 r  array/pe_3_16/int8_quad_mac/mul/dff_ae0/q_reg[1]/Q
-                         net (fo=2, routed)           1.202     3.928    array/pe_3_16/int8_quad_mac/mul/dff_ae1/D[1]
-    SLICE_X89Y275        FDRE                                         r  array/pe_3_16/int8_quad_mac/mul/dff_ae1/q_reg[1]/D
+    SLICE_X77Y240        FDRE (Prop_EFF2_SLICEM_C_Q)
+                                                      0.072     2.708 r  array/pe_6_14/int8_quad_mac/mul/dff_be0/q_reg[1]/Q
+                         net (fo=2, routed)           0.963     3.671    array/pe_6_14/int8_quad_mac/mul/dff_be1/D[1]
+    SLICE_X77Y237        FDRE                                         r  array/pe_6_14/int8_quad_mac/mul/dff_be1/q_reg[1]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk2x rise edge)      1.666     1.666 r  
                                                       0.000     1.666 r  clk2x (IN)
-    X1Y3 (CLOCK_ROOT)    net (fo=105471, unset)       2.373     4.039    array/pe_3_16/int8_quad_mac/mul/dff_ae1/clk2x
-    SLICE_X89Y275        FDRE                                         r  array/pe_3_16/int8_quad_mac/mul/dff_ae1/q_reg[1]/C
-                         clock pessimism              0.207     4.246    
-                         clock uncertainty           -0.035     4.210    
-    SLICE_X89Y275        FDRE (Setup_FFF2_SLICEL_C_D)
-                                                      0.033     4.243    array/pe_3_16/int8_quad_mac/mul/dff_ae1/q_reg[1]
+    X1Y3 (CLOCK_ROOT)    net (fo=105471, unset)       2.311     3.977    array/pe_6_14/int8_quad_mac/mul/dff_be1/clk2x
+    SLICE_X77Y237        FDRE                                         r  array/pe_6_14/int8_quad_mac/mul/dff_be1/q_reg[1]/C
+                         clock pessimism              0.095     4.072    
+                         clock uncertainty           -0.035     4.037    
+    SLICE_X77Y237        FDRE (Setup_HFF2_SLICEM_C_D)
+                                                      0.033     4.070    array/pe_6_14/int8_quad_mac/mul/dff_be1/q_reg[1]
   -------------------------------------------------------------------
-                         required time                          4.243    
-                         arrival time                          -3.928    
+                         required time                          4.070    
+                         arrival time                          -3.671    
   -------------------------------------------------------------------
-                         slack                                  0.315    
+                         slack                                  0.398    
 
 
 
@@ -377,45 +377,45 @@ Slack (MET) :             0.315ns  (required time - arrival time)
 Min Delay Paths
 --------------------------------------------------------------------------------------
 Slack (MET) :             0.010ns  (arrival time - required time)
-  Source:                 array/pe_21_5/int8_quad_mac/mul/dff_ae0/q_reg[6]/C
+  Source:                 array/pe_26_28/int8_quad_mac/mul/dff_ae0/q_reg[2]/C
                             (rising edge-triggered cell FDRE clocked by clk2x  {rise@0.000ns fall@0.833ns period=1.666ns})
-  Destination:            array/pe_21_5/int8_quad_mac/mul/dff_ae1/q_reg[6]/D
+  Destination:            array/pe_26_28/int8_quad_mac/mul/dff_ae1/q_reg[2]/D
                             (rising edge-triggered cell FDRE clocked by clk2x  {rise@0.000ns fall@0.833ns period=1.666ns})
   Path Group:             clk2x
   Path Type:              Hold (Min at Slow Process Corner)
   Requirement:            0.000ns  (clk2x rise@0.000ns - clk2x rise@0.000ns)
-  Data Path Delay:        0.166ns  (logic 0.055ns (33.133%)  route 0.111ns (66.867%))
+  Data Path Delay:        0.134ns  (logic 0.056ns (41.791%)  route 0.078ns (58.209%))
   Logic Levels:           0  
-  Clock Path Skew:        0.110ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    2.450ns
-    Source Clock Delay      (SCD):    2.178ns
-    Clock Pessimism Removal (CPR):    0.162ns
-  Clock Net Delay (Source):      2.178ns (routing 1.120ns, distribution 1.058ns)
-  Clock Net Delay (Destination): 2.450ns (routing 1.215ns, distribution 1.235ns)
+  Clock Path Skew:        0.077ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.545ns
+    Source Clock Delay      (SCD):    2.267ns
+    Clock Pessimism Removal (CPR):    0.201ns
+  Clock Net Delay (Source):      2.267ns (routing 1.120ns, distribution 1.147ns)
+  Clock Net Delay (Destination): 2.545ns (routing 1.215ns, distribution 1.330ns)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
                          (clock clk2x rise edge)      0.000     0.000 r  
                                                       0.000     0.000 r  clk2x (IN)
-    X1Y3 (CLOCK_ROOT)    net (fo=105471, unset)       2.178     2.178    array/pe_21_5/int8_quad_mac/mul/dff_ae0/clk2x
-    SLICE_X52Y102        FDRE                                         r  array/pe_21_5/int8_quad_mac/mul/dff_ae0/q_reg[6]/C
+    X1Y3 (CLOCK_ROOT)    net (fo=105471, unset)       2.267     2.267    array/pe_26_28/int8_quad_mac/mul/dff_ae0/clk2x
+    SLICE_X18Y383        FDRE                                         r  array/pe_26_28/int8_quad_mac/mul/dff_ae0/q_reg[2]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X52Y102        FDRE (Prop_CFF2_SLICEM_C_Q)
-                                                      0.055     2.233 r  array/pe_21_5/int8_quad_mac/mul/dff_ae0/q_reg[6]/Q
-                         net (fo=2, routed)           0.111     2.344    array/pe_21_5/int8_quad_mac/mul/dff_ae1/D[6]
-    SLICE_X50Y103        FDRE                                         r  array/pe_21_5/int8_quad_mac/mul/dff_ae1/q_reg[6]/D
+    SLICE_X18Y383        FDRE (Prop_AFF_SLICEL_C_Q)
+                                                      0.056     2.323 r  array/pe_26_28/int8_quad_mac/mul/dff_ae0/q_reg[2]/Q
+                         net (fo=2, routed)           0.078     2.401    array/pe_26_28/int8_quad_mac/mul/dff_ae1/D[2]
+    SLICE_X18Y382        FDRE                                         r  array/pe_26_28/int8_quad_mac/mul/dff_ae1/q_reg[2]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk2x rise edge)      0.000     0.000 r  
                                                       0.000     0.000 r  clk2x (IN)
-    X1Y3 (CLOCK_ROOT)    net (fo=105471, unset)       2.450     2.450    array/pe_21_5/int8_quad_mac/mul/dff_ae1/clk2x
-    SLICE_X50Y103        FDRE                                         r  array/pe_21_5/int8_quad_mac/mul/dff_ae1/q_reg[6]/C
-                         clock pessimism             -0.162     2.288    
-    SLICE_X50Y103        FDRE (Hold_CFF_SLICEM_C_D)
-                                                      0.046     2.334    array/pe_21_5/int8_quad_mac/mul/dff_ae1/q_reg[6]
+    X1Y3 (CLOCK_ROOT)    net (fo=105471, unset)       2.545     2.545    array/pe_26_28/int8_quad_mac/mul/dff_ae1/clk2x
+    SLICE_X18Y382        FDRE                                         r  array/pe_26_28/int8_quad_mac/mul/dff_ae1/q_reg[2]/C
+                         clock pessimism             -0.201     2.344    
+    SLICE_X18Y382        FDRE (Hold_CFF2_SLICEL_C_D)
+                                                      0.047     2.391    array/pe_26_28/int8_quad_mac/mul/dff_ae1/q_reg[2]
   -------------------------------------------------------------------
-                         required time                         -2.334    
-                         arrival time                           2.344    
+                         required time                         -2.391    
+                         arrival time                           2.401    
   -------------------------------------------------------------------
                          slack                                  0.010    
 
@@ -430,10 +430,10 @@ Waveform(ns):       { 0.000 0.833 }
 Period(ns):         1.666
 Sources:            { clk2x }
 
-Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
-Min Period        n/a     FDRE/C   n/a            0.550         1.666       1.116      SLICE_X49Y207  array/pe_19_11/int8_quad_mac/mul/dff_ae0/q_reg[9]/C
-Low Pulse Width   Slow    FDRE/C   n/a            0.275         0.833       0.558      SLICE_X46Y205  array/pe_19_11/int8_quad_mac/mul/dff_ae1/q_reg[13]/C
-High Pulse Width  Fast    FDRE/C   n/a            0.275         0.833       0.558      SLICE_X49Y207  array/pe_19_11/int8_quad_mac/mul/dff_ae0/q_reg[9]/C
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location      Pin
+Min Period        n/a     FDRE/C   n/a            0.550         1.666       1.116      SLICE_X92Y70  array/pe_0_0/int8_quad_mac/mul/dff_ae0/q_reg[0]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.275         0.833       0.558      SLICE_X93Y74  array/pe_0_0/int8_quad_mac/mul/dff_ae0/q_reg[10]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.275         0.833       0.558      SLICE_X92Y70  array/pe_0_0/int8_quad_mac/mul/dff_ae0/q_reg[0]/C
 
 
 
@@ -441,62 +441,62 @@ High Pulse Width  Fast    FDRE/C   n/a            0.275         0.833       0.55
 From Clock:  clk2x
   To Clock:  clk
 
-Setup :            0  Failing Endpoints,  Worst Slack        0.200ns,  Total Violation        0.000ns
-Hold  :            0  Failing Endpoints,  Worst Slack        0.004ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack        0.197ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.010ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.200ns  (required time - arrival time)
-  Source:                 array/pe_4_19/int8_quad_mac/mul/dff_ae0/q_reg[0]/C
+Slack (MET) :             0.197ns  (required time - arrival time)
+  Source:                 array/pe_6_18/int8_quad_mac/mul/dff_ae1/q_reg[11]/C
                             (rising edge-triggered cell FDRE clocked by clk2x  {rise@0.000ns fall@0.833ns period=1.666ns})
-  Destination:            array/pe_4_19/int8_quad_mac/mul/dff_mul_ce/q_reg[0]/D
+  Destination:            array/pe_6_18/int8_quad_mac/mul/dff_mul_ae/q_reg[11]/D
                             (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.666ns period=3.333ns})
   Path Group:             clk
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            1.667ns  (clk rise@3.333ns - clk2x rise@1.666ns)
-  Data Path Delay:        1.165ns  (logic 0.069ns (5.923%)  route 1.096ns (94.077%))
+  Data Path Delay:        1.177ns  (logic 0.073ns (6.202%)  route 1.104ns (93.798%))
   Logic Levels:           0  
-  Clock Path Skew:        -0.298ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    2.334ns = ( 5.667 - 3.333 ) 
-    Source Clock Delay      (SCD):    2.632ns = ( 4.298 - 1.666 ) 
+  Clock Path Skew:        -0.290ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.315ns = ( 5.648 - 3.333 ) 
+    Source Clock Delay      (SCD):    2.605ns = ( 4.271 - 1.666 ) 
     Clock Pessimism Removal (CPR):    0.000ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Total Input Jitter      (TIJ):    0.000ns
     Discrete Jitter          (DJ):    0.000ns
     Phase Error              (PE):    0.000ns
-  Clock Net Delay (Source):      2.632ns (routing 1.215ns, distribution 1.417ns)
-  Clock Net Delay (Destination): 2.334ns (routing 1.109ns, distribution 1.225ns)
+  Clock Net Delay (Source):      2.605ns (routing 1.215ns, distribution 1.390ns)
+  Clock Net Delay (Destination): 2.315ns (routing 1.109ns, distribution 1.206ns)
   Clock Domain Crossing:  Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
                          (clock clk2x rise edge)      1.666     1.666 r  
                                                       0.000     1.666 r  clk2x (IN)
-    X1Y3 (CLOCK_ROOT)    net (fo=105471, unset)       2.632     4.298    array/pe_4_19/int8_quad_mac/mul/dff_ae0/clk2x
-    SLICE_X77Y297        FDRE                                         r  array/pe_4_19/int8_quad_mac/mul/dff_ae0/q_reg[0]/C
+    X1Y3 (CLOCK_ROOT)    net (fo=105471, unset)       2.605     4.271    array/pe_6_18/int8_quad_mac/mul/dff_ae1/clk2x
+    SLICE_X78Y269        FDRE                                         r  array/pe_6_18/int8_quad_mac/mul/dff_ae1/q_reg[11]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X77Y297        FDRE (Prop_EFF_SLICEM_C_Q)
-                                                      0.069     4.367 r  array/pe_4_19/int8_quad_mac/mul/dff_ae0/q_reg[0]/Q
-                         net (fo=2, routed)           1.096     5.463    array/pe_4_19/int8_quad_mac/mul/dff_mul_ce/D[0]
-    SLICE_X77Y298        FDRE                                         r  array/pe_4_19/int8_quad_mac/mul/dff_mul_ce/q_reg[0]/D
+    SLICE_X78Y269        FDRE (Prop_BFF_SLICEL_C_Q)
+                                                      0.073     4.344 r  array/pe_6_18/int8_quad_mac/mul/dff_ae1/q_reg[11]/Q
+                         net (fo=1, routed)           1.104     5.448    array/pe_6_18/int8_quad_mac/mul/dff_mul_ae/D[11]
+    SLICE_X78Y269        FDRE                                         r  array/pe_6_18/int8_quad_mac/mul/dff_mul_ae/q_reg[11]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk rise edge)        3.333     3.333 r  
                                                       0.000     3.333 r  clk (IN)
-    X1Y3 (CLOCK_ROOT)    net (fo=232885, unset)       2.334     5.667    array/pe_4_19/int8_quad_mac/mul/dff_mul_ce/clk
-    SLICE_X77Y298        FDRE                                         r  array/pe_4_19/int8_quad_mac/mul/dff_mul_ce/q_reg[0]/C
-                         clock pessimism              0.000     5.667    
-                         clock uncertainty           -0.035     5.632    
-    SLICE_X77Y298        FDRE (Setup_FFF_SLICEM_C_D)
-                                                      0.032     5.664    array/pe_4_19/int8_quad_mac/mul/dff_mul_ce/q_reg[0]
+    X1Y3 (CLOCK_ROOT)    net (fo=228494, unset)       2.315     5.648    array/pe_6_18/int8_quad_mac/mul/dff_mul_ae/clk
+    SLICE_X78Y269        FDRE                                         r  array/pe_6_18/int8_quad_mac/mul/dff_mul_ae/q_reg[11]/C
+                         clock pessimism              0.000     5.648    
+                         clock uncertainty           -0.035     5.613    
+    SLICE_X78Y269        FDRE (Setup_EFF2_SLICEL_C_D)
+                                                      0.033     5.646    array/pe_6_18/int8_quad_mac/mul/dff_mul_ae/q_reg[11]
   -------------------------------------------------------------------
-                         required time                          5.664    
-                         arrival time                          -5.463    
+                         required time                          5.646    
+                         arrival time                          -5.448    
   -------------------------------------------------------------------
-                         slack                                  0.200    
+                         slack                                  0.197    
 
 
 
@@ -504,55 +504,55 @@ Slack (MET) :             0.200ns  (required time - arrival time)
 
 Min Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.004ns  (arrival time - required time)
-  Source:                 array/pe_0_26/int8_quad_mac/mul/dff_be0/q_reg[0]/C
+Slack (MET) :             0.010ns  (arrival time - required time)
+  Source:                 array/pe_15_0/int8_quad_mac/mul/dff_ae0/q_reg[5]/C
                             (rising edge-triggered cell FDRE clocked by clk2x  {rise@0.000ns fall@0.833ns period=1.666ns})
-  Destination:            array/pe_0_26/int8_quad_mac/mul/dff_mul_de/q_reg[0]/D
+  Destination:            array/pe_15_0/int8_quad_mac/mul/dff_mul_ce/q_reg[5]/D
                             (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.666ns period=3.333ns})
   Path Group:             clk
   Path Type:              Hold (Min at Slow Process Corner)
   Requirement:            0.000ns  (clk rise@0.000ns - clk2x rise@0.000ns)
-  Data Path Delay:        0.363ns  (logic 0.054ns (14.876%)  route 0.309ns (85.124%))
+  Data Path Delay:        0.349ns  (logic 0.055ns (15.759%)  route 0.294ns (84.241%))
   Logic Levels:           0  
-  Clock Path Skew:        0.277ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    2.671ns
-    Source Clock Delay      (SCD):    2.394ns
+  Clock Path Skew:        0.257ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.577ns
+    Source Clock Delay      (SCD):    2.320ns
     Clock Pessimism Removal (CPR):    -0.000ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Total Input Jitter      (TIJ):    0.000ns
     Discrete Jitter          (DJ):    0.000ns
     Phase Error              (PE):    0.000ns
-  Clock Net Delay (Source):      2.394ns (routing 1.120ns, distribution 1.274ns)
-  Clock Net Delay (Destination): 2.671ns (routing 1.204ns, distribution 1.467ns)
+  Clock Net Delay (Source):      2.320ns (routing 1.120ns, distribution 1.200ns)
+  Clock Net Delay (Destination): 2.577ns (routing 1.204ns, distribution 1.373ns)
   Clock Domain Crossing:  Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
                          (clock clk2x rise edge)      0.000     0.000 r  
                                                       0.000     0.000 r  clk2x (IN)
-    X1Y3 (CLOCK_ROOT)    net (fo=105471, unset)       2.394     2.394    array/pe_0_26/int8_quad_mac/mul/dff_be0/clk2x
-    SLICE_X93Y354        FDRE                                         r  array/pe_0_26/int8_quad_mac/mul/dff_be0/q_reg[0]/C
+    X1Y3 (CLOCK_ROOT)    net (fo=105471, unset)       2.320     2.320    array/pe_15_0/int8_quad_mac/mul/dff_ae0/clk2x
+    SLICE_X85Y25         FDRE                                         r  array/pe_15_0/int8_quad_mac/mul/dff_ae0/q_reg[5]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X93Y354        FDRE (Prop_AFF_SLICEM_C_Q)
-                                                      0.054     2.448 r  array/pe_0_26/int8_quad_mac/mul/dff_be0/q_reg[0]/Q
-                         net (fo=2, routed)           0.309     2.757    array/pe_0_26/int8_quad_mac/mul/dff_mul_de/D[0]
-    SLICE_X93Y354        FDRE                                         r  array/pe_0_26/int8_quad_mac/mul/dff_mul_de/q_reg[0]/D
+    SLICE_X85Y25         FDRE (Prop_CFF_SLICEM_C_Q)
+                                                      0.055     2.375 r  array/pe_15_0/int8_quad_mac/mul/dff_ae0/q_reg[5]/Q
+                         net (fo=2, routed)           0.294     2.669    array/pe_15_0/int8_quad_mac/mul/dff_mul_ce/D[5]
+    SLICE_X82Y23         FDRE                                         r  array/pe_15_0/int8_quad_mac/mul/dff_mul_ce/q_reg[5]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk rise edge)        0.000     0.000 r  
                                                       0.000     0.000 r  clk (IN)
-    X1Y3 (CLOCK_ROOT)    net (fo=232885, unset)       2.671     2.671    array/pe_0_26/int8_quad_mac/mul/dff_mul_de/clk
-    SLICE_X93Y354        FDRE                                         r  array/pe_0_26/int8_quad_mac/mul/dff_mul_de/q_reg[0]/C
-                         clock pessimism              0.000     2.671    
-                         clock uncertainty            0.035     2.707    
-    SLICE_X93Y354        FDRE (Hold_HFF_SLICEM_C_D)
-                                                      0.046     2.753    array/pe_0_26/int8_quad_mac/mul/dff_mul_de/q_reg[0]
+    X1Y3 (CLOCK_ROOT)    net (fo=228494, unset)       2.577     2.577    array/pe_15_0/int8_quad_mac/mul/dff_mul_ce/clk
+    SLICE_X82Y23         FDRE                                         r  array/pe_15_0/int8_quad_mac/mul/dff_mul_ce/q_reg[5]/C
+                         clock pessimism              0.000     2.577    
+                         clock uncertainty            0.035     2.613    
+    SLICE_X82Y23         FDRE (Hold_DFF_SLICEM_C_D)
+                                                      0.046     2.659    array/pe_15_0/int8_quad_mac/mul/dff_mul_ce/q_reg[5]
   -------------------------------------------------------------------
-                         required time                         -2.753    
-                         arrival time                           2.757    
+                         required time                         -2.659    
+                         arrival time                           2.669    
   -------------------------------------------------------------------
-                         slack                                  0.004    
+                         slack                                  0.010    
 
 
 
@@ -562,65 +562,65 @@ Slack (MET) :             0.004ns  (arrival time - required time)
 From Clock:  clk
   To Clock:  clk2x
 
-Setup :            0  Failing Endpoints,  Worst Slack        0.199ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack        0.216ns,  Total Violation        0.000ns
 Hold  :            0  Failing Endpoints,  Worst Slack        0.010ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.199ns  (required time - arrival time)
-  Source:                 array/pe_6_10/dff_b/q_reg[3]/C
+Slack (MET) :             0.216ns  (required time - arrival time)
+  Source:                 array/pe_7_10/dff_d/q_reg[5]/C
                             (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.666ns period=3.333ns})
-  Destination:            array/pe_6_10/int8_quad_mac/mul/dff_dsp_in1/q_reg[3]/D
+  Destination:            array/pe_7_10/int8_quad_mac/mul/dff_dsp_in1/q_reg[5]/D
                             (rising edge-triggered cell FDRE clocked by clk2x  {rise@0.000ns fall@0.833ns period=1.666ns})
   Path Group:             clk2x
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            1.666ns  (clk2x rise@1.666ns - clk rise@0.000ns)
-  Data Path Delay:        1.188ns  (logic 0.148ns (12.458%)  route 1.040ns (87.542%))
+  Data Path Delay:        1.178ns  (logic 0.117ns (9.932%)  route 1.061ns (90.068%))
   Logic Levels:           1  (LUT3=1)
-  Clock Path Skew:        -0.275ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    2.302ns = ( 3.968 - 1.666 ) 
-    Source Clock Delay      (SCD):    2.577ns
+  Clock Path Skew:        -0.268ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.301ns = ( 3.967 - 1.666 ) 
+    Source Clock Delay      (SCD):    2.569ns
     Clock Pessimism Removal (CPR):    0.000ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Total Input Jitter      (TIJ):    0.000ns
     Discrete Jitter          (DJ):    0.000ns
     Phase Error              (PE):    0.000ns
-  Clock Net Delay (Source):      2.577ns (routing 1.204ns, distribution 1.373ns)
-  Clock Net Delay (Destination): 2.302ns (routing 1.120ns, distribution 1.182ns)
+  Clock Net Delay (Source):      2.569ns (routing 1.204ns, distribution 1.365ns)
+  Clock Net Delay (Destination): 2.301ns (routing 1.120ns, distribution 1.181ns)
   Clock Domain Crossing:  Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
                          (clock clk rise edge)        0.000     0.000 r  
                                                       0.000     0.000 r  clk (IN)
-    X1Y3 (CLOCK_ROOT)    net (fo=232885, unset)       2.577     2.577    array/pe_6_10/dff_b/clk
-    SLICE_X78Y192        FDRE                                         r  array/pe_6_10/dff_b/q_reg[3]/C
+    X1Y3 (CLOCK_ROOT)    net (fo=228494, unset)       2.569     2.569    array/pe_7_10/dff_d/clk
+    SLICE_X77Y205        FDRE                                         r  array/pe_7_10/dff_d/q_reg[5]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X78Y192        FDRE (Prop_EFF2_SLICEL_C_Q)
-                                                      0.074     2.651 r  array/pe_6_10/dff_b/q_reg[3]/Q
-                         net (fo=2, routed)           0.989     3.640    array/pe_6_10/int8_quad_mac/mul/q_reg[7]_7[3]
-    SLICE_X78Y200        LUT3 (Prop_H6LUT_SLICEL_I1_O)
-                                                      0.074     3.714 r  array/pe_6_10/int8_quad_mac/mul/q[3]_i_1__0/O
-                         net (fo=1, routed)           0.051     3.765    array/pe_6_10/int8_quad_mac/mul/dff_dsp_in1/D[3]
-    SLICE_X78Y200        FDRE                                         r  array/pe_6_10/int8_quad_mac/mul/dff_dsp_in1/q_reg[3]/D
+    SLICE_X77Y205        FDRE (Prop_GFF_SLICEM_C_Q)
+                                                      0.071     2.640 r  array/pe_7_10/dff_d/q_reg[5]/Q
+                         net (fo=2, routed)           0.994     3.634    array/pe_7_10/int8_quad_mac/mul/q_reg[7]_4[5]
+    SLICE_X77Y206        LUT3 (Prop_C6LUT_SLICEM_I0_O)
+                                                      0.046     3.680 r  array/pe_7_10/int8_quad_mac/mul/q[5]_i_1__0/O
+                         net (fo=1, routed)           0.067     3.747    array/pe_7_10/int8_quad_mac/mul/dff_dsp_in1/D[5]
+    SLICE_X77Y206        FDRE                                         r  array/pe_7_10/int8_quad_mac/mul/dff_dsp_in1/q_reg[5]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk2x rise edge)      1.666     1.666 r  
                                                       0.000     1.666 r  clk2x (IN)
-    X1Y3 (CLOCK_ROOT)    net (fo=105471, unset)       2.302     3.968    array/pe_6_10/int8_quad_mac/mul/dff_dsp_in1/clk2x
-    SLICE_X78Y200        FDRE                                         r  array/pe_6_10/int8_quad_mac/mul/dff_dsp_in1/q_reg[3]/C
-                         clock pessimism              0.000     3.968    
-                         clock uncertainty           -0.035     3.933    
-    SLICE_X78Y200        FDRE (Setup_HFF_SLICEL_C_D)
-                                                      0.032     3.965    array/pe_6_10/int8_quad_mac/mul/dff_dsp_in1/q_reg[3]
+    X1Y3 (CLOCK_ROOT)    net (fo=105471, unset)       2.301     3.967    array/pe_7_10/int8_quad_mac/mul/dff_dsp_in1/clk2x
+    SLICE_X77Y206        FDRE                                         r  array/pe_7_10/int8_quad_mac/mul/dff_dsp_in1/q_reg[5]/C
+                         clock pessimism              0.000     3.967    
+                         clock uncertainty           -0.035     3.932    
+    SLICE_X77Y206        FDRE (Setup_CFF_SLICEM_C_D)
+                                                      0.032     3.964    array/pe_7_10/int8_quad_mac/mul/dff_dsp_in1/q_reg[5]
   -------------------------------------------------------------------
-                         required time                          3.965    
-                         arrival time                          -3.765    
+                         required time                          3.964    
+                         arrival time                          -3.747    
   -------------------------------------------------------------------
-                         slack                                  0.199    
+                         slack                                  0.216    
 
 
 
@@ -629,55 +629,55 @@ Slack (MET) :             0.199ns  (required time - arrival time)
 Min Delay Paths
 --------------------------------------------------------------------------------------
 Slack (MET) :             0.010ns  (arrival time - required time)
-  Source:                 array/pe_22_5/dff_c/q_reg[5]/C
+  Source:                 array/pe_11_4/dff_d/q_reg[2]/C
                             (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@1.666ns period=3.333ns})
-  Destination:            array/pe_22_5/int8_quad_mac/mul/dff_dsp_in0/q_reg[5]/D
+  Destination:            array/pe_11_4/int8_quad_mac/mul/dff_dsp_in1/q_reg[2]/D
                             (rising edge-triggered cell FDRE clocked by clk2x  {rise@0.000ns fall@0.833ns period=1.666ns})
   Path Group:             clk2x
   Path Type:              Hold (Min at Slow Process Corner)
   Requirement:            0.000ns  (clk2x rise@0.000ns - clk rise@0.000ns)
-  Data Path Delay:        0.387ns  (logic 0.107ns (27.649%)  route 0.280ns (72.351%))
+  Data Path Delay:        0.388ns  (logic 0.089ns (22.938%)  route 0.299ns (77.062%))
   Logic Levels:           1  (LUT3=1)
-  Clock Path Skew:        0.295ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    2.449ns
-    Source Clock Delay      (SCD):    2.154ns
+  Clock Path Skew:        0.296ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.535ns
+    Source Clock Delay      (SCD):    2.239ns
     Clock Pessimism Removal (CPR):    -0.000ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Total Input Jitter      (TIJ):    0.000ns
     Discrete Jitter          (DJ):    0.000ns
     Phase Error              (PE):    0.000ns
-  Clock Net Delay (Source):      2.154ns (routing 1.109ns, distribution 1.045ns)
-  Clock Net Delay (Destination): 2.449ns (routing 1.215ns, distribution 1.234ns)
+  Clock Net Delay (Source):      2.239ns (routing 1.109ns, distribution 1.130ns)
+  Clock Net Delay (Destination): 2.535ns (routing 1.215ns, distribution 1.320ns)
   Clock Domain Crossing:  Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
                          (clock clk rise edge)        0.000     0.000 r  
                                                       0.000     0.000 r  clk (IN)
-    X1Y3 (CLOCK_ROOT)    net (fo=232885, unset)       2.154     2.154    array/pe_22_5/dff_c/clk
-    SLICE_X50Y94         FDRE                                         r  array/pe_22_5/dff_c/q_reg[5]/C
+    X1Y3 (CLOCK_ROOT)    net (fo=228494, unset)       2.239     2.239    array/pe_11_4/dff_d/clk
+    SLICE_X74Y103        FDRE                                         r  array/pe_11_4/dff_d/q_reg[2]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X50Y94         FDRE (Prop_FFF2_SLICEM_C_Q)
-                                                      0.057     2.211 r  array/pe_22_5/dff_c/q_reg[5]/Q
-                         net (fo=2, routed)           0.251     2.462    array/pe_22_5/int8_quad_mac/mul/q_reg[7]_5[5]
-    SLICE_X52Y100        LUT3 (Prop_B6LUT_SLICEM_I0_O)
-                                                      0.050     2.512 r  array/pe_22_5/int8_quad_mac/mul/q[5]_i_1/O
-                         net (fo=1, routed)           0.029     2.541    array/pe_22_5/int8_quad_mac/mul/dff_dsp_in0/D[5]
-    SLICE_X52Y100        FDRE                                         r  array/pe_22_5/int8_quad_mac/mul/dff_dsp_in0/q_reg[5]/D
+    SLICE_X74Y103        FDRE (Prop_BFF2_SLICEM_C_Q)
+                                                      0.057     2.296 r  array/pe_11_4/dff_d/q_reg[2]/Q
+                         net (fo=2, routed)           0.264     2.560    array/pe_11_4/int8_quad_mac/mul/q_reg[7]_5[2]
+    SLICE_X73Y116        LUT3 (Prop_D6LUT_SLICEM_I0_O)
+                                                      0.032     2.592 r  array/pe_11_4/int8_quad_mac/mul/q[2]_i_1__1086/O
+                         net (fo=1, routed)           0.035     2.627    array/pe_11_4/int8_quad_mac/mul/dff_dsp_in1/D[2]
+    SLICE_X73Y116        FDRE                                         r  array/pe_11_4/int8_quad_mac/mul/dff_dsp_in1/q_reg[2]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk2x rise edge)      0.000     0.000 r  
                                                       0.000     0.000 r  clk2x (IN)
-    X1Y3 (CLOCK_ROOT)    net (fo=105471, unset)       2.449     2.449    array/pe_22_5/int8_quad_mac/mul/dff_dsp_in0/clk2x
-    SLICE_X52Y100        FDRE                                         r  array/pe_22_5/int8_quad_mac/mul/dff_dsp_in0/q_reg[5]/C
-                         clock pessimism              0.000     2.449    
-                         clock uncertainty            0.035     2.485    
-    SLICE_X52Y100        FDRE (Hold_BFF_SLICEM_C_D)
-                                                      0.046     2.531    array/pe_22_5/int8_quad_mac/mul/dff_dsp_in0/q_reg[5]
+    X1Y3 (CLOCK_ROOT)    net (fo=105471, unset)       2.535     2.535    array/pe_11_4/int8_quad_mac/mul/dff_dsp_in1/clk2x
+    SLICE_X73Y116        FDRE                                         r  array/pe_11_4/int8_quad_mac/mul/dff_dsp_in1/q_reg[2]/C
+                         clock pessimism              0.000     2.535    
+                         clock uncertainty            0.035     2.571    
+    SLICE_X73Y116        FDRE (Hold_DFF_SLICEM_C_D)
+                                                      0.046     2.617    array/pe_11_4/int8_quad_mac/mul/dff_dsp_in1/q_reg[2]
   -------------------------------------------------------------------
-                         required time                         -2.531    
-                         arrival time                           2.541    
+                         required time                         -2.617    
+                         arrival time                           2.627    
   -------------------------------------------------------------------
                          slack                                  0.010    
 

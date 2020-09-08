@@ -1,0 +1,41 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
+| Date         : Mon Sep  7 17:13:24 2020
+| Host         : Shears running 64-bit unknown
+| Command      : report_drc -file ./rundir/post_route_drc.rpt
+| Design       : top
+| Device       : xczu9eg-ffvb1156-3-e-es2
+| Speed File   : -3
+| Design State : Routed
+------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: top
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 1
++-----------+----------+-------------------+------------+
+| Rule      | Severity | Description       | Violations |
++-----------+----------+-------------------+------------+
+| RTSTAT-10 | Warning  | No routable loads | 1          |
++-----------+----------+-------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+RTSTAT-10#1 Warning
+No routable loads  
+4097 net(s) have no routable loads. The problem bus(es) and/or net(s) are mem_y_2/M_AXIS_TDATA[31:0], mem_z_6/M_AXIS_TDATA[31:0], mem_y_26/M_AXIS_TDATA[31:0], mem_y_25/M_AXIS_TDATA[31:0], mem_y_24/M_AXIS_TDATA[31:0], mem_z_7/M_AXIS_TDATA[31:0], mem_y_23/M_AXIS_TDATA[31:0], mem_w_7/M_AXIS_TDATA[31:0], mem_y_22/M_AXIS_TDATA[31:0], mem_w_2/M_AXIS_TDATA[31:0], mem_y_21/M_AXIS_TDATA[31:0], mem_z_8/M_AXIS_TDATA[31:0], mem_y_20/M_AXIS_TDATA[31:0], mem_y_27/M_AXIS_TDATA[31:0], mem_y_19/M_AXIS_TDATA[31:0] (the first 15 of 129 listed).
+Related violations: <none>
+
+

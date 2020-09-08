@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
-| Date             : Wed Aug 26 22:36:11 2020
+| Date             : Mon Sep  7 19:52:56 2020
 | Host             : linux running 64-bit Ubuntu 16.04.6 LTS
 | Command          : report_power -file ./rundir/post_route_power.rpt
 | Design           : top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.707        |
+| Total On-Chip Power (W)  | 0.607        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.593        |
-| Device Static (W)        | 0.114        |
+| Dynamic (W)              | 0.495        |
+| Device Static (W)        | 0.112        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 91.9         |
-| Junction Temperature (C) | 33.1         |
+| Max Ambient (C)          | 93.0         |
+| Junction Temperature (C) | 32.0         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,17 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.280 |        4 |       --- |             --- |
-| Slice Logic    |     0.021 |    31133 |       --- |             --- |
-|   LUT as Logic |     0.020 |     6980 |     53200 |           13.12 |
-|   Register     |     0.001 |    19492 |    106400 |           18.32 |
-|   Others       |     0.000 |     2781 |       --- |             --- |
-|   CARRY4       |     0.000 |     1632 |     13300 |           12.27 |
-| Signals        |     0.034 |    23260 |       --- |             --- |
-| Block RAM      |     0.257 |       36 |       140 |           25.71 |
+| Clocks         |     0.267 |        4 |       --- |             --- |
+| Slice Logic    |     0.023 |    28703 |       --- |             --- |
+|   LUT as Logic |     0.022 |     5862 |     53200 |           11.02 |
+|   Register     |     0.001 |    18260 |    106400 |           17.16 |
+|   Others       |     0.000 |     2861 |       --- |             --- |
+|   CARRY4       |     0.000 |     1360 |     13300 |           10.23 |
+| Signals        |     0.032 |    21755 |       --- |             --- |
+| Block RAM      |     0.173 |       24 |       140 |           17.14 |
 | DSPs           |    <0.001 |       64 |       220 |           29.09 |
-| Static Power   |     0.114 |          |           |                 |
-| Total          |     0.707 |          |           |                 |
+| Static Power   |     0.112 |          |           |                 |
+| Total          |     0.607 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.590 |       0.579 |      0.011 |
+| Vccint    |       1.000 |     0.499 |       0.489 |      0.010 |
 | Vccaux    |       1.800 |     0.012 |       0.000 |      0.012 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -81,11 +81,11 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.015 |       0.013 |      0.001 |
+| Vccbram   |       1.000 |     0.007 |       0.006 |      0.001 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.021 |       0.000 |      0.021 |
+| Vccpint   |       1.000 |     0.020 |       0.000 |      0.020 |
 | Vccpaux   |       1.800 |     0.010 |       0.000 |      0.010 |
 | Vccpll    |       1.800 |     0.003 |       0.000 |      0.003 |
 | Vcco_ddr  |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -149,21 +149,21 @@ Table of Contents
 +--------------------------------------------------+-----------+
 | Name                                             | Power (W) |
 +--------------------------------------------------+-----------+
-| top                                              |     0.593 |
-|   array                                          |     0.333 |
+| top                                              |     0.495 |
+|   array                                          |     0.320 |
 |     pe_0_0                                       |     0.005 |
 |       dff_a                                      |    <0.001 |
 |       dff_b                                      |    <0.001 |
 |       dff_c                                      |    <0.001 |
 |       dff_d                                      |    <0.001 |
-|       int8_quad_mac                              |     0.005 |
+|       int8_quad_mac                              |     0.004 |
 |         acc_w                                    |     0.000 |
 |         acc_w_dff                                |    <0.001 |
 |         acc_x_dff                                |    <0.001 |
 |         acc_y                                    |     0.000 |
 |         acc_y_dff                                |    <0.001 |
 |         acc_z_dff                                |    <0.001 |
-|         mul                                      |     0.004 |
+|         mul                                      |     0.003 |
 |           dff_ae0                                |    <0.001 |
 |           dff_ae1                                |    <0.001 |
 |           dff_be0                                |    <0.001 |
@@ -191,7 +191,7 @@ Table of Contents
 |       dff_b                                      |    <0.001 |
 |       dff_c                                      |    <0.001 |
 |       dff_d                                      |    <0.001 |
-|       int8_quad_mac                              |     0.005 |
+|       int8_quad_mac                              |     0.004 |
 |         acc_w                                    |     0.000 |
 |         acc_w_dff                                |    <0.001 |
 |         acc_x_dff                                |    <0.001 |
@@ -261,14 +261,14 @@ Table of Contents
 |       dff_b                                      |    <0.001 |
 |       dff_c                                      |    <0.001 |
 |       dff_d                                      |    <0.001 |
-|       int8_quad_mac                              |     0.005 |
+|       int8_quad_mac                              |     0.004 |
 |         acc_w                                    |     0.000 |
 |         acc_w_dff                                |    <0.001 |
 |         acc_x_dff                                |    <0.001 |
 |         acc_y                                    |     0.000 |
 |         acc_y_dff                                |    <0.001 |
 |         acc_z_dff                                |    <0.001 |
-|         mul                                      |     0.004 |
+|         mul                                      |     0.003 |
 |           dff_ae0                                |    <0.001 |
 |           dff_ae1                                |    <0.001 |
 |           dff_be0                                |    <0.001 |
@@ -296,7 +296,7 @@ Table of Contents
 |       dff_b                                      |    <0.001 |
 |       dff_c                                      |    <0.001 |
 |       dff_d                                      |    <0.001 |
-|       int8_quad_mac                              |     0.005 |
+|       int8_quad_mac                              |     0.004 |
 |         acc_w                                    |     0.000 |
 |         acc_w_dff                                |    <0.001 |
 |         acc_x_dff                                |    <0.001 |
@@ -366,7 +366,7 @@ Table of Contents
 |       dff_b                                      |    <0.001 |
 |       dff_c                                      |    <0.001 |
 |       dff_d                                      |    <0.001 |
-|       int8_quad_mac                              |     0.005 |
+|       int8_quad_mac                              |     0.004 |
 |         acc_w                                    |     0.000 |
 |         acc_w_dff                                |    <0.001 |
 |         acc_x_dff                                |    <0.001 |
@@ -437,7 +437,7 @@ Table of Contents
 |       dff_c                                      |    <0.001 |
 |       dff_d                                      |    <0.001 |
 |       dff_e                                      |    <0.001 |
-|       int8_quad_mac                              |     0.005 |
+|       int8_quad_mac                              |     0.004 |
 |         acc_w                                    |     0.000 |
 |         acc_w_dff                                |    <0.001 |
 |         acc_x                                    |     0.000 |
@@ -475,7 +475,7 @@ Table of Contents
 |       dff_c                                      |    <0.001 |
 |       dff_d                                      |    <0.001 |
 |       dff_e                                      |    <0.001 |
-|       int8_quad_mac                              |     0.005 |
+|       int8_quad_mac                              |     0.004 |
 |         acc_w                                    |     0.000 |
 |         acc_w_dff                                |    <0.001 |
 |         acc_x                                    |     0.000 |
@@ -513,7 +513,7 @@ Table of Contents
 |       dff_c                                      |    <0.001 |
 |       dff_d                                      |    <0.001 |
 |       dff_e                                      |    <0.001 |
-|       int8_quad_mac                              |     0.005 |
+|       int8_quad_mac                              |     0.004 |
 |         acc_w                                    |     0.000 |
 |         acc_w_dff                                |    <0.001 |
 |         acc_x                                    |     0.000 |
@@ -551,7 +551,7 @@ Table of Contents
 |       dff_c                                      |    <0.001 |
 |       dff_d                                      |    <0.001 |
 |       dff_e                                      |    <0.001 |
-|       int8_quad_mac                              |     0.005 |
+|       int8_quad_mac                              |     0.004 |
 |         acc_w                                    |     0.000 |
 |         acc_w_dff                                |    <0.001 |
 |         acc_x                                    |     0.000 |
@@ -589,7 +589,7 @@ Table of Contents
 |       dff_c                                      |    <0.001 |
 |       dff_d                                      |    <0.001 |
 |       dff_e                                      |    <0.001 |
-|       int8_quad_mac                              |     0.005 |
+|       int8_quad_mac                              |     0.004 |
 |         acc_w                                    |     0.000 |
 |         acc_w_dff                                |    <0.001 |
 |         acc_x                                    |     0.000 |
@@ -598,7 +598,7 @@ Table of Contents
 |         acc_y_dff                                |    <0.001 |
 |         acc_z                                    |     0.000 |
 |         acc_z_dff                                |    <0.001 |
-|         mul                                      |     0.003 |
+|         mul                                      |     0.004 |
 |           dff_ae0                                |    <0.001 |
 |           dff_ae1                                |    <0.001 |
 |           dff_be0                                |    <0.001 |
@@ -627,7 +627,7 @@ Table of Contents
 |       dff_c                                      |    <0.001 |
 |       dff_d                                      |    <0.001 |
 |       dff_e                                      |    <0.001 |
-|       int8_quad_mac                              |     0.005 |
+|       int8_quad_mac                              |     0.004 |
 |         acc_w                                    |     0.000 |
 |         acc_w_dff                                |    <0.001 |
 |         acc_x                                    |     0.000 |
@@ -665,7 +665,7 @@ Table of Contents
 |       dff_c                                      |    <0.001 |
 |       dff_d                                      |    <0.001 |
 |       dff_e                                      |    <0.001 |
-|       int8_quad_mac                              |     0.005 |
+|       int8_quad_mac                              |     0.004 |
 |         acc_w                                    |     0.000 |
 |         acc_w_dff                                |    <0.001 |
 |         acc_x                                    |     0.000 |
@@ -741,7 +741,7 @@ Table of Contents
 |       dff_c                                      |    <0.001 |
 |       dff_d                                      |    <0.001 |
 |       dff_e                                      |    <0.001 |
-|       int8_quad_mac                              |     0.005 |
+|       int8_quad_mac                              |     0.004 |
 |         acc_w                                    |     0.000 |
 |         acc_w_dff                                |    <0.001 |
 |         acc_x                                    |     0.000 |
@@ -779,7 +779,7 @@ Table of Contents
 |       dff_c                                      |    <0.001 |
 |       dff_d                                      |    <0.001 |
 |       dff_e                                      |    <0.001 |
-|       int8_quad_mac                              |     0.005 |
+|       int8_quad_mac                              |     0.004 |
 |         acc_w                                    |     0.000 |
 |         acc_w_dff                                |    <0.001 |
 |         acc_x                                    |     0.000 |
@@ -855,7 +855,7 @@ Table of Contents
 |       dff_c                                      |    <0.001 |
 |       dff_d                                      |    <0.001 |
 |       dff_e                                      |    <0.001 |
-|       int8_quad_mac                              |     0.005 |
+|       int8_quad_mac                              |     0.004 |
 |         acc_w                                    |     0.000 |
 |         acc_w_dff                                |    <0.001 |
 |         acc_x                                    |     0.000 |
@@ -969,7 +969,7 @@ Table of Contents
 |       dff_c                                      |    <0.001 |
 |       dff_d                                      |    <0.001 |
 |       dff_e                                      |    <0.001 |
-|       int8_quad_mac                              |     0.005 |
+|       int8_quad_mac                              |     0.004 |
 |         acc_w                                    |     0.000 |
 |         acc_w_dff                                |    <0.001 |
 |         acc_x                                    |     0.000 |
@@ -1045,7 +1045,7 @@ Table of Contents
 |       dff_c                                      |    <0.001 |
 |       dff_d                                      |    <0.001 |
 |       dff_e                                      |    <0.001 |
-|       int8_quad_mac                              |     0.005 |
+|       int8_quad_mac                              |     0.004 |
 |         acc_w                                    |     0.000 |
 |         acc_w_dff                                |    <0.001 |
 |         acc_x                                    |     0.000 |
@@ -1083,7 +1083,7 @@ Table of Contents
 |       dff_c                                      |    <0.001 |
 |       dff_d                                      |    <0.001 |
 |       dff_e                                      |    <0.001 |
-|       int8_quad_mac                              |     0.005 |
+|       int8_quad_mac                              |     0.004 |
 |         acc_w                                    |     0.000 |
 |         acc_w_dff                                |    <0.001 |
 |         acc_x                                    |     0.000 |
@@ -1197,7 +1197,7 @@ Table of Contents
 |       dff_c                                      |    <0.001 |
 |       dff_d                                      |    <0.001 |
 |       dff_e                                      |    <0.001 |
-|       int8_quad_mac                              |     0.005 |
+|       int8_quad_mac                              |     0.004 |
 |         acc_w                                    |     0.000 |
 |         acc_w_dff                                |    <0.001 |
 |         acc_x                                    |     0.000 |
@@ -1501,7 +1501,7 @@ Table of Contents
 |       dff_c                                      |    <0.001 |
 |       dff_d                                      |    <0.001 |
 |       dff_e                                      |    <0.001 |
-|       int8_quad_mac                              |     0.005 |
+|       int8_quad_mac                              |     0.004 |
 |         acc_w                                    |     0.000 |
 |         acc_w_dff                                |    <0.001 |
 |         acc_x                                    |     0.000 |
@@ -1662,7 +1662,7 @@ Table of Contents
 |         acc_y_dff                                |    <0.001 |
 |         acc_z                                    |     0.000 |
 |         acc_z_dff                                |    <0.001 |
-|         mul                                      |     0.003 |
+|         mul                                      |     0.004 |
 |           dff_ae0                                |    <0.001 |
 |           dff_ae1                                |    <0.001 |
 |           dff_be0                                |    <0.001 |
@@ -1837,7 +1837,7 @@ Table of Contents
 |                       i_op3                      |    <0.001 |
 |                       i_op4                      |    <0.001 |
 |                       opt_7series.i_uniwrap      |    <0.001 |
-|     pe_5_5                                       |     0.006 |
+|     pe_5_5                                       |     0.005 |
 |       dff_a                                      |    <0.001 |
 |       dff_b                                      |    <0.001 |
 |       dff_c                                      |    <0.001 |
@@ -1957,7 +1957,7 @@ Table of Contents
 |       dff_c                                      |    <0.001 |
 |       dff_d                                      |    <0.001 |
 |       dff_e                                      |    <0.001 |
-|       int8_quad_mac                              |     0.005 |
+|       int8_quad_mac                              |     0.004 |
 |         acc_w                                    |     0.000 |
 |         acc_w_dff                                |    <0.001 |
 |         acc_x                                    |     0.000 |
@@ -2407,7 +2407,7 @@ Table of Contents
 |                       i_op3                      |    <0.001 |
 |                       i_op4                      |    <0.001 |
 |                       opt_7series.i_uniwrap      |    <0.001 |
-|     pe_7_4                                       |     0.006 |
+|     pe_7_4                                       |     0.005 |
 |       dff_a                                      |    <0.001 |
 |       dff_b                                      |    <0.001 |
 |       dff_c                                      |    <0.001 |
@@ -2604,38 +2604,14 @@ Table of Contents
 |     dff_wxyzReadAddress                          |    <0.001 |
 |     dff_wxyzWriteAddress                         |    <0.001 |
 |     state                                        |    <0.001 |
-|   mem_a_0                                        |     0.004 |
-|   mem_a_1                                        |     0.004 |
-|   mem_a_2                                        |     0.004 |
-|   mem_a_3                                        |     0.004 |
-|   mem_a_4                                        |     0.004 |
-|   mem_a_5                                        |     0.004 |
-|   mem_a_6                                        |     0.004 |
-|   mem_a_7                                        |     0.004 |
-|   mem_b_0                                        |     0.004 |
-|   mem_b_1                                        |     0.004 |
-|   mem_b_2                                        |     0.004 |
-|   mem_b_3                                        |     0.004 |
-|   mem_b_4                                        |     0.004 |
-|   mem_b_5                                        |     0.004 |
-|   mem_b_6                                        |     0.004 |
-|   mem_b_7                                        |     0.004 |
-|   mem_c_0                                        |     0.004 |
-|   mem_c_1                                        |     0.004 |
-|   mem_c_2                                        |     0.004 |
-|   mem_c_3                                        |     0.004 |
-|   mem_c_4                                        |     0.004 |
-|   mem_c_5                                        |     0.004 |
-|   mem_c_6                                        |     0.004 |
-|   mem_c_7                                        |     0.004 |
-|   mem_d_0                                        |     0.004 |
-|   mem_d_1                                        |     0.004 |
-|   mem_d_2                                        |     0.004 |
-|   mem_d_3                                        |     0.004 |
-|   mem_d_4                                        |     0.004 |
-|   mem_d_5                                        |     0.004 |
-|   mem_d_6                                        |     0.004 |
-|   mem_d_7                                        |     0.004 |
+|   mem_abcd_0                                     |     0.006 |
+|   mem_abcd_1                                     |     0.006 |
+|   mem_abcd_2                                     |     0.006 |
+|   mem_abcd_3                                     |     0.006 |
+|   mem_abcd_4                                     |     0.006 |
+|   mem_abcd_5                                     |     0.006 |
+|   mem_abcd_6                                     |     0.006 |
+|   mem_abcd_7                                     |     0.006 |
 |   mem_e_0                                        |     0.004 |
 |   mem_e_1                                        |     0.004 |
 |   mem_e_2                                        |     0.004 |

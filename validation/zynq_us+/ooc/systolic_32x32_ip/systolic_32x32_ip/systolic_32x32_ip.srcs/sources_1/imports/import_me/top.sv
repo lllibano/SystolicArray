@@ -50,14 +50,8 @@ module top //32x32
 	//others
 	//abcd
 	//line0
-	logic [inputBits-1:0] mem_a_0_writeData;
-	logic [inputBits-1:0] mem_a_0_readData;
-	logic [inputBits-1:0] mem_b_0_writeData;
-	logic [inputBits-1:0] mem_b_0_readData;
-	logic [inputBits-1:0] mem_c_0_writeData;
-	logic [inputBits-1:0] mem_c_0_readData;
-	logic [inputBits-1:0] mem_d_0_writeData;
-	logic [inputBits-1:0] mem_d_0_readData;
+	logic [4*inputBits-1:0] mem_abcd_0_writeData;
+	logic [4*inputBits-1:0] mem_abcd_0_readData;
 	logic [inputBits-1:0] array_a_0_input;
 	logic [inputBits-1:0] array_b_0_input;
 	logic [inputBits-1:0] array_c_0_input;
@@ -65,14 +59,8 @@ module top //32x32
 	//line1
 	logic validInputs_1;
 	logic [addressWidth-1:0] abcdReadAddress_1;
-	logic [inputBits-1:0] mem_a_1_writeData;
-	logic [inputBits-1:0] mem_a_1_readData;
-	logic [inputBits-1:0] mem_b_1_writeData;
-	logic [inputBits-1:0] mem_b_1_readData;
-	logic [inputBits-1:0] mem_c_1_writeData;
-	logic [inputBits-1:0] mem_c_1_readData;
-	logic [inputBits-1:0] mem_d_1_writeData;
-	logic [inputBits-1:0] mem_d_1_readData;
+	logic [4*inputBits-1:0] mem_abcd_1_writeData;
+	logic [4*inputBits-1:0] mem_abcd_1_readData;
 	logic [inputBits-1:0] array_a_1_input;
 	logic [inputBits-1:0] array_b_1_input;
 	logic [inputBits-1:0] array_c_1_input;
@@ -80,14 +68,8 @@ module top //32x32
 	//line2
 	logic validInputs_2;
 	logic [addressWidth-1:0] abcdReadAddress_2;
-	logic [inputBits-1:0] mem_a_2_writeData;
-	logic [inputBits-1:0] mem_a_2_readData;
-	logic [inputBits-1:0] mem_b_2_writeData;
-	logic [inputBits-1:0] mem_b_2_readData;
-	logic [inputBits-1:0] mem_c_2_writeData;
-	logic [inputBits-1:0] mem_c_2_readData;
-	logic [inputBits-1:0] mem_d_2_writeData;
-	logic [inputBits-1:0] mem_d_2_readData;
+	logic [4*inputBits-1:0] mem_abcd_2_writeData;
+	logic [4*inputBits-1:0] mem_abcd_2_readData;
 	logic [inputBits-1:0] array_a_2_input;
 	logic [inputBits-1:0] array_b_2_input;
 	logic [inputBits-1:0] array_c_2_input;
@@ -95,14 +77,8 @@ module top //32x32
 	//line3
 	logic validInputs_3;
 	logic [addressWidth-1:0] abcdReadAddress_3;
-	logic [inputBits-1:0] mem_a_3_writeData;
-	logic [inputBits-1:0] mem_a_3_readData;
-	logic [inputBits-1:0] mem_b_3_writeData;
-	logic [inputBits-1:0] mem_b_3_readData;
-	logic [inputBits-1:0] mem_c_3_writeData;
-	logic [inputBits-1:0] mem_c_3_readData;
-	logic [inputBits-1:0] mem_d_3_writeData;
-	logic [inputBits-1:0] mem_d_3_readData;
+	logic [4*inputBits-1:0] mem_abcd_3_writeData;
+	logic [4*inputBits-1:0] mem_abcd_3_readData;
 	logic [inputBits-1:0] array_a_3_input;
 	logic [inputBits-1:0] array_b_3_input;
 	logic [inputBits-1:0] array_c_3_input;
@@ -110,14 +86,8 @@ module top //32x32
 	//line4
 	logic validInputs_4;
 	logic [addressWidth-1:0] abcdReadAddress_4;
-	logic [inputBits-1:0] mem_a_4_writeData;
-	logic [inputBits-1:0] mem_a_4_readData;
-	logic [inputBits-1:0] mem_b_4_writeData;
-	logic [inputBits-1:0] mem_b_4_readData;
-	logic [inputBits-1:0] mem_c_4_writeData;
-	logic [inputBits-1:0] mem_c_4_readData;
-	logic [inputBits-1:0] mem_d_4_writeData;
-	logic [inputBits-1:0] mem_d_4_readData;
+	logic [4*inputBits-1:0] mem_abcd_4_writeData;
+	logic [4*inputBits-1:0] mem_abcd_4_readData;
 	logic [inputBits-1:0] array_a_4_input;
 	logic [inputBits-1:0] array_b_4_input;
 	logic [inputBits-1:0] array_c_4_input;
@@ -125,14 +95,8 @@ module top //32x32
 	//line5
 	logic validInputs_5;
 	logic [addressWidth-1:0] abcdReadAddress_5;
-	logic [inputBits-1:0] mem_a_5_writeData;
-	logic [inputBits-1:0] mem_a_5_readData;
-	logic [inputBits-1:0] mem_b_5_writeData;
-	logic [inputBits-1:0] mem_b_5_readData;
-	logic [inputBits-1:0] mem_c_5_writeData;
-	logic [inputBits-1:0] mem_c_5_readData;
-	logic [inputBits-1:0] mem_d_5_writeData;
-	logic [inputBits-1:0] mem_d_5_readData;
+	logic [4*inputBits-1:0] mem_abcd_5_writeData;
+	logic [4*inputBits-1:0] mem_abcd_5_readData;
 	logic [inputBits-1:0] array_a_5_input;
 	logic [inputBits-1:0] array_b_5_input;
 	logic [inputBits-1:0] array_c_5_input;
@@ -140,14 +104,8 @@ module top //32x32
 	//line6
 	logic validInputs_6;
 	logic [addressWidth-1:0] abcdReadAddress_6;
-	logic [inputBits-1:0] mem_a_6_writeData;
-	logic [inputBits-1:0] mem_a_6_readData;
-	logic [inputBits-1:0] mem_b_6_writeData;
-	logic [inputBits-1:0] mem_b_6_readData;
-	logic [inputBits-1:0] mem_c_6_writeData;
-	logic [inputBits-1:0] mem_c_6_readData;
-	logic [inputBits-1:0] mem_d_6_writeData;
-	logic [inputBits-1:0] mem_d_6_readData;
+	logic [4*inputBits-1:0] mem_abcd_6_writeData;
+	logic [4*inputBits-1:0] mem_abcd_6_readData;
 	logic [inputBits-1:0] array_a_6_input;
 	logic [inputBits-1:0] array_b_6_input;
 	logic [inputBits-1:0] array_c_6_input;
@@ -155,14 +113,8 @@ module top //32x32
 	//line7
 	logic validInputs_7;
 	logic [addressWidth-1:0] abcdReadAddress_7;
-	logic [inputBits-1:0] mem_a_7_writeData;
-	logic [inputBits-1:0] mem_a_7_readData;
-	logic [inputBits-1:0] mem_b_7_writeData;
-	logic [inputBits-1:0] mem_b_7_readData;
-	logic [inputBits-1:0] mem_c_7_writeData;
-	logic [inputBits-1:0] mem_c_7_readData;
-	logic [inputBits-1:0] mem_d_7_writeData;
-	logic [inputBits-1:0] mem_d_7_readData;
+	logic [4*inputBits-1:0] mem_abcd_7_writeData;
+	logic [4*inputBits-1:0] mem_abcd_7_readData;
 	logic [inputBits-1:0] array_a_7_input;
 	logic [inputBits-1:0] array_b_7_input;
 	logic [inputBits-1:0] array_c_7_input;
@@ -170,14 +122,8 @@ module top //32x32
 	//line8
 	logic validInputs_8;
 	logic [addressWidth-1:0] abcdReadAddress_8;
-	logic [inputBits-1:0] mem_a_8_writeData;
-	logic [inputBits-1:0] mem_a_8_readData;
-	logic [inputBits-1:0] mem_b_8_writeData;
-	logic [inputBits-1:0] mem_b_8_readData;
-	logic [inputBits-1:0] mem_c_8_writeData;
-	logic [inputBits-1:0] mem_c_8_readData;
-	logic [inputBits-1:0] mem_d_8_writeData;
-	logic [inputBits-1:0] mem_d_8_readData;
+	logic [4*inputBits-1:0] mem_abcd_8_writeData;
+	logic [4*inputBits-1:0] mem_abcd_8_readData;
 	logic [inputBits-1:0] array_a_8_input;
 	logic [inputBits-1:0] array_b_8_input;
 	logic [inputBits-1:0] array_c_8_input;
@@ -185,14 +131,8 @@ module top //32x32
 	//line9
 	logic validInputs_9;
 	logic [addressWidth-1:0] abcdReadAddress_9;
-	logic [inputBits-1:0] mem_a_9_writeData;
-	logic [inputBits-1:0] mem_a_9_readData;
-	logic [inputBits-1:0] mem_b_9_writeData;
-	logic [inputBits-1:0] mem_b_9_readData;
-	logic [inputBits-1:0] mem_c_9_writeData;
-	logic [inputBits-1:0] mem_c_9_readData;
-	logic [inputBits-1:0] mem_d_9_writeData;
-	logic [inputBits-1:0] mem_d_9_readData;
+	logic [4*inputBits-1:0] mem_abcd_9_writeData;
+	logic [4*inputBits-1:0] mem_abcd_9_readData;
 	logic [inputBits-1:0] array_a_9_input;
 	logic [inputBits-1:0] array_b_9_input;
 	logic [inputBits-1:0] array_c_9_input;
@@ -200,14 +140,8 @@ module top //32x32
 	//line10
 	logic validInputs_10;
 	logic [addressWidth-1:0] abcdReadAddress_10;
-	logic [inputBits-1:0] mem_a_10_writeData;
-	logic [inputBits-1:0] mem_a_10_readData;
-	logic [inputBits-1:0] mem_b_10_writeData;
-	logic [inputBits-1:0] mem_b_10_readData;
-	logic [inputBits-1:0] mem_c_10_writeData;
-	logic [inputBits-1:0] mem_c_10_readData;
-	logic [inputBits-1:0] mem_d_10_writeData;
-	logic [inputBits-1:0] mem_d_10_readData;
+	logic [4*inputBits-1:0] mem_abcd_10_writeData;
+	logic [4*inputBits-1:0] mem_abcd_10_readData;
 	logic [inputBits-1:0] array_a_10_input;
 	logic [inputBits-1:0] array_b_10_input;
 	logic [inputBits-1:0] array_c_10_input;
@@ -215,14 +149,8 @@ module top //32x32
 	//line11
 	logic validInputs_11;
 	logic [addressWidth-1:0] abcdReadAddress_11;
-	logic [inputBits-1:0] mem_a_11_writeData;
-	logic [inputBits-1:0] mem_a_11_readData;
-	logic [inputBits-1:0] mem_b_11_writeData;
-	logic [inputBits-1:0] mem_b_11_readData;
-	logic [inputBits-1:0] mem_c_11_writeData;
-	logic [inputBits-1:0] mem_c_11_readData;
-	logic [inputBits-1:0] mem_d_11_writeData;
-	logic [inputBits-1:0] mem_d_11_readData;
+	logic [4*inputBits-1:0] mem_abcd_11_writeData;
+	logic [4*inputBits-1:0] mem_abcd_11_readData;
 	logic [inputBits-1:0] array_a_11_input;
 	logic [inputBits-1:0] array_b_11_input;
 	logic [inputBits-1:0] array_c_11_input;
@@ -230,14 +158,8 @@ module top //32x32
 	//line12
 	logic validInputs_12;
 	logic [addressWidth-1:0] abcdReadAddress_12;
-	logic [inputBits-1:0] mem_a_12_writeData;
-	logic [inputBits-1:0] mem_a_12_readData;
-	logic [inputBits-1:0] mem_b_12_writeData;
-	logic [inputBits-1:0] mem_b_12_readData;
-	logic [inputBits-1:0] mem_c_12_writeData;
-	logic [inputBits-1:0] mem_c_12_readData;
-	logic [inputBits-1:0] mem_d_12_writeData;
-	logic [inputBits-1:0] mem_d_12_readData;
+	logic [4*inputBits-1:0] mem_abcd_12_writeData;
+	logic [4*inputBits-1:0] mem_abcd_12_readData;
 	logic [inputBits-1:0] array_a_12_input;
 	logic [inputBits-1:0] array_b_12_input;
 	logic [inputBits-1:0] array_c_12_input;
@@ -245,14 +167,8 @@ module top //32x32
 	//line13
 	logic validInputs_13;
 	logic [addressWidth-1:0] abcdReadAddress_13;
-	logic [inputBits-1:0] mem_a_13_writeData;
-	logic [inputBits-1:0] mem_a_13_readData;
-	logic [inputBits-1:0] mem_b_13_writeData;
-	logic [inputBits-1:0] mem_b_13_readData;
-	logic [inputBits-1:0] mem_c_13_writeData;
-	logic [inputBits-1:0] mem_c_13_readData;
-	logic [inputBits-1:0] mem_d_13_writeData;
-	logic [inputBits-1:0] mem_d_13_readData;
+	logic [4*inputBits-1:0] mem_abcd_13_writeData;
+	logic [4*inputBits-1:0] mem_abcd_13_readData;
 	logic [inputBits-1:0] array_a_13_input;
 	logic [inputBits-1:0] array_b_13_input;
 	logic [inputBits-1:0] array_c_13_input;
@@ -260,14 +176,8 @@ module top //32x32
 	//line14
 	logic validInputs_14;
 	logic [addressWidth-1:0] abcdReadAddress_14;
-	logic [inputBits-1:0] mem_a_14_writeData;
-	logic [inputBits-1:0] mem_a_14_readData;
-	logic [inputBits-1:0] mem_b_14_writeData;
-	logic [inputBits-1:0] mem_b_14_readData;
-	logic [inputBits-1:0] mem_c_14_writeData;
-	logic [inputBits-1:0] mem_c_14_readData;
-	logic [inputBits-1:0] mem_d_14_writeData;
-	logic [inputBits-1:0] mem_d_14_readData;
+	logic [4*inputBits-1:0] mem_abcd_14_writeData;
+	logic [4*inputBits-1:0] mem_abcd_14_readData;
 	logic [inputBits-1:0] array_a_14_input;
 	logic [inputBits-1:0] array_b_14_input;
 	logic [inputBits-1:0] array_c_14_input;
@@ -275,14 +185,8 @@ module top //32x32
 	//line15
 	logic validInputs_15;
 	logic [addressWidth-1:0] abcdReadAddress_15;
-	logic [inputBits-1:0] mem_a_15_writeData;
-	logic [inputBits-1:0] mem_a_15_readData;
-	logic [inputBits-1:0] mem_b_15_writeData;
-	logic [inputBits-1:0] mem_b_15_readData;
-	logic [inputBits-1:0] mem_c_15_writeData;
-	logic [inputBits-1:0] mem_c_15_readData;
-	logic [inputBits-1:0] mem_d_15_writeData;
-	logic [inputBits-1:0] mem_d_15_readData;
+	logic [4*inputBits-1:0] mem_abcd_15_writeData;
+	logic [4*inputBits-1:0] mem_abcd_15_readData;
 	logic [inputBits-1:0] array_a_15_input;
 	logic [inputBits-1:0] array_b_15_input;
 	logic [inputBits-1:0] array_c_15_input;
@@ -290,14 +194,8 @@ module top //32x32
 	//line16
 	logic validInputs_16;
 	logic [addressWidth-1:0] abcdReadAddress_16;
-	logic [inputBits-1:0] mem_a_16_writeData;
-	logic [inputBits-1:0] mem_a_16_readData;
-	logic [inputBits-1:0] mem_b_16_writeData;
-	logic [inputBits-1:0] mem_b_16_readData;
-	logic [inputBits-1:0] mem_c_16_writeData;
-	logic [inputBits-1:0] mem_c_16_readData;
-	logic [inputBits-1:0] mem_d_16_writeData;
-	logic [inputBits-1:0] mem_d_16_readData;
+	logic [4*inputBits-1:0] mem_abcd_16_writeData;
+	logic [4*inputBits-1:0] mem_abcd_16_readData;
 	logic [inputBits-1:0] array_a_16_input;
 	logic [inputBits-1:0] array_b_16_input;
 	logic [inputBits-1:0] array_c_16_input;
@@ -305,14 +203,8 @@ module top //32x32
 	//line17
 	logic validInputs_17;
 	logic [addressWidth-1:0] abcdReadAddress_17;
-	logic [inputBits-1:0] mem_a_17_writeData;
-	logic [inputBits-1:0] mem_a_17_readData;
-	logic [inputBits-1:0] mem_b_17_writeData;
-	logic [inputBits-1:0] mem_b_17_readData;
-	logic [inputBits-1:0] mem_c_17_writeData;
-	logic [inputBits-1:0] mem_c_17_readData;
-	logic [inputBits-1:0] mem_d_17_writeData;
-	logic [inputBits-1:0] mem_d_17_readData;
+	logic [4*inputBits-1:0] mem_abcd_17_writeData;
+	logic [4*inputBits-1:0] mem_abcd_17_readData;
 	logic [inputBits-1:0] array_a_17_input;
 	logic [inputBits-1:0] array_b_17_input;
 	logic [inputBits-1:0] array_c_17_input;
@@ -320,14 +212,8 @@ module top //32x32
 	//line18
 	logic validInputs_18;
 	logic [addressWidth-1:0] abcdReadAddress_18;
-	logic [inputBits-1:0] mem_a_18_writeData;
-	logic [inputBits-1:0] mem_a_18_readData;
-	logic [inputBits-1:0] mem_b_18_writeData;
-	logic [inputBits-1:0] mem_b_18_readData;
-	logic [inputBits-1:0] mem_c_18_writeData;
-	logic [inputBits-1:0] mem_c_18_readData;
-	logic [inputBits-1:0] mem_d_18_writeData;
-	logic [inputBits-1:0] mem_d_18_readData;
+	logic [4*inputBits-1:0] mem_abcd_18_writeData;
+	logic [4*inputBits-1:0] mem_abcd_18_readData;
 	logic [inputBits-1:0] array_a_18_input;
 	logic [inputBits-1:0] array_b_18_input;
 	logic [inputBits-1:0] array_c_18_input;
@@ -335,14 +221,8 @@ module top //32x32
 	//line19
 	logic validInputs_19;
 	logic [addressWidth-1:0] abcdReadAddress_19;
-	logic [inputBits-1:0] mem_a_19_writeData;
-	logic [inputBits-1:0] mem_a_19_readData;
-	logic [inputBits-1:0] mem_b_19_writeData;
-	logic [inputBits-1:0] mem_b_19_readData;
-	logic [inputBits-1:0] mem_c_19_writeData;
-	logic [inputBits-1:0] mem_c_19_readData;
-	logic [inputBits-1:0] mem_d_19_writeData;
-	logic [inputBits-1:0] mem_d_19_readData;
+	logic [4*inputBits-1:0] mem_abcd_19_writeData;
+	logic [4*inputBits-1:0] mem_abcd_19_readData;
 	logic [inputBits-1:0] array_a_19_input;
 	logic [inputBits-1:0] array_b_19_input;
 	logic [inputBits-1:0] array_c_19_input;
@@ -350,14 +230,8 @@ module top //32x32
 	//line20
 	logic validInputs_20;
 	logic [addressWidth-1:0] abcdReadAddress_20;
-	logic [inputBits-1:0] mem_a_20_writeData;
-	logic [inputBits-1:0] mem_a_20_readData;
-	logic [inputBits-1:0] mem_b_20_writeData;
-	logic [inputBits-1:0] mem_b_20_readData;
-	logic [inputBits-1:0] mem_c_20_writeData;
-	logic [inputBits-1:0] mem_c_20_readData;
-	logic [inputBits-1:0] mem_d_20_writeData;
-	logic [inputBits-1:0] mem_d_20_readData;
+	logic [4*inputBits-1:0] mem_abcd_20_writeData;
+	logic [4*inputBits-1:0] mem_abcd_20_readData;
 	logic [inputBits-1:0] array_a_20_input;
 	logic [inputBits-1:0] array_b_20_input;
 	logic [inputBits-1:0] array_c_20_input;
@@ -365,14 +239,8 @@ module top //32x32
 	//line21
 	logic validInputs_21;
 	logic [addressWidth-1:0] abcdReadAddress_21;
-	logic [inputBits-1:0] mem_a_21_writeData;
-	logic [inputBits-1:0] mem_a_21_readData;
-	logic [inputBits-1:0] mem_b_21_writeData;
-	logic [inputBits-1:0] mem_b_21_readData;
-	logic [inputBits-1:0] mem_c_21_writeData;
-	logic [inputBits-1:0] mem_c_21_readData;
-	logic [inputBits-1:0] mem_d_21_writeData;
-	logic [inputBits-1:0] mem_d_21_readData;
+	logic [4*inputBits-1:0] mem_abcd_21_writeData;
+	logic [4*inputBits-1:0] mem_abcd_21_readData;
 	logic [inputBits-1:0] array_a_21_input;
 	logic [inputBits-1:0] array_b_21_input;
 	logic [inputBits-1:0] array_c_21_input;
@@ -380,14 +248,8 @@ module top //32x32
 	//line22
 	logic validInputs_22;
 	logic [addressWidth-1:0] abcdReadAddress_22;
-	logic [inputBits-1:0] mem_a_22_writeData;
-	logic [inputBits-1:0] mem_a_22_readData;
-	logic [inputBits-1:0] mem_b_22_writeData;
-	logic [inputBits-1:0] mem_b_22_readData;
-	logic [inputBits-1:0] mem_c_22_writeData;
-	logic [inputBits-1:0] mem_c_22_readData;
-	logic [inputBits-1:0] mem_d_22_writeData;
-	logic [inputBits-1:0] mem_d_22_readData;
+	logic [4*inputBits-1:0] mem_abcd_22_writeData;
+	logic [4*inputBits-1:0] mem_abcd_22_readData;
 	logic [inputBits-1:0] array_a_22_input;
 	logic [inputBits-1:0] array_b_22_input;
 	logic [inputBits-1:0] array_c_22_input;
@@ -395,14 +257,8 @@ module top //32x32
 	//line23
 	logic validInputs_23;
 	logic [addressWidth-1:0] abcdReadAddress_23;
-	logic [inputBits-1:0] mem_a_23_writeData;
-	logic [inputBits-1:0] mem_a_23_readData;
-	logic [inputBits-1:0] mem_b_23_writeData;
-	logic [inputBits-1:0] mem_b_23_readData;
-	logic [inputBits-1:0] mem_c_23_writeData;
-	logic [inputBits-1:0] mem_c_23_readData;
-	logic [inputBits-1:0] mem_d_23_writeData;
-	logic [inputBits-1:0] mem_d_23_readData;
+	logic [4*inputBits-1:0] mem_abcd_23_writeData;
+	logic [4*inputBits-1:0] mem_abcd_23_readData;
 	logic [inputBits-1:0] array_a_23_input;
 	logic [inputBits-1:0] array_b_23_input;
 	logic [inputBits-1:0] array_c_23_input;
@@ -410,14 +266,8 @@ module top //32x32
 	//line24
 	logic validInputs_24;
 	logic [addressWidth-1:0] abcdReadAddress_24;
-	logic [inputBits-1:0] mem_a_24_writeData;
-	logic [inputBits-1:0] mem_a_24_readData;
-	logic [inputBits-1:0] mem_b_24_writeData;
-	logic [inputBits-1:0] mem_b_24_readData;
-	logic [inputBits-1:0] mem_c_24_writeData;
-	logic [inputBits-1:0] mem_c_24_readData;
-	logic [inputBits-1:0] mem_d_24_writeData;
-	logic [inputBits-1:0] mem_d_24_readData;
+	logic [4*inputBits-1:0] mem_abcd_24_writeData;
+	logic [4*inputBits-1:0] mem_abcd_24_readData;
 	logic [inputBits-1:0] array_a_24_input;
 	logic [inputBits-1:0] array_b_24_input;
 	logic [inputBits-1:0] array_c_24_input;
@@ -425,14 +275,8 @@ module top //32x32
 	//line25
 	logic validInputs_25;
 	logic [addressWidth-1:0] abcdReadAddress_25;
-	logic [inputBits-1:0] mem_a_25_writeData;
-	logic [inputBits-1:0] mem_a_25_readData;
-	logic [inputBits-1:0] mem_b_25_writeData;
-	logic [inputBits-1:0] mem_b_25_readData;
-	logic [inputBits-1:0] mem_c_25_writeData;
-	logic [inputBits-1:0] mem_c_25_readData;
-	logic [inputBits-1:0] mem_d_25_writeData;
-	logic [inputBits-1:0] mem_d_25_readData;
+	logic [4*inputBits-1:0] mem_abcd_25_writeData;
+	logic [4*inputBits-1:0] mem_abcd_25_readData;
 	logic [inputBits-1:0] array_a_25_input;
 	logic [inputBits-1:0] array_b_25_input;
 	logic [inputBits-1:0] array_c_25_input;
@@ -440,14 +284,8 @@ module top //32x32
 	//line26
 	logic validInputs_26;
 	logic [addressWidth-1:0] abcdReadAddress_26;
-	logic [inputBits-1:0] mem_a_26_writeData;
-	logic [inputBits-1:0] mem_a_26_readData;
-	logic [inputBits-1:0] mem_b_26_writeData;
-	logic [inputBits-1:0] mem_b_26_readData;
-	logic [inputBits-1:0] mem_c_26_writeData;
-	logic [inputBits-1:0] mem_c_26_readData;
-	logic [inputBits-1:0] mem_d_26_writeData;
-	logic [inputBits-1:0] mem_d_26_readData;
+	logic [4*inputBits-1:0] mem_abcd_26_writeData;
+	logic [4*inputBits-1:0] mem_abcd_26_readData;
 	logic [inputBits-1:0] array_a_26_input;
 	logic [inputBits-1:0] array_b_26_input;
 	logic [inputBits-1:0] array_c_26_input;
@@ -455,14 +293,8 @@ module top //32x32
 	//line27
 	logic validInputs_27;
 	logic [addressWidth-1:0] abcdReadAddress_27;
-	logic [inputBits-1:0] mem_a_27_writeData;
-	logic [inputBits-1:0] mem_a_27_readData;
-	logic [inputBits-1:0] mem_b_27_writeData;
-	logic [inputBits-1:0] mem_b_27_readData;
-	logic [inputBits-1:0] mem_c_27_writeData;
-	logic [inputBits-1:0] mem_c_27_readData;
-	logic [inputBits-1:0] mem_d_27_writeData;
-	logic [inputBits-1:0] mem_d_27_readData;
+	logic [4*inputBits-1:0] mem_abcd_27_writeData;
+	logic [4*inputBits-1:0] mem_abcd_27_readData;
 	logic [inputBits-1:0] array_a_27_input;
 	logic [inputBits-1:0] array_b_27_input;
 	logic [inputBits-1:0] array_c_27_input;
@@ -470,14 +302,8 @@ module top //32x32
 	//line28
 	logic validInputs_28;
 	logic [addressWidth-1:0] abcdReadAddress_28;
-	logic [inputBits-1:0] mem_a_28_writeData;
-	logic [inputBits-1:0] mem_a_28_readData;
-	logic [inputBits-1:0] mem_b_28_writeData;
-	logic [inputBits-1:0] mem_b_28_readData;
-	logic [inputBits-1:0] mem_c_28_writeData;
-	logic [inputBits-1:0] mem_c_28_readData;
-	logic [inputBits-1:0] mem_d_28_writeData;
-	logic [inputBits-1:0] mem_d_28_readData;
+	logic [4*inputBits-1:0] mem_abcd_28_writeData;
+	logic [4*inputBits-1:0] mem_abcd_28_readData;
 	logic [inputBits-1:0] array_a_28_input;
 	logic [inputBits-1:0] array_b_28_input;
 	logic [inputBits-1:0] array_c_28_input;
@@ -485,14 +311,8 @@ module top //32x32
 	//line29
 	logic validInputs_29;
 	logic [addressWidth-1:0] abcdReadAddress_29;
-	logic [inputBits-1:0] mem_a_29_writeData;
-	logic [inputBits-1:0] mem_a_29_readData;
-	logic [inputBits-1:0] mem_b_29_writeData;
-	logic [inputBits-1:0] mem_b_29_readData;
-	logic [inputBits-1:0] mem_c_29_writeData;
-	logic [inputBits-1:0] mem_c_29_readData;
-	logic [inputBits-1:0] mem_d_29_writeData;
-	logic [inputBits-1:0] mem_d_29_readData;
+	logic [4*inputBits-1:0] mem_abcd_29_writeData;
+	logic [4*inputBits-1:0] mem_abcd_29_readData;
 	logic [inputBits-1:0] array_a_29_input;
 	logic [inputBits-1:0] array_b_29_input;
 	logic [inputBits-1:0] array_c_29_input;
@@ -500,14 +320,8 @@ module top //32x32
 	//line30
 	logic validInputs_30;
 	logic [addressWidth-1:0] abcdReadAddress_30;
-	logic [inputBits-1:0] mem_a_30_writeData;
-	logic [inputBits-1:0] mem_a_30_readData;
-	logic [inputBits-1:0] mem_b_30_writeData;
-	logic [inputBits-1:0] mem_b_30_readData;
-	logic [inputBits-1:0] mem_c_30_writeData;
-	logic [inputBits-1:0] mem_c_30_readData;
-	logic [inputBits-1:0] mem_d_30_writeData;
-	logic [inputBits-1:0] mem_d_30_readData;
+	logic [4*inputBits-1:0] mem_abcd_30_writeData;
+	logic [4*inputBits-1:0] mem_abcd_30_readData;
 	logic [inputBits-1:0] array_a_30_input;
 	logic [inputBits-1:0] array_b_30_input;
 	logic [inputBits-1:0] array_c_30_input;
@@ -515,19 +329,13 @@ module top //32x32
 	//line31
 	logic validInputs_31;
 	logic [addressWidth-1:0] abcdReadAddress_31;
-	logic [inputBits-1:0] mem_a_31_writeData;
-	logic [inputBits-1:0] mem_a_31_readData;
-	logic [inputBits-1:0] mem_b_31_writeData;
-	logic [inputBits-1:0] mem_b_31_readData;
-	logic [inputBits-1:0] mem_c_31_writeData;
-	logic [inputBits-1:0] mem_c_31_readData;
-	logic [inputBits-1:0] mem_d_31_writeData;
-	logic [inputBits-1:0] mem_d_31_readData;
+	logic [4*inputBits-1:0] mem_abcd_31_writeData;
+	logic [4*inputBits-1:0] mem_abcd_31_readData;
 	logic [inputBits-1:0] array_a_31_input;
 	logic [inputBits-1:0] array_b_31_input;
 	logic [inputBits-1:0] array_c_31_input;
 	logic [inputBits-1:0] array_d_31_input;
-	//c
+	//e
 	//column0
 	logic [inputBits-1:0] mem_e_0_writeData;
 	logic [inputBits-1:0] mem_e_0_readData;
@@ -656,7 +464,7 @@ module top //32x32
 	logic [inputBits-1:0] mem_e_31_writeData;
 	logic [inputBits-1:0] mem_e_31_readData;
 	logic [inputBits-1:0] array_e_31_input;
-	//yz
+	//wxyz
 	//column0
 	logic [outputBits-1:0] array_w_0_output;
 	logic [outputBits-1:0] array_x_0_output;
@@ -1051,514 +859,418 @@ module top //32x32
 						 wxyzReadAddress_0);
 	//mem_abcd [write external, read by array]
 	//line 0
-	assign mem_a_0_writeData = S_AXIS_TDATA[1*inputBits-1:0*inputBits];
-	mem #(inputBits, arraySize) mem_a_0(clk, fillingInputMemories, abcdeWriteAddress, mem_a_0_writeData, abcdReadAddress_0, mem_a_0_readData);
-	assign array_a_0_input = (validInputs_0) ? mem_a_0_readData:{inputBits{1'b0}};
-	assign mem_b_0_writeData = S_AXIS_TDATA[33*inputBits-1:32*inputBits];
-	mem #(inputBits, arraySize) mem_b_0(clk, fillingInputMemories, abcdeWriteAddress, mem_b_0_writeData, abcdReadAddress_0, mem_b_0_readData);
-	assign array_b_0_input = (validInputs_0) ? mem_b_0_readData:{inputBits{1'b0}};
-	assign mem_c_0_writeData = S_AXIS_TDATA[65*inputBits-1:64*inputBits];
-	mem #(inputBits, arraySize) mem_c_0(clk, fillingInputMemories, abcdeWriteAddress, mem_c_0_writeData, abcdReadAddress_0, mem_c_0_readData);
-	assign array_c_0_input = (validInputs_0) ? mem_c_0_readData:{inputBits{1'b0}};
-	assign mem_d_0_writeData = S_AXIS_TDATA[97*inputBits-1:96*inputBits];
-	mem #(inputBits, arraySize) mem_d_0(clk, fillingInputMemories, abcdeWriteAddress, mem_d_0_writeData, abcdReadAddress_0, mem_d_0_readData);
-	assign array_d_0_input = (validInputs_0) ? mem_d_0_readData:{inputBits{1'b0}};
+	assign mem_abcd_0_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[1*inputBits-1:0*inputBits];
+	assign mem_abcd_0_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[33*inputBits-1:32*inputBits];
+	assign mem_abcd_0_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[65*inputBits-1:64*inputBits];
+	assign mem_abcd_0_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[97*inputBits-1:96*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_0(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_0_writeData, abcdReadAddress_0, mem_abcd_0_readData);
+	assign array_a_0_input = (validInputs_0) ? mem_abcd_0_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_0_input = (validInputs_0) ? mem_abcd_0_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_0_input = (validInputs_0) ? mem_abcd_0_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_0_input = (validInputs_0) ? mem_abcd_0_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 1
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_1(clk, rst, validInputs_0, validInputs_1);
 	dff #(addressWidth) dff_abcdReadAddress_1(clk, rst, abcdReadAddress_0, abcdReadAddress_1);
-	assign mem_a_1_writeData = S_AXIS_TDATA[2*inputBits-1:1*inputBits];
-	mem #(inputBits, arraySize) mem_a_1(clk, fillingInputMemories, abcdeWriteAddress, mem_a_1_writeData, abcdReadAddress_1, mem_a_1_readData);
-	assign array_a_1_input = (validInputs_1) ? mem_a_1_readData:{inputBits{1'b0}};
-	assign mem_b_1_writeData = S_AXIS_TDATA[34*inputBits-1:33*inputBits];
-	mem #(inputBits, arraySize) mem_b_1(clk, fillingInputMemories, abcdeWriteAddress, mem_b_1_writeData, abcdReadAddress_1, mem_b_1_readData);
-	assign array_b_1_input = (validInputs_1) ? mem_b_1_readData:{inputBits{1'b0}};
-	assign mem_c_1_writeData = S_AXIS_TDATA[66*inputBits-1:65*inputBits];
-	mem #(inputBits, arraySize) mem_c_1(clk, fillingInputMemories, abcdeWriteAddress, mem_c_1_writeData, abcdReadAddress_1, mem_c_1_readData);
-	assign array_c_1_input = (validInputs_1) ? mem_c_1_readData:{inputBits{1'b0}};
-	assign mem_d_1_writeData = S_AXIS_TDATA[98*inputBits-1:97*inputBits];
-	mem #(inputBits, arraySize) mem_d_1(clk, fillingInputMemories, abcdeWriteAddress, mem_d_1_writeData, abcdReadAddress_1, mem_d_1_readData);
-	assign array_d_1_input = (validInputs_1) ? mem_d_1_readData:{inputBits{1'b0}};
+	assign mem_abcd_1_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[2*inputBits-1:1*inputBits];
+	assign mem_abcd_1_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[34*inputBits-1:33*inputBits];
+	assign mem_abcd_1_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[66*inputBits-1:65*inputBits];
+	assign mem_abcd_1_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[98*inputBits-1:97*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_1(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_1_writeData, abcdReadAddress_1, mem_abcd_1_readData);
+	assign array_a_1_input = (validInputs_1) ? mem_abcd_1_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_1_input = (validInputs_1) ? mem_abcd_1_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_1_input = (validInputs_1) ? mem_abcd_1_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_1_input = (validInputs_1) ? mem_abcd_1_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 2
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_2(clk, rst, validInputs_1, validInputs_2);
 	dff #(addressWidth) dff_abcdReadAddress_2(clk, rst, abcdReadAddress_1, abcdReadAddress_2);
-	assign mem_a_2_writeData = S_AXIS_TDATA[3*inputBits-1:2*inputBits];
-	mem #(inputBits, arraySize) mem_a_2(clk, fillingInputMemories, abcdeWriteAddress, mem_a_2_writeData, abcdReadAddress_2, mem_a_2_readData);
-	assign array_a_2_input = (validInputs_2) ? mem_a_2_readData:{inputBits{1'b0}};
-	assign mem_b_2_writeData = S_AXIS_TDATA[35*inputBits-1:34*inputBits];
-	mem #(inputBits, arraySize) mem_b_2(clk, fillingInputMemories, abcdeWriteAddress, mem_b_2_writeData, abcdReadAddress_2, mem_b_2_readData);
-	assign array_b_2_input = (validInputs_2) ? mem_b_2_readData:{inputBits{1'b0}};
-	assign mem_c_2_writeData = S_AXIS_TDATA[67*inputBits-1:66*inputBits];
-	mem #(inputBits, arraySize) mem_c_2(clk, fillingInputMemories, abcdeWriteAddress, mem_c_2_writeData, abcdReadAddress_2, mem_c_2_readData);
-	assign array_c_2_input = (validInputs_2) ? mem_c_2_readData:{inputBits{1'b0}};
-	assign mem_d_2_writeData = S_AXIS_TDATA[99*inputBits-1:98*inputBits];
-	mem #(inputBits, arraySize) mem_d_2(clk, fillingInputMemories, abcdeWriteAddress, mem_d_2_writeData, abcdReadAddress_2, mem_d_2_readData);
-	assign array_d_2_input = (validInputs_2) ? mem_d_2_readData:{inputBits{1'b0}};
+	assign mem_abcd_2_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[3*inputBits-1:2*inputBits];
+	assign mem_abcd_2_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[35*inputBits-1:34*inputBits];
+	assign mem_abcd_2_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[67*inputBits-1:66*inputBits];
+	assign mem_abcd_2_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[99*inputBits-1:98*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_2(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_2_writeData, abcdReadAddress_2, mem_abcd_2_readData);
+	assign array_a_2_input = (validInputs_2) ? mem_abcd_2_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_2_input = (validInputs_2) ? mem_abcd_2_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_2_input = (validInputs_2) ? mem_abcd_2_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_2_input = (validInputs_2) ? mem_abcd_2_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 3
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_3(clk, rst, validInputs_2, validInputs_3);
 	dff #(addressWidth) dff_abcdReadAddress_3(clk, rst, abcdReadAddress_2, abcdReadAddress_3);
-	assign mem_a_3_writeData = S_AXIS_TDATA[4*inputBits-1:3*inputBits];
-	mem #(inputBits, arraySize) mem_a_3(clk, fillingInputMemories, abcdeWriteAddress, mem_a_3_writeData, abcdReadAddress_3, mem_a_3_readData);
-	assign array_a_3_input = (validInputs_3) ? mem_a_3_readData:{inputBits{1'b0}};
-	assign mem_b_3_writeData = S_AXIS_TDATA[36*inputBits-1:35*inputBits];
-	mem #(inputBits, arraySize) mem_b_3(clk, fillingInputMemories, abcdeWriteAddress, mem_b_3_writeData, abcdReadAddress_3, mem_b_3_readData);
-	assign array_b_3_input = (validInputs_3) ? mem_b_3_readData:{inputBits{1'b0}};
-	assign mem_c_3_writeData = S_AXIS_TDATA[68*inputBits-1:67*inputBits];
-	mem #(inputBits, arraySize) mem_c_3(clk, fillingInputMemories, abcdeWriteAddress, mem_c_3_writeData, abcdReadAddress_3, mem_c_3_readData);
-	assign array_c_3_input = (validInputs_3) ? mem_c_3_readData:{inputBits{1'b0}};
-	assign mem_d_3_writeData = S_AXIS_TDATA[100*inputBits-1:99*inputBits];
-	mem #(inputBits, arraySize) mem_d_3(clk, fillingInputMemories, abcdeWriteAddress, mem_d_3_writeData, abcdReadAddress_3, mem_d_3_readData);
-	assign array_d_3_input = (validInputs_3) ? mem_d_3_readData:{inputBits{1'b0}};
+	assign mem_abcd_3_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[4*inputBits-1:3*inputBits];
+	assign mem_abcd_3_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[36*inputBits-1:35*inputBits];
+	assign mem_abcd_3_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[68*inputBits-1:67*inputBits];
+	assign mem_abcd_3_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[100*inputBits-1:99*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_3(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_3_writeData, abcdReadAddress_3, mem_abcd_3_readData);
+	assign array_a_3_input = (validInputs_3) ? mem_abcd_3_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_3_input = (validInputs_3) ? mem_abcd_3_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_3_input = (validInputs_3) ? mem_abcd_3_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_3_input = (validInputs_3) ? mem_abcd_3_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 4
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_4(clk, rst, validInputs_3, validInputs_4);
 	dff #(addressWidth) dff_abcdReadAddress_4(clk, rst, abcdReadAddress_3, abcdReadAddress_4);
-	assign mem_a_4_writeData = S_AXIS_TDATA[5*inputBits-1:4*inputBits];
-	mem #(inputBits, arraySize) mem_a_4(clk, fillingInputMemories, abcdeWriteAddress, mem_a_4_writeData, abcdReadAddress_4, mem_a_4_readData);
-	assign array_a_4_input = (validInputs_4) ? mem_a_4_readData:{inputBits{1'b0}};
-	assign mem_b_4_writeData = S_AXIS_TDATA[37*inputBits-1:36*inputBits];
-	mem #(inputBits, arraySize) mem_b_4(clk, fillingInputMemories, abcdeWriteAddress, mem_b_4_writeData, abcdReadAddress_4, mem_b_4_readData);
-	assign array_b_4_input = (validInputs_4) ? mem_b_4_readData:{inputBits{1'b0}};
-	assign mem_c_4_writeData = S_AXIS_TDATA[69*inputBits-1:68*inputBits];
-	mem #(inputBits, arraySize) mem_c_4(clk, fillingInputMemories, abcdeWriteAddress, mem_c_4_writeData, abcdReadAddress_4, mem_c_4_readData);
-	assign array_c_4_input = (validInputs_4) ? mem_c_4_readData:{inputBits{1'b0}};
-	assign mem_d_4_writeData = S_AXIS_TDATA[101*inputBits-1:100*inputBits];
-	mem #(inputBits, arraySize) mem_d_4(clk, fillingInputMemories, abcdeWriteAddress, mem_d_4_writeData, abcdReadAddress_4, mem_d_4_readData);
-	assign array_d_4_input = (validInputs_4) ? mem_d_4_readData:{inputBits{1'b0}};
+	assign mem_abcd_4_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[5*inputBits-1:4*inputBits];
+	assign mem_abcd_4_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[37*inputBits-1:36*inputBits];
+	assign mem_abcd_4_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[69*inputBits-1:68*inputBits];
+	assign mem_abcd_4_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[101*inputBits-1:100*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_4(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_4_writeData, abcdReadAddress_4, mem_abcd_4_readData);
+	assign array_a_4_input = (validInputs_4) ? mem_abcd_4_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_4_input = (validInputs_4) ? mem_abcd_4_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_4_input = (validInputs_4) ? mem_abcd_4_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_4_input = (validInputs_4) ? mem_abcd_4_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 5
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_5(clk, rst, validInputs_4, validInputs_5);
 	dff #(addressWidth) dff_abcdReadAddress_5(clk, rst, abcdReadAddress_4, abcdReadAddress_5);
-	assign mem_a_5_writeData = S_AXIS_TDATA[6*inputBits-1:5*inputBits];
-	mem #(inputBits, arraySize) mem_a_5(clk, fillingInputMemories, abcdeWriteAddress, mem_a_5_writeData, abcdReadAddress_5, mem_a_5_readData);
-	assign array_a_5_input = (validInputs_5) ? mem_a_5_readData:{inputBits{1'b0}};
-	assign mem_b_5_writeData = S_AXIS_TDATA[38*inputBits-1:37*inputBits];
-	mem #(inputBits, arraySize) mem_b_5(clk, fillingInputMemories, abcdeWriteAddress, mem_b_5_writeData, abcdReadAddress_5, mem_b_5_readData);
-	assign array_b_5_input = (validInputs_5) ? mem_b_5_readData:{inputBits{1'b0}};
-	assign mem_c_5_writeData = S_AXIS_TDATA[70*inputBits-1:69*inputBits];
-	mem #(inputBits, arraySize) mem_c_5(clk, fillingInputMemories, abcdeWriteAddress, mem_c_5_writeData, abcdReadAddress_5, mem_c_5_readData);
-	assign array_c_5_input = (validInputs_5) ? mem_c_5_readData:{inputBits{1'b0}};
-	assign mem_d_5_writeData = S_AXIS_TDATA[102*inputBits-1:101*inputBits];
-	mem #(inputBits, arraySize) mem_d_5(clk, fillingInputMemories, abcdeWriteAddress, mem_d_5_writeData, abcdReadAddress_5, mem_d_5_readData);
-	assign array_d_5_input = (validInputs_5) ? mem_d_5_readData:{inputBits{1'b0}};
+	assign mem_abcd_5_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[6*inputBits-1:5*inputBits];
+	assign mem_abcd_5_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[38*inputBits-1:37*inputBits];
+	assign mem_abcd_5_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[70*inputBits-1:69*inputBits];
+	assign mem_abcd_5_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[102*inputBits-1:101*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_5(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_5_writeData, abcdReadAddress_5, mem_abcd_5_readData);
+	assign array_a_5_input = (validInputs_5) ? mem_abcd_5_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_5_input = (validInputs_5) ? mem_abcd_5_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_5_input = (validInputs_5) ? mem_abcd_5_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_5_input = (validInputs_5) ? mem_abcd_5_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 6
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_6(clk, rst, validInputs_5, validInputs_6);
 	dff #(addressWidth) dff_abcdReadAddress_6(clk, rst, abcdReadAddress_5, abcdReadAddress_6);
-	assign mem_a_6_writeData = S_AXIS_TDATA[7*inputBits-1:6*inputBits];
-	mem #(inputBits, arraySize) mem_a_6(clk, fillingInputMemories, abcdeWriteAddress, mem_a_6_writeData, abcdReadAddress_6, mem_a_6_readData);
-	assign array_a_6_input = (validInputs_6) ? mem_a_6_readData:{inputBits{1'b0}};
-	assign mem_b_6_writeData = S_AXIS_TDATA[39*inputBits-1:38*inputBits];
-	mem #(inputBits, arraySize) mem_b_6(clk, fillingInputMemories, abcdeWriteAddress, mem_b_6_writeData, abcdReadAddress_6, mem_b_6_readData);
-	assign array_b_6_input = (validInputs_6) ? mem_b_6_readData:{inputBits{1'b0}};
-	assign mem_c_6_writeData = S_AXIS_TDATA[71*inputBits-1:70*inputBits];
-	mem #(inputBits, arraySize) mem_c_6(clk, fillingInputMemories, abcdeWriteAddress, mem_c_6_writeData, abcdReadAddress_6, mem_c_6_readData);
-	assign array_c_6_input = (validInputs_6) ? mem_c_6_readData:{inputBits{1'b0}};
-	assign mem_d_6_writeData = S_AXIS_TDATA[103*inputBits-1:102*inputBits];
-	mem #(inputBits, arraySize) mem_d_6(clk, fillingInputMemories, abcdeWriteAddress, mem_d_6_writeData, abcdReadAddress_6, mem_d_6_readData);
-	assign array_d_6_input = (validInputs_6) ? mem_d_6_readData:{inputBits{1'b0}};
+	assign mem_abcd_6_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[7*inputBits-1:6*inputBits];
+	assign mem_abcd_6_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[39*inputBits-1:38*inputBits];
+	assign mem_abcd_6_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[71*inputBits-1:70*inputBits];
+	assign mem_abcd_6_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[103*inputBits-1:102*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_6(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_6_writeData, abcdReadAddress_6, mem_abcd_6_readData);
+	assign array_a_6_input = (validInputs_6) ? mem_abcd_6_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_6_input = (validInputs_6) ? mem_abcd_6_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_6_input = (validInputs_6) ? mem_abcd_6_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_6_input = (validInputs_6) ? mem_abcd_6_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 7
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_7(clk, rst, validInputs_6, validInputs_7);
 	dff #(addressWidth) dff_abcdReadAddress_7(clk, rst, abcdReadAddress_6, abcdReadAddress_7);
-	assign mem_a_7_writeData = S_AXIS_TDATA[8*inputBits-1:7*inputBits];
-	mem #(inputBits, arraySize) mem_a_7(clk, fillingInputMemories, abcdeWriteAddress, mem_a_7_writeData, abcdReadAddress_7, mem_a_7_readData);
-	assign array_a_7_input = (validInputs_7) ? mem_a_7_readData:{inputBits{1'b0}};
-	assign mem_b_7_writeData = S_AXIS_TDATA[40*inputBits-1:39*inputBits];
-	mem #(inputBits, arraySize) mem_b_7(clk, fillingInputMemories, abcdeWriteAddress, mem_b_7_writeData, abcdReadAddress_7, mem_b_7_readData);
-	assign array_b_7_input = (validInputs_7) ? mem_b_7_readData:{inputBits{1'b0}};
-	assign mem_c_7_writeData = S_AXIS_TDATA[72*inputBits-1:71*inputBits];
-	mem #(inputBits, arraySize) mem_c_7(clk, fillingInputMemories, abcdeWriteAddress, mem_c_7_writeData, abcdReadAddress_7, mem_c_7_readData);
-	assign array_c_7_input = (validInputs_7) ? mem_c_7_readData:{inputBits{1'b0}};
-	assign mem_d_7_writeData = S_AXIS_TDATA[104*inputBits-1:103*inputBits];
-	mem #(inputBits, arraySize) mem_d_7(clk, fillingInputMemories, abcdeWriteAddress, mem_d_7_writeData, abcdReadAddress_7, mem_d_7_readData);
-	assign array_d_7_input = (validInputs_7) ? mem_d_7_readData:{inputBits{1'b0}};
+	assign mem_abcd_7_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[8*inputBits-1:7*inputBits];
+	assign mem_abcd_7_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[40*inputBits-1:39*inputBits];
+	assign mem_abcd_7_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[72*inputBits-1:71*inputBits];
+	assign mem_abcd_7_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[104*inputBits-1:103*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_7(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_7_writeData, abcdReadAddress_7, mem_abcd_7_readData);
+	assign array_a_7_input = (validInputs_7) ? mem_abcd_7_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_7_input = (validInputs_7) ? mem_abcd_7_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_7_input = (validInputs_7) ? mem_abcd_7_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_7_input = (validInputs_7) ? mem_abcd_7_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 8
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_8(clk, rst, validInputs_7, validInputs_8);
 	dff #(addressWidth) dff_abcdReadAddress_8(clk, rst, abcdReadAddress_7, abcdReadAddress_8);
-	assign mem_a_8_writeData = S_AXIS_TDATA[9*inputBits-1:8*inputBits];
-	mem #(inputBits, arraySize) mem_a_8(clk, fillingInputMemories, abcdeWriteAddress, mem_a_8_writeData, abcdReadAddress_8, mem_a_8_readData);
-	assign array_a_8_input = (validInputs_8) ? mem_a_8_readData:{inputBits{1'b0}};
-	assign mem_b_8_writeData = S_AXIS_TDATA[41*inputBits-1:40*inputBits];
-	mem #(inputBits, arraySize) mem_b_8(clk, fillingInputMemories, abcdeWriteAddress, mem_b_8_writeData, abcdReadAddress_8, mem_b_8_readData);
-	assign array_b_8_input = (validInputs_8) ? mem_b_8_readData:{inputBits{1'b0}};
-	assign mem_c_8_writeData = S_AXIS_TDATA[73*inputBits-1:72*inputBits];
-	mem #(inputBits, arraySize) mem_c_8(clk, fillingInputMemories, abcdeWriteAddress, mem_c_8_writeData, abcdReadAddress_8, mem_c_8_readData);
-	assign array_c_8_input = (validInputs_8) ? mem_c_8_readData:{inputBits{1'b0}};
-	assign mem_d_8_writeData = S_AXIS_TDATA[105*inputBits-1:104*inputBits];
-	mem #(inputBits, arraySize) mem_d_8(clk, fillingInputMemories, abcdeWriteAddress, mem_d_8_writeData, abcdReadAddress_8, mem_d_8_readData);
-	assign array_d_8_input = (validInputs_8) ? mem_d_8_readData:{inputBits{1'b0}};
+	assign mem_abcd_8_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[9*inputBits-1:8*inputBits];
+	assign mem_abcd_8_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[41*inputBits-1:40*inputBits];
+	assign mem_abcd_8_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[73*inputBits-1:72*inputBits];
+	assign mem_abcd_8_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[105*inputBits-1:104*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_8(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_8_writeData, abcdReadAddress_8, mem_abcd_8_readData);
+	assign array_a_8_input = (validInputs_8) ? mem_abcd_8_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_8_input = (validInputs_8) ? mem_abcd_8_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_8_input = (validInputs_8) ? mem_abcd_8_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_8_input = (validInputs_8) ? mem_abcd_8_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 9
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_9(clk, rst, validInputs_8, validInputs_9);
 	dff #(addressWidth) dff_abcdReadAddress_9(clk, rst, abcdReadAddress_8, abcdReadAddress_9);
-	assign mem_a_9_writeData = S_AXIS_TDATA[10*inputBits-1:9*inputBits];
-	mem #(inputBits, arraySize) mem_a_9(clk, fillingInputMemories, abcdeWriteAddress, mem_a_9_writeData, abcdReadAddress_9, mem_a_9_readData);
-	assign array_a_9_input = (validInputs_9) ? mem_a_9_readData:{inputBits{1'b0}};
-	assign mem_b_9_writeData = S_AXIS_TDATA[42*inputBits-1:41*inputBits];
-	mem #(inputBits, arraySize) mem_b_9(clk, fillingInputMemories, abcdeWriteAddress, mem_b_9_writeData, abcdReadAddress_9, mem_b_9_readData);
-	assign array_b_9_input = (validInputs_9) ? mem_b_9_readData:{inputBits{1'b0}};
-	assign mem_c_9_writeData = S_AXIS_TDATA[74*inputBits-1:73*inputBits];
-	mem #(inputBits, arraySize) mem_c_9(clk, fillingInputMemories, abcdeWriteAddress, mem_c_9_writeData, abcdReadAddress_9, mem_c_9_readData);
-	assign array_c_9_input = (validInputs_9) ? mem_c_9_readData:{inputBits{1'b0}};
-	assign mem_d_9_writeData = S_AXIS_TDATA[106*inputBits-1:105*inputBits];
-	mem #(inputBits, arraySize) mem_d_9(clk, fillingInputMemories, abcdeWriteAddress, mem_d_9_writeData, abcdReadAddress_9, mem_d_9_readData);
-	assign array_d_9_input = (validInputs_9) ? mem_d_9_readData:{inputBits{1'b0}};
+	assign mem_abcd_9_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[10*inputBits-1:9*inputBits];
+	assign mem_abcd_9_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[42*inputBits-1:41*inputBits];
+	assign mem_abcd_9_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[74*inputBits-1:73*inputBits];
+	assign mem_abcd_9_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[106*inputBits-1:105*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_9(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_9_writeData, abcdReadAddress_9, mem_abcd_9_readData);
+	assign array_a_9_input = (validInputs_9) ? mem_abcd_9_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_9_input = (validInputs_9) ? mem_abcd_9_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_9_input = (validInputs_9) ? mem_abcd_9_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_9_input = (validInputs_9) ? mem_abcd_9_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 10
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_10(clk, rst, validInputs_9, validInputs_10);
 	dff #(addressWidth) dff_abcdReadAddress_10(clk, rst, abcdReadAddress_9, abcdReadAddress_10);
-	assign mem_a_10_writeData = S_AXIS_TDATA[11*inputBits-1:10*inputBits];
-	mem #(inputBits, arraySize) mem_a_10(clk, fillingInputMemories, abcdeWriteAddress, mem_a_10_writeData, abcdReadAddress_10, mem_a_10_readData);
-	assign array_a_10_input = (validInputs_10) ? mem_a_10_readData:{inputBits{1'b0}};
-	assign mem_b_10_writeData = S_AXIS_TDATA[43*inputBits-1:42*inputBits];
-	mem #(inputBits, arraySize) mem_b_10(clk, fillingInputMemories, abcdeWriteAddress, mem_b_10_writeData, abcdReadAddress_10, mem_b_10_readData);
-	assign array_b_10_input = (validInputs_10) ? mem_b_10_readData:{inputBits{1'b0}};
-	assign mem_c_10_writeData = S_AXIS_TDATA[75*inputBits-1:74*inputBits];
-	mem #(inputBits, arraySize) mem_c_10(clk, fillingInputMemories, abcdeWriteAddress, mem_c_10_writeData, abcdReadAddress_10, mem_c_10_readData);
-	assign array_c_10_input = (validInputs_10) ? mem_c_10_readData:{inputBits{1'b0}};
-	assign mem_d_10_writeData = S_AXIS_TDATA[107*inputBits-1:106*inputBits];
-	mem #(inputBits, arraySize) mem_d_10(clk, fillingInputMemories, abcdeWriteAddress, mem_d_10_writeData, abcdReadAddress_10, mem_d_10_readData);
-	assign array_d_10_input = (validInputs_10) ? mem_d_10_readData:{inputBits{1'b0}};
+	assign mem_abcd_10_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[11*inputBits-1:10*inputBits];
+	assign mem_abcd_10_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[43*inputBits-1:42*inputBits];
+	assign mem_abcd_10_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[75*inputBits-1:74*inputBits];
+	assign mem_abcd_10_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[107*inputBits-1:106*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_10(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_10_writeData, abcdReadAddress_10, mem_abcd_10_readData);
+	assign array_a_10_input = (validInputs_10) ? mem_abcd_10_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_10_input = (validInputs_10) ? mem_abcd_10_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_10_input = (validInputs_10) ? mem_abcd_10_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_10_input = (validInputs_10) ? mem_abcd_10_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 11
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_11(clk, rst, validInputs_10, validInputs_11);
 	dff #(addressWidth) dff_abcdReadAddress_11(clk, rst, abcdReadAddress_10, abcdReadAddress_11);
-	assign mem_a_11_writeData = S_AXIS_TDATA[12*inputBits-1:11*inputBits];
-	mem #(inputBits, arraySize) mem_a_11(clk, fillingInputMemories, abcdeWriteAddress, mem_a_11_writeData, abcdReadAddress_11, mem_a_11_readData);
-	assign array_a_11_input = (validInputs_11) ? mem_a_11_readData:{inputBits{1'b0}};
-	assign mem_b_11_writeData = S_AXIS_TDATA[44*inputBits-1:43*inputBits];
-	mem #(inputBits, arraySize) mem_b_11(clk, fillingInputMemories, abcdeWriteAddress, mem_b_11_writeData, abcdReadAddress_11, mem_b_11_readData);
-	assign array_b_11_input = (validInputs_11) ? mem_b_11_readData:{inputBits{1'b0}};
-	assign mem_c_11_writeData = S_AXIS_TDATA[76*inputBits-1:75*inputBits];
-	mem #(inputBits, arraySize) mem_c_11(clk, fillingInputMemories, abcdeWriteAddress, mem_c_11_writeData, abcdReadAddress_11, mem_c_11_readData);
-	assign array_c_11_input = (validInputs_11) ? mem_c_11_readData:{inputBits{1'b0}};
-	assign mem_d_11_writeData = S_AXIS_TDATA[108*inputBits-1:107*inputBits];
-	mem #(inputBits, arraySize) mem_d_11(clk, fillingInputMemories, abcdeWriteAddress, mem_d_11_writeData, abcdReadAddress_11, mem_d_11_readData);
-	assign array_d_11_input = (validInputs_11) ? mem_d_11_readData:{inputBits{1'b0}};
+	assign mem_abcd_11_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[12*inputBits-1:11*inputBits];
+	assign mem_abcd_11_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[44*inputBits-1:43*inputBits];
+	assign mem_abcd_11_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[76*inputBits-1:75*inputBits];
+	assign mem_abcd_11_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[108*inputBits-1:107*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_11(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_11_writeData, abcdReadAddress_11, mem_abcd_11_readData);
+	assign array_a_11_input = (validInputs_11) ? mem_abcd_11_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_11_input = (validInputs_11) ? mem_abcd_11_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_11_input = (validInputs_11) ? mem_abcd_11_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_11_input = (validInputs_11) ? mem_abcd_11_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 12
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_12(clk, rst, validInputs_11, validInputs_12);
 	dff #(addressWidth) dff_abcdReadAddress_12(clk, rst, abcdReadAddress_11, abcdReadAddress_12);
-	assign mem_a_12_writeData = S_AXIS_TDATA[13*inputBits-1:12*inputBits];
-	mem #(inputBits, arraySize) mem_a_12(clk, fillingInputMemories, abcdeWriteAddress, mem_a_12_writeData, abcdReadAddress_12, mem_a_12_readData);
-	assign array_a_12_input = (validInputs_12) ? mem_a_12_readData:{inputBits{1'b0}};
-	assign mem_b_12_writeData = S_AXIS_TDATA[45*inputBits-1:44*inputBits];
-	mem #(inputBits, arraySize) mem_b_12(clk, fillingInputMemories, abcdeWriteAddress, mem_b_12_writeData, abcdReadAddress_12, mem_b_12_readData);
-	assign array_b_12_input = (validInputs_12) ? mem_b_12_readData:{inputBits{1'b0}};
-	assign mem_c_12_writeData = S_AXIS_TDATA[77*inputBits-1:76*inputBits];
-	mem #(inputBits, arraySize) mem_c_12(clk, fillingInputMemories, abcdeWriteAddress, mem_c_12_writeData, abcdReadAddress_12, mem_c_12_readData);
-	assign array_c_12_input = (validInputs_12) ? mem_c_12_readData:{inputBits{1'b0}};
-	assign mem_d_12_writeData = S_AXIS_TDATA[109*inputBits-1:108*inputBits];
-	mem #(inputBits, arraySize) mem_d_12(clk, fillingInputMemories, abcdeWriteAddress, mem_d_12_writeData, abcdReadAddress_12, mem_d_12_readData);
-	assign array_d_12_input = (validInputs_12) ? mem_d_12_readData:{inputBits{1'b0}};
+	assign mem_abcd_12_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[13*inputBits-1:12*inputBits];
+	assign mem_abcd_12_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[45*inputBits-1:44*inputBits];
+	assign mem_abcd_12_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[77*inputBits-1:76*inputBits];
+	assign mem_abcd_12_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[109*inputBits-1:108*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_12(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_12_writeData, abcdReadAddress_12, mem_abcd_12_readData);
+	assign array_a_12_input = (validInputs_12) ? mem_abcd_12_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_12_input = (validInputs_12) ? mem_abcd_12_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_12_input = (validInputs_12) ? mem_abcd_12_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_12_input = (validInputs_12) ? mem_abcd_12_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 13
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_13(clk, rst, validInputs_12, validInputs_13);
 	dff #(addressWidth) dff_abcdReadAddress_13(clk, rst, abcdReadAddress_12, abcdReadAddress_13);
-	assign mem_a_13_writeData = S_AXIS_TDATA[14*inputBits-1:13*inputBits];
-	mem #(inputBits, arraySize) mem_a_13(clk, fillingInputMemories, abcdeWriteAddress, mem_a_13_writeData, abcdReadAddress_13, mem_a_13_readData);
-	assign array_a_13_input = (validInputs_13) ? mem_a_13_readData:{inputBits{1'b0}};
-	assign mem_b_13_writeData = S_AXIS_TDATA[46*inputBits-1:45*inputBits];
-	mem #(inputBits, arraySize) mem_b_13(clk, fillingInputMemories, abcdeWriteAddress, mem_b_13_writeData, abcdReadAddress_13, mem_b_13_readData);
-	assign array_b_13_input = (validInputs_13) ? mem_b_13_readData:{inputBits{1'b0}};
-	assign mem_c_13_writeData = S_AXIS_TDATA[78*inputBits-1:77*inputBits];
-	mem #(inputBits, arraySize) mem_c_13(clk, fillingInputMemories, abcdeWriteAddress, mem_c_13_writeData, abcdReadAddress_13, mem_c_13_readData);
-	assign array_c_13_input = (validInputs_13) ? mem_c_13_readData:{inputBits{1'b0}};
-	assign mem_d_13_writeData = S_AXIS_TDATA[110*inputBits-1:109*inputBits];
-	mem #(inputBits, arraySize) mem_d_13(clk, fillingInputMemories, abcdeWriteAddress, mem_d_13_writeData, abcdReadAddress_13, mem_d_13_readData);
-	assign array_d_13_input = (validInputs_13) ? mem_d_13_readData:{inputBits{1'b0}};
+	assign mem_abcd_13_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[14*inputBits-1:13*inputBits];
+	assign mem_abcd_13_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[46*inputBits-1:45*inputBits];
+	assign mem_abcd_13_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[78*inputBits-1:77*inputBits];
+	assign mem_abcd_13_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[110*inputBits-1:109*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_13(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_13_writeData, abcdReadAddress_13, mem_abcd_13_readData);
+	assign array_a_13_input = (validInputs_13) ? mem_abcd_13_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_13_input = (validInputs_13) ? mem_abcd_13_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_13_input = (validInputs_13) ? mem_abcd_13_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_13_input = (validInputs_13) ? mem_abcd_13_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 14
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_14(clk, rst, validInputs_13, validInputs_14);
 	dff #(addressWidth) dff_abcdReadAddress_14(clk, rst, abcdReadAddress_13, abcdReadAddress_14);
-	assign mem_a_14_writeData = S_AXIS_TDATA[15*inputBits-1:14*inputBits];
-	mem #(inputBits, arraySize) mem_a_14(clk, fillingInputMemories, abcdeWriteAddress, mem_a_14_writeData, abcdReadAddress_14, mem_a_14_readData);
-	assign array_a_14_input = (validInputs_14) ? mem_a_14_readData:{inputBits{1'b0}};
-	assign mem_b_14_writeData = S_AXIS_TDATA[47*inputBits-1:46*inputBits];
-	mem #(inputBits, arraySize) mem_b_14(clk, fillingInputMemories, abcdeWriteAddress, mem_b_14_writeData, abcdReadAddress_14, mem_b_14_readData);
-	assign array_b_14_input = (validInputs_14) ? mem_b_14_readData:{inputBits{1'b0}};
-	assign mem_c_14_writeData = S_AXIS_TDATA[79*inputBits-1:78*inputBits];
-	mem #(inputBits, arraySize) mem_c_14(clk, fillingInputMemories, abcdeWriteAddress, mem_c_14_writeData, abcdReadAddress_14, mem_c_14_readData);
-	assign array_c_14_input = (validInputs_14) ? mem_c_14_readData:{inputBits{1'b0}};
-	assign mem_d_14_writeData = S_AXIS_TDATA[111*inputBits-1:110*inputBits];
-	mem #(inputBits, arraySize) mem_d_14(clk, fillingInputMemories, abcdeWriteAddress, mem_d_14_writeData, abcdReadAddress_14, mem_d_14_readData);
-	assign array_d_14_input = (validInputs_14) ? mem_d_14_readData:{inputBits{1'b0}};
+	assign mem_abcd_14_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[15*inputBits-1:14*inputBits];
+	assign mem_abcd_14_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[47*inputBits-1:46*inputBits];
+	assign mem_abcd_14_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[79*inputBits-1:78*inputBits];
+	assign mem_abcd_14_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[111*inputBits-1:110*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_14(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_14_writeData, abcdReadAddress_14, mem_abcd_14_readData);
+	assign array_a_14_input = (validInputs_14) ? mem_abcd_14_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_14_input = (validInputs_14) ? mem_abcd_14_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_14_input = (validInputs_14) ? mem_abcd_14_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_14_input = (validInputs_14) ? mem_abcd_14_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 15
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_15(clk, rst, validInputs_14, validInputs_15);
 	dff #(addressWidth) dff_abcdReadAddress_15(clk, rst, abcdReadAddress_14, abcdReadAddress_15);
-	assign mem_a_15_writeData = S_AXIS_TDATA[16*inputBits-1:15*inputBits];
-	mem #(inputBits, arraySize) mem_a_15(clk, fillingInputMemories, abcdeWriteAddress, mem_a_15_writeData, abcdReadAddress_15, mem_a_15_readData);
-	assign array_a_15_input = (validInputs_15) ? mem_a_15_readData:{inputBits{1'b0}};
-	assign mem_b_15_writeData = S_AXIS_TDATA[48*inputBits-1:47*inputBits];
-	mem #(inputBits, arraySize) mem_b_15(clk, fillingInputMemories, abcdeWriteAddress, mem_b_15_writeData, abcdReadAddress_15, mem_b_15_readData);
-	assign array_b_15_input = (validInputs_15) ? mem_b_15_readData:{inputBits{1'b0}};
-	assign mem_c_15_writeData = S_AXIS_TDATA[80*inputBits-1:79*inputBits];
-	mem #(inputBits, arraySize) mem_c_15(clk, fillingInputMemories, abcdeWriteAddress, mem_c_15_writeData, abcdReadAddress_15, mem_c_15_readData);
-	assign array_c_15_input = (validInputs_15) ? mem_c_15_readData:{inputBits{1'b0}};
-	assign mem_d_15_writeData = S_AXIS_TDATA[112*inputBits-1:111*inputBits];
-	mem #(inputBits, arraySize) mem_d_15(clk, fillingInputMemories, abcdeWriteAddress, mem_d_15_writeData, abcdReadAddress_15, mem_d_15_readData);
-	assign array_d_15_input = (validInputs_15) ? mem_d_15_readData:{inputBits{1'b0}};
+	assign mem_abcd_15_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[16*inputBits-1:15*inputBits];
+	assign mem_abcd_15_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[48*inputBits-1:47*inputBits];
+	assign mem_abcd_15_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[80*inputBits-1:79*inputBits];
+	assign mem_abcd_15_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[112*inputBits-1:111*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_15(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_15_writeData, abcdReadAddress_15, mem_abcd_15_readData);
+	assign array_a_15_input = (validInputs_15) ? mem_abcd_15_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_15_input = (validInputs_15) ? mem_abcd_15_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_15_input = (validInputs_15) ? mem_abcd_15_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_15_input = (validInputs_15) ? mem_abcd_15_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 16
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_16(clk, rst, validInputs_15, validInputs_16);
 	dff #(addressWidth) dff_abcdReadAddress_16(clk, rst, abcdReadAddress_15, abcdReadAddress_16);
-	assign mem_a_16_writeData = S_AXIS_TDATA[17*inputBits-1:16*inputBits];
-	mem #(inputBits, arraySize) mem_a_16(clk, fillingInputMemories, abcdeWriteAddress, mem_a_16_writeData, abcdReadAddress_16, mem_a_16_readData);
-	assign array_a_16_input = (validInputs_16) ? mem_a_16_readData:{inputBits{1'b0}};
-	assign mem_b_16_writeData = S_AXIS_TDATA[49*inputBits-1:48*inputBits];
-	mem #(inputBits, arraySize) mem_b_16(clk, fillingInputMemories, abcdeWriteAddress, mem_b_16_writeData, abcdReadAddress_16, mem_b_16_readData);
-	assign array_b_16_input = (validInputs_16) ? mem_b_16_readData:{inputBits{1'b0}};
-	assign mem_c_16_writeData = S_AXIS_TDATA[81*inputBits-1:80*inputBits];
-	mem #(inputBits, arraySize) mem_c_16(clk, fillingInputMemories, abcdeWriteAddress, mem_c_16_writeData, abcdReadAddress_16, mem_c_16_readData);
-	assign array_c_16_input = (validInputs_16) ? mem_c_16_readData:{inputBits{1'b0}};
-	assign mem_d_16_writeData = S_AXIS_TDATA[113*inputBits-1:112*inputBits];
-	mem #(inputBits, arraySize) mem_d_16(clk, fillingInputMemories, abcdeWriteAddress, mem_d_16_writeData, abcdReadAddress_16, mem_d_16_readData);
-	assign array_d_16_input = (validInputs_16) ? mem_d_16_readData:{inputBits{1'b0}};
+	assign mem_abcd_16_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[17*inputBits-1:16*inputBits];
+	assign mem_abcd_16_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[49*inputBits-1:48*inputBits];
+	assign mem_abcd_16_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[81*inputBits-1:80*inputBits];
+	assign mem_abcd_16_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[113*inputBits-1:112*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_16(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_16_writeData, abcdReadAddress_16, mem_abcd_16_readData);
+	assign array_a_16_input = (validInputs_16) ? mem_abcd_16_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_16_input = (validInputs_16) ? mem_abcd_16_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_16_input = (validInputs_16) ? mem_abcd_16_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_16_input = (validInputs_16) ? mem_abcd_16_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 17
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_17(clk, rst, validInputs_16, validInputs_17);
 	dff #(addressWidth) dff_abcdReadAddress_17(clk, rst, abcdReadAddress_16, abcdReadAddress_17);
-	assign mem_a_17_writeData = S_AXIS_TDATA[18*inputBits-1:17*inputBits];
-	mem #(inputBits, arraySize) mem_a_17(clk, fillingInputMemories, abcdeWriteAddress, mem_a_17_writeData, abcdReadAddress_17, mem_a_17_readData);
-	assign array_a_17_input = (validInputs_17) ? mem_a_17_readData:{inputBits{1'b0}};
-	assign mem_b_17_writeData = S_AXIS_TDATA[50*inputBits-1:49*inputBits];
-	mem #(inputBits, arraySize) mem_b_17(clk, fillingInputMemories, abcdeWriteAddress, mem_b_17_writeData, abcdReadAddress_17, mem_b_17_readData);
-	assign array_b_17_input = (validInputs_17) ? mem_b_17_readData:{inputBits{1'b0}};
-	assign mem_c_17_writeData = S_AXIS_TDATA[82*inputBits-1:81*inputBits];
-	mem #(inputBits, arraySize) mem_c_17(clk, fillingInputMemories, abcdeWriteAddress, mem_c_17_writeData, abcdReadAddress_17, mem_c_17_readData);
-	assign array_c_17_input = (validInputs_17) ? mem_c_17_readData:{inputBits{1'b0}};
-	assign mem_d_17_writeData = S_AXIS_TDATA[114*inputBits-1:113*inputBits];
-	mem #(inputBits, arraySize) mem_d_17(clk, fillingInputMemories, abcdeWriteAddress, mem_d_17_writeData, abcdReadAddress_17, mem_d_17_readData);
-	assign array_d_17_input = (validInputs_17) ? mem_d_17_readData:{inputBits{1'b0}};
+	assign mem_abcd_17_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[18*inputBits-1:17*inputBits];
+	assign mem_abcd_17_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[50*inputBits-1:49*inputBits];
+	assign mem_abcd_17_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[82*inputBits-1:81*inputBits];
+	assign mem_abcd_17_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[114*inputBits-1:113*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_17(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_17_writeData, abcdReadAddress_17, mem_abcd_17_readData);
+	assign array_a_17_input = (validInputs_17) ? mem_abcd_17_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_17_input = (validInputs_17) ? mem_abcd_17_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_17_input = (validInputs_17) ? mem_abcd_17_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_17_input = (validInputs_17) ? mem_abcd_17_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 18
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_18(clk, rst, validInputs_17, validInputs_18);
 	dff #(addressWidth) dff_abcdReadAddress_18(clk, rst, abcdReadAddress_17, abcdReadAddress_18);
-	assign mem_a_18_writeData = S_AXIS_TDATA[19*inputBits-1:18*inputBits];
-	mem #(inputBits, arraySize) mem_a_18(clk, fillingInputMemories, abcdeWriteAddress, mem_a_18_writeData, abcdReadAddress_18, mem_a_18_readData);
-	assign array_a_18_input = (validInputs_18) ? mem_a_18_readData:{inputBits{1'b0}};
-	assign mem_b_18_writeData = S_AXIS_TDATA[51*inputBits-1:50*inputBits];
-	mem #(inputBits, arraySize) mem_b_18(clk, fillingInputMemories, abcdeWriteAddress, mem_b_18_writeData, abcdReadAddress_18, mem_b_18_readData);
-	assign array_b_18_input = (validInputs_18) ? mem_b_18_readData:{inputBits{1'b0}};
-	assign mem_c_18_writeData = S_AXIS_TDATA[83*inputBits-1:82*inputBits];
-	mem #(inputBits, arraySize) mem_c_18(clk, fillingInputMemories, abcdeWriteAddress, mem_c_18_writeData, abcdReadAddress_18, mem_c_18_readData);
-	assign array_c_18_input = (validInputs_18) ? mem_c_18_readData:{inputBits{1'b0}};
-	assign mem_d_18_writeData = S_AXIS_TDATA[115*inputBits-1:114*inputBits];
-	mem #(inputBits, arraySize) mem_d_18(clk, fillingInputMemories, abcdeWriteAddress, mem_d_18_writeData, abcdReadAddress_18, mem_d_18_readData);
-	assign array_d_18_input = (validInputs_18) ? mem_d_18_readData:{inputBits{1'b0}};
+	assign mem_abcd_18_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[19*inputBits-1:18*inputBits];
+	assign mem_abcd_18_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[51*inputBits-1:50*inputBits];
+	assign mem_abcd_18_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[83*inputBits-1:82*inputBits];
+	assign mem_abcd_18_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[115*inputBits-1:114*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_18(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_18_writeData, abcdReadAddress_18, mem_abcd_18_readData);
+	assign array_a_18_input = (validInputs_18) ? mem_abcd_18_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_18_input = (validInputs_18) ? mem_abcd_18_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_18_input = (validInputs_18) ? mem_abcd_18_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_18_input = (validInputs_18) ? mem_abcd_18_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 19
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_19(clk, rst, validInputs_18, validInputs_19);
 	dff #(addressWidth) dff_abcdReadAddress_19(clk, rst, abcdReadAddress_18, abcdReadAddress_19);
-	assign mem_a_19_writeData = S_AXIS_TDATA[20*inputBits-1:19*inputBits];
-	mem #(inputBits, arraySize) mem_a_19(clk, fillingInputMemories, abcdeWriteAddress, mem_a_19_writeData, abcdReadAddress_19, mem_a_19_readData);
-	assign array_a_19_input = (validInputs_19) ? mem_a_19_readData:{inputBits{1'b0}};
-	assign mem_b_19_writeData = S_AXIS_TDATA[52*inputBits-1:51*inputBits];
-	mem #(inputBits, arraySize) mem_b_19(clk, fillingInputMemories, abcdeWriteAddress, mem_b_19_writeData, abcdReadAddress_19, mem_b_19_readData);
-	assign array_b_19_input = (validInputs_19) ? mem_b_19_readData:{inputBits{1'b0}};
-	assign mem_c_19_writeData = S_AXIS_TDATA[84*inputBits-1:83*inputBits];
-	mem #(inputBits, arraySize) mem_c_19(clk, fillingInputMemories, abcdeWriteAddress, mem_c_19_writeData, abcdReadAddress_19, mem_c_19_readData);
-	assign array_c_19_input = (validInputs_19) ? mem_c_19_readData:{inputBits{1'b0}};
-	assign mem_d_19_writeData = S_AXIS_TDATA[116*inputBits-1:115*inputBits];
-	mem #(inputBits, arraySize) mem_d_19(clk, fillingInputMemories, abcdeWriteAddress, mem_d_19_writeData, abcdReadAddress_19, mem_d_19_readData);
-	assign array_d_19_input = (validInputs_19) ? mem_d_19_readData:{inputBits{1'b0}};
+	assign mem_abcd_19_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[20*inputBits-1:19*inputBits];
+	assign mem_abcd_19_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[52*inputBits-1:51*inputBits];
+	assign mem_abcd_19_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[84*inputBits-1:83*inputBits];
+	assign mem_abcd_19_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[116*inputBits-1:115*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_19(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_19_writeData, abcdReadAddress_19, mem_abcd_19_readData);
+	assign array_a_19_input = (validInputs_19) ? mem_abcd_19_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_19_input = (validInputs_19) ? mem_abcd_19_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_19_input = (validInputs_19) ? mem_abcd_19_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_19_input = (validInputs_19) ? mem_abcd_19_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 20
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_20(clk, rst, validInputs_19, validInputs_20);
 	dff #(addressWidth) dff_abcdReadAddress_20(clk, rst, abcdReadAddress_19, abcdReadAddress_20);
-	assign mem_a_20_writeData = S_AXIS_TDATA[21*inputBits-1:20*inputBits];
-	mem #(inputBits, arraySize) mem_a_20(clk, fillingInputMemories, abcdeWriteAddress, mem_a_20_writeData, abcdReadAddress_20, mem_a_20_readData);
-	assign array_a_20_input = (validInputs_20) ? mem_a_20_readData:{inputBits{1'b0}};
-	assign mem_b_20_writeData = S_AXIS_TDATA[53*inputBits-1:52*inputBits];
-	mem #(inputBits, arraySize) mem_b_20(clk, fillingInputMemories, abcdeWriteAddress, mem_b_20_writeData, abcdReadAddress_20, mem_b_20_readData);
-	assign array_b_20_input = (validInputs_20) ? mem_b_20_readData:{inputBits{1'b0}};
-	assign mem_c_20_writeData = S_AXIS_TDATA[85*inputBits-1:84*inputBits];
-	mem #(inputBits, arraySize) mem_c_20(clk, fillingInputMemories, abcdeWriteAddress, mem_c_20_writeData, abcdReadAddress_20, mem_c_20_readData);
-	assign array_c_20_input = (validInputs_20) ? mem_c_20_readData:{inputBits{1'b0}};
-	assign mem_d_20_writeData = S_AXIS_TDATA[117*inputBits-1:116*inputBits];
-	mem #(inputBits, arraySize) mem_d_20(clk, fillingInputMemories, abcdeWriteAddress, mem_d_20_writeData, abcdReadAddress_20, mem_d_20_readData);
-	assign array_d_20_input = (validInputs_20) ? mem_d_20_readData:{inputBits{1'b0}};
+	assign mem_abcd_20_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[21*inputBits-1:20*inputBits];
+	assign mem_abcd_20_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[53*inputBits-1:52*inputBits];
+	assign mem_abcd_20_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[85*inputBits-1:84*inputBits];
+	assign mem_abcd_20_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[117*inputBits-1:116*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_20(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_20_writeData, abcdReadAddress_20, mem_abcd_20_readData);
+	assign array_a_20_input = (validInputs_20) ? mem_abcd_20_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_20_input = (validInputs_20) ? mem_abcd_20_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_20_input = (validInputs_20) ? mem_abcd_20_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_20_input = (validInputs_20) ? mem_abcd_20_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 21
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_21(clk, rst, validInputs_20, validInputs_21);
 	dff #(addressWidth) dff_abcdReadAddress_21(clk, rst, abcdReadAddress_20, abcdReadAddress_21);
-	assign mem_a_21_writeData = S_AXIS_TDATA[22*inputBits-1:21*inputBits];
-	mem #(inputBits, arraySize) mem_a_21(clk, fillingInputMemories, abcdeWriteAddress, mem_a_21_writeData, abcdReadAddress_21, mem_a_21_readData);
-	assign array_a_21_input = (validInputs_21) ? mem_a_21_readData:{inputBits{1'b0}};
-	assign mem_b_21_writeData = S_AXIS_TDATA[54*inputBits-1:53*inputBits];
-	mem #(inputBits, arraySize) mem_b_21(clk, fillingInputMemories, abcdeWriteAddress, mem_b_21_writeData, abcdReadAddress_21, mem_b_21_readData);
-	assign array_b_21_input = (validInputs_21) ? mem_b_21_readData:{inputBits{1'b0}};
-	assign mem_c_21_writeData = S_AXIS_TDATA[86*inputBits-1:85*inputBits];
-	mem #(inputBits, arraySize) mem_c_21(clk, fillingInputMemories, abcdeWriteAddress, mem_c_21_writeData, abcdReadAddress_21, mem_c_21_readData);
-	assign array_c_21_input = (validInputs_21) ? mem_c_21_readData:{inputBits{1'b0}};
-	assign mem_d_21_writeData = S_AXIS_TDATA[118*inputBits-1:117*inputBits];
-	mem #(inputBits, arraySize) mem_d_21(clk, fillingInputMemories, abcdeWriteAddress, mem_d_21_writeData, abcdReadAddress_21, mem_d_21_readData);
-	assign array_d_21_input = (validInputs_21) ? mem_d_21_readData:{inputBits{1'b0}};
+	assign mem_abcd_21_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[22*inputBits-1:21*inputBits];
+	assign mem_abcd_21_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[54*inputBits-1:53*inputBits];
+	assign mem_abcd_21_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[86*inputBits-1:85*inputBits];
+	assign mem_abcd_21_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[118*inputBits-1:117*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_21(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_21_writeData, abcdReadAddress_21, mem_abcd_21_readData);
+	assign array_a_21_input = (validInputs_21) ? mem_abcd_21_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_21_input = (validInputs_21) ? mem_abcd_21_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_21_input = (validInputs_21) ? mem_abcd_21_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_21_input = (validInputs_21) ? mem_abcd_21_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 22
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_22(clk, rst, validInputs_21, validInputs_22);
 	dff #(addressWidth) dff_abcdReadAddress_22(clk, rst, abcdReadAddress_21, abcdReadAddress_22);
-	assign mem_a_22_writeData = S_AXIS_TDATA[23*inputBits-1:22*inputBits];
-	mem #(inputBits, arraySize) mem_a_22(clk, fillingInputMemories, abcdeWriteAddress, mem_a_22_writeData, abcdReadAddress_22, mem_a_22_readData);
-	assign array_a_22_input = (validInputs_22) ? mem_a_22_readData:{inputBits{1'b0}};
-	assign mem_b_22_writeData = S_AXIS_TDATA[55*inputBits-1:54*inputBits];
-	mem #(inputBits, arraySize) mem_b_22(clk, fillingInputMemories, abcdeWriteAddress, mem_b_22_writeData, abcdReadAddress_22, mem_b_22_readData);
-	assign array_b_22_input = (validInputs_22) ? mem_b_22_readData:{inputBits{1'b0}};
-	assign mem_c_22_writeData = S_AXIS_TDATA[87*inputBits-1:86*inputBits];
-	mem #(inputBits, arraySize) mem_c_22(clk, fillingInputMemories, abcdeWriteAddress, mem_c_22_writeData, abcdReadAddress_22, mem_c_22_readData);
-	assign array_c_22_input = (validInputs_22) ? mem_c_22_readData:{inputBits{1'b0}};
-	assign mem_d_22_writeData = S_AXIS_TDATA[119*inputBits-1:118*inputBits];
-	mem #(inputBits, arraySize) mem_d_22(clk, fillingInputMemories, abcdeWriteAddress, mem_d_22_writeData, abcdReadAddress_22, mem_d_22_readData);
-	assign array_d_22_input = (validInputs_22) ? mem_d_22_readData:{inputBits{1'b0}};
+	assign mem_abcd_22_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[23*inputBits-1:22*inputBits];
+	assign mem_abcd_22_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[55*inputBits-1:54*inputBits];
+	assign mem_abcd_22_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[87*inputBits-1:86*inputBits];
+	assign mem_abcd_22_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[119*inputBits-1:118*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_22(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_22_writeData, abcdReadAddress_22, mem_abcd_22_readData);
+	assign array_a_22_input = (validInputs_22) ? mem_abcd_22_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_22_input = (validInputs_22) ? mem_abcd_22_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_22_input = (validInputs_22) ? mem_abcd_22_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_22_input = (validInputs_22) ? mem_abcd_22_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 23
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_23(clk, rst, validInputs_22, validInputs_23);
 	dff #(addressWidth) dff_abcdReadAddress_23(clk, rst, abcdReadAddress_22, abcdReadAddress_23);
-	assign mem_a_23_writeData = S_AXIS_TDATA[24*inputBits-1:23*inputBits];
-	mem #(inputBits, arraySize) mem_a_23(clk, fillingInputMemories, abcdeWriteAddress, mem_a_23_writeData, abcdReadAddress_23, mem_a_23_readData);
-	assign array_a_23_input = (validInputs_23) ? mem_a_23_readData:{inputBits{1'b0}};
-	assign mem_b_23_writeData = S_AXIS_TDATA[56*inputBits-1:55*inputBits];
-	mem #(inputBits, arraySize) mem_b_23(clk, fillingInputMemories, abcdeWriteAddress, mem_b_23_writeData, abcdReadAddress_23, mem_b_23_readData);
-	assign array_b_23_input = (validInputs_23) ? mem_b_23_readData:{inputBits{1'b0}};
-	assign mem_c_23_writeData = S_AXIS_TDATA[88*inputBits-1:87*inputBits];
-	mem #(inputBits, arraySize) mem_c_23(clk, fillingInputMemories, abcdeWriteAddress, mem_c_23_writeData, abcdReadAddress_23, mem_c_23_readData);
-	assign array_c_23_input = (validInputs_23) ? mem_c_23_readData:{inputBits{1'b0}};
-	assign mem_d_23_writeData = S_AXIS_TDATA[120*inputBits-1:119*inputBits];
-	mem #(inputBits, arraySize) mem_d_23(clk, fillingInputMemories, abcdeWriteAddress, mem_d_23_writeData, abcdReadAddress_23, mem_d_23_readData);
-	assign array_d_23_input = (validInputs_23) ? mem_d_23_readData:{inputBits{1'b0}};
+	assign mem_abcd_23_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[24*inputBits-1:23*inputBits];
+	assign mem_abcd_23_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[56*inputBits-1:55*inputBits];
+	assign mem_abcd_23_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[88*inputBits-1:87*inputBits];
+	assign mem_abcd_23_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[120*inputBits-1:119*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_23(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_23_writeData, abcdReadAddress_23, mem_abcd_23_readData);
+	assign array_a_23_input = (validInputs_23) ? mem_abcd_23_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_23_input = (validInputs_23) ? mem_abcd_23_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_23_input = (validInputs_23) ? mem_abcd_23_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_23_input = (validInputs_23) ? mem_abcd_23_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 24
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_24(clk, rst, validInputs_23, validInputs_24);
 	dff #(addressWidth) dff_abcdReadAddress_24(clk, rst, abcdReadAddress_23, abcdReadAddress_24);
-	assign mem_a_24_writeData = S_AXIS_TDATA[25*inputBits-1:24*inputBits];
-	mem #(inputBits, arraySize) mem_a_24(clk, fillingInputMemories, abcdeWriteAddress, mem_a_24_writeData, abcdReadAddress_24, mem_a_24_readData);
-	assign array_a_24_input = (validInputs_24) ? mem_a_24_readData:{inputBits{1'b0}};
-	assign mem_b_24_writeData = S_AXIS_TDATA[57*inputBits-1:56*inputBits];
-	mem #(inputBits, arraySize) mem_b_24(clk, fillingInputMemories, abcdeWriteAddress, mem_b_24_writeData, abcdReadAddress_24, mem_b_24_readData);
-	assign array_b_24_input = (validInputs_24) ? mem_b_24_readData:{inputBits{1'b0}};
-	assign mem_c_24_writeData = S_AXIS_TDATA[89*inputBits-1:88*inputBits];
-	mem #(inputBits, arraySize) mem_c_24(clk, fillingInputMemories, abcdeWriteAddress, mem_c_24_writeData, abcdReadAddress_24, mem_c_24_readData);
-	assign array_c_24_input = (validInputs_24) ? mem_c_24_readData:{inputBits{1'b0}};
-	assign mem_d_24_writeData = S_AXIS_TDATA[121*inputBits-1:120*inputBits];
-	mem #(inputBits, arraySize) mem_d_24(clk, fillingInputMemories, abcdeWriteAddress, mem_d_24_writeData, abcdReadAddress_24, mem_d_24_readData);
-	assign array_d_24_input = (validInputs_24) ? mem_d_24_readData:{inputBits{1'b0}};
+	assign mem_abcd_24_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[25*inputBits-1:24*inputBits];
+	assign mem_abcd_24_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[57*inputBits-1:56*inputBits];
+	assign mem_abcd_24_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[89*inputBits-1:88*inputBits];
+	assign mem_abcd_24_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[121*inputBits-1:120*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_24(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_24_writeData, abcdReadAddress_24, mem_abcd_24_readData);
+	assign array_a_24_input = (validInputs_24) ? mem_abcd_24_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_24_input = (validInputs_24) ? mem_abcd_24_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_24_input = (validInputs_24) ? mem_abcd_24_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_24_input = (validInputs_24) ? mem_abcd_24_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 25
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_25(clk, rst, validInputs_24, validInputs_25);
 	dff #(addressWidth) dff_abcdReadAddress_25(clk, rst, abcdReadAddress_24, abcdReadAddress_25);
-	assign mem_a_25_writeData = S_AXIS_TDATA[26*inputBits-1:25*inputBits];
-	mem #(inputBits, arraySize) mem_a_25(clk, fillingInputMemories, abcdeWriteAddress, mem_a_25_writeData, abcdReadAddress_25, mem_a_25_readData);
-	assign array_a_25_input = (validInputs_25) ? mem_a_25_readData:{inputBits{1'b0}};
-	assign mem_b_25_writeData = S_AXIS_TDATA[58*inputBits-1:57*inputBits];
-	mem #(inputBits, arraySize) mem_b_25(clk, fillingInputMemories, abcdeWriteAddress, mem_b_25_writeData, abcdReadAddress_25, mem_b_25_readData);
-	assign array_b_25_input = (validInputs_25) ? mem_b_25_readData:{inputBits{1'b0}};
-	assign mem_c_25_writeData = S_AXIS_TDATA[90*inputBits-1:89*inputBits];
-	mem #(inputBits, arraySize) mem_c_25(clk, fillingInputMemories, abcdeWriteAddress, mem_c_25_writeData, abcdReadAddress_25, mem_c_25_readData);
-	assign array_c_25_input = (validInputs_25) ? mem_c_25_readData:{inputBits{1'b0}};
-	assign mem_d_25_writeData = S_AXIS_TDATA[122*inputBits-1:121*inputBits];
-	mem #(inputBits, arraySize) mem_d_25(clk, fillingInputMemories, abcdeWriteAddress, mem_d_25_writeData, abcdReadAddress_25, mem_d_25_readData);
-	assign array_d_25_input = (validInputs_25) ? mem_d_25_readData:{inputBits{1'b0}};
+	assign mem_abcd_25_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[26*inputBits-1:25*inputBits];
+	assign mem_abcd_25_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[58*inputBits-1:57*inputBits];
+	assign mem_abcd_25_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[90*inputBits-1:89*inputBits];
+	assign mem_abcd_25_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[122*inputBits-1:121*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_25(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_25_writeData, abcdReadAddress_25, mem_abcd_25_readData);
+	assign array_a_25_input = (validInputs_25) ? mem_abcd_25_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_25_input = (validInputs_25) ? mem_abcd_25_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_25_input = (validInputs_25) ? mem_abcd_25_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_25_input = (validInputs_25) ? mem_abcd_25_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 26
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_26(clk, rst, validInputs_25, validInputs_26);
 	dff #(addressWidth) dff_abcdReadAddress_26(clk, rst, abcdReadAddress_25, abcdReadAddress_26);
-	assign mem_a_26_writeData = S_AXIS_TDATA[27*inputBits-1:26*inputBits];
-	mem #(inputBits, arraySize) mem_a_26(clk, fillingInputMemories, abcdeWriteAddress, mem_a_26_writeData, abcdReadAddress_26, mem_a_26_readData);
-	assign array_a_26_input = (validInputs_26) ? mem_a_26_readData:{inputBits{1'b0}};
-	assign mem_b_26_writeData = S_AXIS_TDATA[59*inputBits-1:58*inputBits];
-	mem #(inputBits, arraySize) mem_b_26(clk, fillingInputMemories, abcdeWriteAddress, mem_b_26_writeData, abcdReadAddress_26, mem_b_26_readData);
-	assign array_b_26_input = (validInputs_26) ? mem_b_26_readData:{inputBits{1'b0}};
-	assign mem_c_26_writeData = S_AXIS_TDATA[91*inputBits-1:90*inputBits];
-	mem #(inputBits, arraySize) mem_c_26(clk, fillingInputMemories, abcdeWriteAddress, mem_c_26_writeData, abcdReadAddress_26, mem_c_26_readData);
-	assign array_c_26_input = (validInputs_26) ? mem_c_26_readData:{inputBits{1'b0}};
-	assign mem_d_26_writeData = S_AXIS_TDATA[123*inputBits-1:122*inputBits];
-	mem #(inputBits, arraySize) mem_d_26(clk, fillingInputMemories, abcdeWriteAddress, mem_d_26_writeData, abcdReadAddress_26, mem_d_26_readData);
-	assign array_d_26_input = (validInputs_26) ? mem_d_26_readData:{inputBits{1'b0}};
+	assign mem_abcd_26_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[27*inputBits-1:26*inputBits];
+	assign mem_abcd_26_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[59*inputBits-1:58*inputBits];
+	assign mem_abcd_26_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[91*inputBits-1:90*inputBits];
+	assign mem_abcd_26_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[123*inputBits-1:122*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_26(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_26_writeData, abcdReadAddress_26, mem_abcd_26_readData);
+	assign array_a_26_input = (validInputs_26) ? mem_abcd_26_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_26_input = (validInputs_26) ? mem_abcd_26_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_26_input = (validInputs_26) ? mem_abcd_26_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_26_input = (validInputs_26) ? mem_abcd_26_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 27
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_27(clk, rst, validInputs_26, validInputs_27);
 	dff #(addressWidth) dff_abcdReadAddress_27(clk, rst, abcdReadAddress_26, abcdReadAddress_27);
-	assign mem_a_27_writeData = S_AXIS_TDATA[28*inputBits-1:27*inputBits];
-	mem #(inputBits, arraySize) mem_a_27(clk, fillingInputMemories, abcdeWriteAddress, mem_a_27_writeData, abcdReadAddress_27, mem_a_27_readData);
-	assign array_a_27_input = (validInputs_27) ? mem_a_27_readData:{inputBits{1'b0}};
-	assign mem_b_27_writeData = S_AXIS_TDATA[60*inputBits-1:59*inputBits];
-	mem #(inputBits, arraySize) mem_b_27(clk, fillingInputMemories, abcdeWriteAddress, mem_b_27_writeData, abcdReadAddress_27, mem_b_27_readData);
-	assign array_b_27_input = (validInputs_27) ? mem_b_27_readData:{inputBits{1'b0}};
-	assign mem_c_27_writeData = S_AXIS_TDATA[92*inputBits-1:91*inputBits];
-	mem #(inputBits, arraySize) mem_c_27(clk, fillingInputMemories, abcdeWriteAddress, mem_c_27_writeData, abcdReadAddress_27, mem_c_27_readData);
-	assign array_c_27_input = (validInputs_27) ? mem_c_27_readData:{inputBits{1'b0}};
-	assign mem_d_27_writeData = S_AXIS_TDATA[124*inputBits-1:123*inputBits];
-	mem #(inputBits, arraySize) mem_d_27(clk, fillingInputMemories, abcdeWriteAddress, mem_d_27_writeData, abcdReadAddress_27, mem_d_27_readData);
-	assign array_d_27_input = (validInputs_27) ? mem_d_27_readData:{inputBits{1'b0}};
+	assign mem_abcd_27_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[28*inputBits-1:27*inputBits];
+	assign mem_abcd_27_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[60*inputBits-1:59*inputBits];
+	assign mem_abcd_27_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[92*inputBits-1:91*inputBits];
+	assign mem_abcd_27_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[124*inputBits-1:123*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_27(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_27_writeData, abcdReadAddress_27, mem_abcd_27_readData);
+	assign array_a_27_input = (validInputs_27) ? mem_abcd_27_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_27_input = (validInputs_27) ? mem_abcd_27_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_27_input = (validInputs_27) ? mem_abcd_27_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_27_input = (validInputs_27) ? mem_abcd_27_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 28
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_28(clk, rst, validInputs_27, validInputs_28);
 	dff #(addressWidth) dff_abcdReadAddress_28(clk, rst, abcdReadAddress_27, abcdReadAddress_28);
-	assign mem_a_28_writeData = S_AXIS_TDATA[29*inputBits-1:28*inputBits];
-	mem #(inputBits, arraySize) mem_a_28(clk, fillingInputMemories, abcdeWriteAddress, mem_a_28_writeData, abcdReadAddress_28, mem_a_28_readData);
-	assign array_a_28_input = (validInputs_28) ? mem_a_28_readData:{inputBits{1'b0}};
-	assign mem_b_28_writeData = S_AXIS_TDATA[61*inputBits-1:60*inputBits];
-	mem #(inputBits, arraySize) mem_b_28(clk, fillingInputMemories, abcdeWriteAddress, mem_b_28_writeData, abcdReadAddress_28, mem_b_28_readData);
-	assign array_b_28_input = (validInputs_28) ? mem_b_28_readData:{inputBits{1'b0}};
-	assign mem_c_28_writeData = S_AXIS_TDATA[93*inputBits-1:92*inputBits];
-	mem #(inputBits, arraySize) mem_c_28(clk, fillingInputMemories, abcdeWriteAddress, mem_c_28_writeData, abcdReadAddress_28, mem_c_28_readData);
-	assign array_c_28_input = (validInputs_28) ? mem_c_28_readData:{inputBits{1'b0}};
-	assign mem_d_28_writeData = S_AXIS_TDATA[125*inputBits-1:124*inputBits];
-	mem #(inputBits, arraySize) mem_d_28(clk, fillingInputMemories, abcdeWriteAddress, mem_d_28_writeData, abcdReadAddress_28, mem_d_28_readData);
-	assign array_d_28_input = (validInputs_28) ? mem_d_28_readData:{inputBits{1'b0}};
+	assign mem_abcd_28_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[29*inputBits-1:28*inputBits];
+	assign mem_abcd_28_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[61*inputBits-1:60*inputBits];
+	assign mem_abcd_28_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[93*inputBits-1:92*inputBits];
+	assign mem_abcd_28_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[125*inputBits-1:124*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_28(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_28_writeData, abcdReadAddress_28, mem_abcd_28_readData);
+	assign array_a_28_input = (validInputs_28) ? mem_abcd_28_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_28_input = (validInputs_28) ? mem_abcd_28_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_28_input = (validInputs_28) ? mem_abcd_28_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_28_input = (validInputs_28) ? mem_abcd_28_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 29
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_29(clk, rst, validInputs_28, validInputs_29);
 	dff #(addressWidth) dff_abcdReadAddress_29(clk, rst, abcdReadAddress_28, abcdReadAddress_29);
-	assign mem_a_29_writeData = S_AXIS_TDATA[30*inputBits-1:29*inputBits];
-	mem #(inputBits, arraySize) mem_a_29(clk, fillingInputMemories, abcdeWriteAddress, mem_a_29_writeData, abcdReadAddress_29, mem_a_29_readData);
-	assign array_a_29_input = (validInputs_29) ? mem_a_29_readData:{inputBits{1'b0}};
-	assign mem_b_29_writeData = S_AXIS_TDATA[62*inputBits-1:61*inputBits];
-	mem #(inputBits, arraySize) mem_b_29(clk, fillingInputMemories, abcdeWriteAddress, mem_b_29_writeData, abcdReadAddress_29, mem_b_29_readData);
-	assign array_b_29_input = (validInputs_29) ? mem_b_29_readData:{inputBits{1'b0}};
-	assign mem_c_29_writeData = S_AXIS_TDATA[94*inputBits-1:93*inputBits];
-	mem #(inputBits, arraySize) mem_c_29(clk, fillingInputMemories, abcdeWriteAddress, mem_c_29_writeData, abcdReadAddress_29, mem_c_29_readData);
-	assign array_c_29_input = (validInputs_29) ? mem_c_29_readData:{inputBits{1'b0}};
-	assign mem_d_29_writeData = S_AXIS_TDATA[126*inputBits-1:125*inputBits];
-	mem #(inputBits, arraySize) mem_d_29(clk, fillingInputMemories, abcdeWriteAddress, mem_d_29_writeData, abcdReadAddress_29, mem_d_29_readData);
-	assign array_d_29_input = (validInputs_29) ? mem_d_29_readData:{inputBits{1'b0}};
+	assign mem_abcd_29_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[30*inputBits-1:29*inputBits];
+	assign mem_abcd_29_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[62*inputBits-1:61*inputBits];
+	assign mem_abcd_29_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[94*inputBits-1:93*inputBits];
+	assign mem_abcd_29_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[126*inputBits-1:125*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_29(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_29_writeData, abcdReadAddress_29, mem_abcd_29_readData);
+	assign array_a_29_input = (validInputs_29) ? mem_abcd_29_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_29_input = (validInputs_29) ? mem_abcd_29_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_29_input = (validInputs_29) ? mem_abcd_29_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_29_input = (validInputs_29) ? mem_abcd_29_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 30
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_30(clk, rst, validInputs_29, validInputs_30);
 	dff #(addressWidth) dff_abcdReadAddress_30(clk, rst, abcdReadAddress_29, abcdReadAddress_30);
-	assign mem_a_30_writeData = S_AXIS_TDATA[31*inputBits-1:30*inputBits];
-	mem #(inputBits, arraySize) mem_a_30(clk, fillingInputMemories, abcdeWriteAddress, mem_a_30_writeData, abcdReadAddress_30, mem_a_30_readData);
-	assign array_a_30_input = (validInputs_30) ? mem_a_30_readData:{inputBits{1'b0}};
-	assign mem_b_30_writeData = S_AXIS_TDATA[63*inputBits-1:62*inputBits];
-	mem #(inputBits, arraySize) mem_b_30(clk, fillingInputMemories, abcdeWriteAddress, mem_b_30_writeData, abcdReadAddress_30, mem_b_30_readData);
-	assign array_b_30_input = (validInputs_30) ? mem_b_30_readData:{inputBits{1'b0}};
-	assign mem_c_30_writeData = S_AXIS_TDATA[95*inputBits-1:94*inputBits];
-	mem #(inputBits, arraySize) mem_c_30(clk, fillingInputMemories, abcdeWriteAddress, mem_c_30_writeData, abcdReadAddress_30, mem_c_30_readData);
-	assign array_c_30_input = (validInputs_30) ? mem_c_30_readData:{inputBits{1'b0}};
-	assign mem_d_30_writeData = S_AXIS_TDATA[127*inputBits-1:126*inputBits];
-	mem #(inputBits, arraySize) mem_d_30(clk, fillingInputMemories, abcdeWriteAddress, mem_d_30_writeData, abcdReadAddress_30, mem_d_30_readData);
-	assign array_d_30_input = (validInputs_30) ? mem_d_30_readData:{inputBits{1'b0}};
+	assign mem_abcd_30_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[31*inputBits-1:30*inputBits];
+	assign mem_abcd_30_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[63*inputBits-1:62*inputBits];
+	assign mem_abcd_30_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[95*inputBits-1:94*inputBits];
+	assign mem_abcd_30_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[127*inputBits-1:126*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_30(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_30_writeData, abcdReadAddress_30, mem_abcd_30_readData);
+	assign array_a_30_input = (validInputs_30) ? mem_abcd_30_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_30_input = (validInputs_30) ? mem_abcd_30_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_30_input = (validInputs_30) ? mem_abcd_30_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_30_input = (validInputs_30) ? mem_abcd_30_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//line 31
 	//dff for delaying valid + address
 	dff #(1) dff_validInputs_31(clk, rst, validInputs_30, validInputs_31);
 	dff #(addressWidth) dff_abcdReadAddress_31(clk, rst, abcdReadAddress_30, abcdReadAddress_31);
-	assign mem_a_31_writeData = S_AXIS_TDATA[32*inputBits-1:31*inputBits];
-	mem #(inputBits, arraySize) mem_a_31(clk, fillingInputMemories, abcdeWriteAddress, mem_a_31_writeData, abcdReadAddress_31, mem_a_31_readData);
-	assign array_a_31_input = (validInputs_31) ? mem_a_31_readData:{inputBits{1'b0}};
-	assign mem_b_31_writeData = S_AXIS_TDATA[64*inputBits-1:63*inputBits];
-	mem #(inputBits, arraySize) mem_b_31(clk, fillingInputMemories, abcdeWriteAddress, mem_b_31_writeData, abcdReadAddress_31, mem_b_31_readData);
-	assign array_b_31_input = (validInputs_31) ? mem_b_31_readData:{inputBits{1'b0}};
-	assign mem_c_31_writeData = S_AXIS_TDATA[96*inputBits-1:95*inputBits];
-	mem #(inputBits, arraySize) mem_c_31(clk, fillingInputMemories, abcdeWriteAddress, mem_c_31_writeData, abcdReadAddress_31, mem_c_31_readData);
-	assign array_c_31_input = (validInputs_31) ? mem_c_31_readData:{inputBits{1'b0}};
-	assign mem_d_31_writeData = S_AXIS_TDATA[128*inputBits-1:127*inputBits];
-	mem #(inputBits, arraySize) mem_d_31(clk, fillingInputMemories, abcdeWriteAddress, mem_d_31_writeData, abcdReadAddress_31, mem_d_31_readData);
-	assign array_d_31_input = (validInputs_31) ? mem_d_31_readData:{inputBits{1'b0}};
+	assign mem_abcd_31_writeData[1*inputBits-1:0*inputBits] = S_AXIS_TDATA[32*inputBits-1:31*inputBits];
+	assign mem_abcd_31_writeData[2*inputBits-1:1*inputBits] = S_AXIS_TDATA[64*inputBits-1:63*inputBits];
+	assign mem_abcd_31_writeData[3*inputBits-1:2*inputBits] = S_AXIS_TDATA[96*inputBits-1:95*inputBits];
+	assign mem_abcd_31_writeData[4*inputBits-1:3*inputBits] = S_AXIS_TDATA[128*inputBits-1:127*inputBits];
+	mem #(4*inputBits, arraySize) mem_abcd_31(clk, fillingInputMemories, abcdeWriteAddress, mem_abcd_31_writeData, abcdReadAddress_31, mem_abcd_31_readData);
+	assign array_a_31_input = (validInputs_31) ? mem_abcd_31_readData[1*inputBits-1:0*inputBits]:{4*inputBits{1'b0}};
+	assign array_b_31_input = (validInputs_31) ? mem_abcd_31_readData[2*inputBits-1:1*inputBits]:{4*inputBits{1'b0}};
+	assign array_c_31_input = (validInputs_31) ? mem_abcd_31_readData[3*inputBits-1:2*inputBits]:{4*inputBits{1'b0}};
+	assign array_d_31_input = (validInputs_31) ? mem_abcd_31_readData[4*inputBits-1:3*inputBits]:{4*inputBits{1'b0}};
 	//mem_e [write external, read by array]
 	//column 0
 	assign mem_e_0_writeData = S_AXIS_TDATA[129*inputBits-1:128*inputBits];

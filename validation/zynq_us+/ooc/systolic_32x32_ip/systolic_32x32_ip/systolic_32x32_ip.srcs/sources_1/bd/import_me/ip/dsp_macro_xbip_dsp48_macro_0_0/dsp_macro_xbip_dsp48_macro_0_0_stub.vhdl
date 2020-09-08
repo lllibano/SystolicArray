@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.1 (lin64) Build 2188600 Wed Apr  4 18:39:19 MDT 2018
--- Date        : Thu Sep  3 15:56:03 2020
+-- Date        : Mon Sep  7 15:59:29 2020
 -- Host        : Shears running 64-bit Ubuntu 16.04.6 LTS
 -- Command     : write_vhdl -force -mode synth_stub
---               /home/flibano/vivado/vivado/NON_PROJECT_MODE/systolic_32x32_ip/systolic_32x32_ip/systolic_32x32_ip.srcs/sources_1/bd/import_me/ip/dsp_macro_xbip_dsp48_macro_0_0/dsp_macro_xbip_dsp48_macro_0_0_stub.vhdl
+--               /home/flibano/vivado/vivado/NON_PROJECT_MODE/zynq_us+/systolic_32x32_ip/systolic_32x32_ip/systolic_32x32_ip.srcs/sources_1/bd/import_me/ip/dsp_macro_xbip_dsp48_macro_0_0/dsp_macro_xbip_dsp48_macro_0_0_stub.vhdl
 -- Design      : dsp_macro_xbip_dsp48_macro_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xczu9eg-ffvb1156-3-e-es2
