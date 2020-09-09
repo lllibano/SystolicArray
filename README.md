@@ -1,5 +1,5 @@
 # Libano's Systolic Array Generator
-A parametric RTL code generator of an efficient MxM Systolic Array implementation for Xilinx FPGAs.
+A parametric RTL code generator of an efficient integer MxM Systolic Array implementation for Xilinx FPGAs.
 
 ---
 
@@ -23,11 +23,11 @@ Hence, the Processing Elements (PEs) that constitute the array are multiply-accu
 
 Given a systolic array of size NxN:
 - **DSPs:** N<sup>2</sup> DSP48E[1<sup>[[5]](https://www.xilinx.com/support/documentation/user_guides/ug479_7Series_DSP48E1.pdf)</sup>|2<sup>[[6]](https://www.xilinx.com/support/documentation/user_guides/ug579-ultrascale-dsp.pdf)</sup>] *(1 for each PE)*
-- **BRAMs:** 9N RAMB18E[1<sup>[[9]](https://www.xilinx.com/support/documentation/user_guides/ug473_7Series_Memory_Resources.pdf)</sup>|2<sup>[[10]](https://www.xilinx.com/support/documentation/user_guides/ug573-ultrascale-memory-resources.pdf)</sup>] *(N for each input/output matrix: A,B,C,D,E,W,X,Y,Z)*
+- **BRAMs:** 6N RAMB18E[1<sup>[[9]](https://www.xilinx.com/support/documentation/user_guides/ug473_7Series_Memory_Resources.pdf)</sup>|2<sup>[[10]](https://www.xilinx.com/support/documentation/user_guides/ug573-ultrascale-memory-resources.pdf)</sup>] *(N for each input/output matrix: ABCD,E,W,X,Y,Z)*
 - **Operations/Cycle:** 8N<sup>2</sup> *(N<sup>2</sup> PEs, 2x2xMUL + 4xADD per PE)*
-- **Frequency:** Will depend on N and target device *(![/validation/](/validation/))*
-	- 8x8 @ XC7Z020 @ 200MHz
-	- 8x8 @ XCZU9EG @ 300MHz
+- **Frequency:** Will mostly depend target device, but can also depend on N *(![/validation/](/validation/))*
+	- 8x8/14x14 @ XC7Z020 @ 200MHz
+	- 8x8/14x14/32x32 @ XCZU9 @ 300MHz
 
 ![testbench](/docs/testbench.png)
 
@@ -36,9 +36,9 @@ Given a systolic array of size NxN:
 ## Repository Organization
 
 - ![/docs/](/docs/): Relevant repository documentation.
-- ![/example/](/example/): Vivado project with a working example, and testbenches for a 2x2 array.
-- ![/generator/](/generator/): Python script for generating RTL (edit 'settings.py', and then run 'main.py').
-- ![/validation/](/validation/): Out-of-context and system-level Vivado projects for an 8x8 array (synth/place/route).
+- ![/example/](/example/): Vivado project for a 2x2 array, including testbenches, and an use-case scenario with AXI DMA.
+- ![/generator/](/generator/): Python script for generating RTL (edit 'settings.py', run 'main.py', import '/RTL/import_me/*').
+- ![/validation/](/validation/): OOC Vivado projects, scripts, and reports for synth/place/route of 8x8/14x14/32x32 arrays on 7000/UltraScale.
 
 ---
 
