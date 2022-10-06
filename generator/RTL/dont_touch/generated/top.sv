@@ -45,7 +45,7 @@ module top //2x2
 	//runningState - outputs [array -> mem]
 	logic wxyzWriteEnable_0;
 	logic [addressWidth-1:0] wxyzWriteAddress_0;
-	//runningState - inputs [mem -> outside]
+	//runningState - outputs [mem -> outside]
 	logic [addressWidth-1:0] wxyzReadAddress_0;
 	//others
 	//abcd

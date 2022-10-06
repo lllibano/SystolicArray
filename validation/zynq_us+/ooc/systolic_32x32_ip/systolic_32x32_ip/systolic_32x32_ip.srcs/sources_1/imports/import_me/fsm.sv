@@ -31,7 +31,7 @@ module fsm
 	//runningState - outputs [array -> mem]
 	output logic wxyzWriteEnable,
 	output logic [addressWidth-1:0] wxyzWriteAddress,
-	//runningState - inputs [mem -> outside]
+	//runningState - outputs [mem -> outside]
 	output logic [addressWidth-1:0] wxyzReadAddress
 );
 
